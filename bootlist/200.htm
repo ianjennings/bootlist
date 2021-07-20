@@ -1,0 +1,194 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 200</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 200 December 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 200th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) 200 Gig Drive On Non LBA 48 Bit PC</a><BR>
+<a href="#2">2) Clean Up After SP2 Install</a><BR>
+<a href="#3">3) Easy Way To Burn A Slipstreamed CD</a><BR>
+<a href="#4">4) What's My Real CPU Temperature?</a><BR>
+<a href="#5">5) A Good Reason To Keep Your Win95 CD</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) 200 Gig Drive On Non LBA 48 Bit PC</font></STRONG>
+<P>
+Kenny S. wrote - What will happen if I install a 200 gb HD and my motherboard is not LBA48 bit? I have XP 
+SP2. Will it work? Will I have to partition? Will some of it be detected?
+<P>
+Art delineates:<BR>
+First of all, if you're sure that your motherboard does not support large-capacity hard drives, i.e., disks 
+that have a capacity greater than 137 GB, check with the motherboard's manufacturer to determine if a 
+BIOS upgrade is available that provides that capability.
+<P>
+If your motherboard does not support large-capacity disks, and you install your 200 GB HD in a Windows
+XP w/SP2 environment, then your system will recognize only 137 GB of your hard drive. (I'm assuming that 
+your motherboard isn't too old and will recognize 137 GB).
+<P>
+Should the motherboard's BIOS not support large-capacity disks, the most practical way of getting 
+around this barrier is to install a controller card that supports large-capacity disks, which every controller 
+card manufactured today does. It's a relatively cheap fix - about $35 or so for such a controller card.
+<P>
+Bear in mind that if you install your 200 GB drive while the motherboard does not support large-capacity 
+disks and you later install a controller card as indicated above (or install a new motherboard that 
+supports large-capacity disks), the full capacity of your disk will be recognized, i.e., the 137 GB originally partitioned/formatted and the remaining capacity (roughly 50 GB - an advertised 200 GB HD comports to 
+about 187 GB in binary terms) will be reflected as "unallocated space", space which you can 
+subsequently format using XP's Disk Management utility. But note that you will now have a minimum of 
+two partitions on that disk -the 137 GB and the remaining disk space of about 50 GB.
+<P><BR>
+*** Art made some good points. It's quite hard to answer such a question as it really depends on how old
+your pc is. For example, if Kenny's pc is a P400 class it may just lock on post and/or not even detect that 
+such a large drive is even connected. Or, it may just be a few [perhaps 3 or 4] years old which is the 
+assumption here. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Clean Up After SP2 Install</font></STRONG>
+<P>
+SK asks - I am told that after installing SP2 that there is a whole lot of junk left on the HD that should 
+manually be removed to get space back.  I don't really need the space but I do like to run a tight/clean
+ship.
+<P>
+Alex N. notes in one of his forums:<BR>
+<P>
+Installing SP2 leaves a lot of space on hard disk taken up by files you would only ever need if you were 
+to uninstall it. Once you are sure you are happy with it [see the following]: 
+<P>
+A very big restore point will have been made. Once a new regular size one has been made in the 
+ordinary way, clean up by going to Start - All Programs - Accessories - System Tools - Disk Cleanup                   and in 'More Options' click the bottom button to remove all but the most recent restore point 
+<P>
+Delete the hidden folder of files that would be restored by an Uninstall:<BR>
+C:\Windows\$NTServicePackUninstall<BR>
+Once done, if you try to use the 'Remove' for Service pack 2 in Add/remove programs, that will fail and 
+offer to remove itself 
+<P>
+There may also be a large folder C:\Windows\SoftwareDistribution\Download depending on how you 
+did the installation. That can also be deleted 
+<P>
+Check that the installations temporary folder did get properly removed - it will be on the drive where you downloaded the setup files, so probably C: and have a long name of random letters. If it is still around,                  delete it. And burn the downloaded file to a CD so as to have it if you ever need to reinstall. 
+<P>
+There will also be a large folder C:\Windows\ServicePackFiles. Do not delete this - it will be used in 
+future by Windows File Protection - but on an NTFS disk you can compress it to save about 200MB of 
+disk space.  R-click on it, Properties, click the Advanced button, and select 'Compress'.
+                                    
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Easy Way To Burn A Slipstreamed CD</font></STRONG>
+<P>
+RushH inquired - I want to build some slipstreamed CDs for my OS's to include the service packs but
+the directions I read on the how to do it sites are confusing to me. Is there an easier or more automated 
+way to do this? 
+<P>
+<A HREF="http://www.autopatcher.com/autostreamer.html">http://www.autopatcher.com/autostreamer.html</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) What's My Real CPU Temperature?</font></STRONG>
+<P>
+DILIP questions - Has anyone experienced software apps reporting different values for CPU temps than 
+the BIOS? My BIOS reports 45-46C [even after a reboot]. Motherboard Monitor and Aida32 report 91-92C. 
+Has anyone seen this before?  I'm baffled.  Asus P4T-M Socket 423 850 based. Pentium 4 1300MHz.
+<P><BR>
+*** There is only one thermometer on your PC and that's on the motherboard. Your bios reading is correct.
+The other apps are not. The other apps you are using are simply NOT gathering the correct data from the
+motherboard and/or the bios. ie They can NOT determine the CPU temps independently. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) A Good Reason To Keep Your Win95 CD</font></STRONG>
+<P>
+Neil V. posted - I want to reformat and reinstall from my upgrade xp cd. I have a 95 cd for conformation but
+apparently I cant use this? Am I right and what shall I do?
+<P>
+Darrell answers:<BR>
+You can use your Windows 95 CD for confirmation since you're going to use an upgrade XP CD.  Boot 
+your system with the upgrade XP CD and when prompted for a previous version of the Windows system, 
+insert your Windows 95 CD.
+<P>
+Tim S. adds:<BR>
+XP wont upgrade [an existing] Win95 installation, but you can present a Win95 CD as proof of a qualifying product when you use the XP Upgrade CD [and install XP fresh].
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS - You will also be provided with a link to download the previous 100 issues COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

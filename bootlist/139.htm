@@ -1,0 +1,233 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 139  </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 139 February 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 139th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Stop Those Annoying Bubble Tips</a><BR>
+<a href="#2">2) My CD Drives Have Vanished</a><BR>
+<a href="#3">3) hal.dll File Is Missing Or Corrupt</a><BR>
+<a href="#4">4) New XP System Rebooting 8 Times Per Hour</a><BR>
+<a href="#5">5) More USB One And Two</a><BR>
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Stop Those Annoying Bubble Tips</font></STRONG>
+<P>
+Steven writes - I know there is a registry change that will stop most of those annoying bubble tips. Would someone please share it with me. I have xp home.
+<P><BR>
+*** 
+<A HREF="http://www.dougknox.com/xp/scripts_desc/xp_balloontips.htm">http://www.dougknox.com/xp/scripts_desc/xp_balloontips.htm</A><BR>
+<A HREF="http://support.microsoft.com/default.aspx?scid=KB;en-us;307729&">http://support.microsoft.com/default.aspx?scid=KB;en-us;307729&</A>
+<P>
+Vanguard answers:<BR>
+If you don't want to edit the registry, get Tweakui powertoy for Windows XP. Under the "Taskbar and Start 
+menu" node in the tree, you can enable/disable balloon tips.  This changes the same registry data value 
+that the KB article mentions.
+<P><BR>
+*** 
+TweakUI for XP:<BR>
+<A HREF="http://download.microsoft.com/download/whistler/Install/2/WXP/EN-US/TweakUiPowertoySetup.exe">http://download.microsoft.com/download/whistler/Install/2/WXP/EN-US/TweakUiPowertoySetup.exe</A>
+<P>
+For XP w/SP1:<BR>
+<A HREF="http://www.microsoft.com/windowsxp/pro/downloads/powertoys.asp">http://www.microsoft.com/windowsxp/pro/downloads/powertoys.asp</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) My CD Drives Have Vanished</font></STRONG>
+<P>
+YW4 asks - The CD-Roms on my XP Pro are not loading. I've checked the device manager and it shows 
+that the device drivers are "corrupt or damaged". I unloaded the drivers and rebooted and Windows 
+reloaded the drivers but I still have the same problem. I've gone to the mfg. website but they do not have 
+any independent drivers for the CD drives. I've tried to reinstall the hardware and add new hardware but 
+neither of the drives will work. I open up windows explorer and it doesn't even show the drives. Any ideas?
+<P>
+Rick suggests:<BR>
+See if this [patch] helps [ie cdgone.zip]:<BR>
+Section 8, My CD drives have vanished (from Explorer, Device Manager, etc.)
+<P>
+<A HREF="http://aumha.org/win5/a/xpcd.php">http://aumha.org/win5/a/xpcd.php</A>
+
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) hal.dll File Is Missing Or Corrupt</font></STRONG>
+<P>
+geoffd inquires - I have a new, blank hard drive im trying to install XP on. After setup is complete and it 
+restarts i get the error message windows couldn't load because hal.dll file was missing or corrupt.
+<P>
+Alex N. responds:<BR>
+Note: you may have let it reboot from the CD rather than the HD during installation. 
+<P>
+That message is rather misleading.  It happens because the boot.ini file that tells the boot where to look 
+for 'Windows' is damaged, so it is looking for files in the wrong place - hal.dll just happens to be the
+first one it looks for.
+<P>
+Set the BIOS to boot CD before Hard Disk.  Boot the XP CD and, instead of Setup, take the immediate R 
+for Repair.  Assume any password requested is blank, and TAB over.
+<P>
+Use:<BR>
+Attrib -H -R -S C:\boot.ini<BR>
+DEL C:\boot.ini<BR>
+To delete the bad one <BR>
+<P>
+BootCfg  /Rebuild
+<P>
+To search for Windows installations and make a new one.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) New XP System Rebooting 8 Times Per Hour</font></STRONG>
+<P>
+David inquires - Unexpected crashes of xp home edition on newly built computer and no explanation.  
+Computer just restarts randomly, then I see then dos prompt, then a scandisk then the desktop again.  has happened eight times in the last hour alone.  very frustrating.  computer only has Asus motherboard, 
+nvidia video card and everything else is onboard and installed correctly. 
+<P><BR>
+*** First off, if you installed XP with all your perifs attached ie printers, usb devices, etc you already might 
+have made a fatal mistake, as no devices should be attached when you install XP fresh on a new PC. 
+Make sure that your basic box works first, then add the perifs one at a time.
+<P>
+This way, if there is a niggle one can limit troubleshooting to your basic hardware, eg drivers, cooling, 
+flakey power supply, ram etc.
+<P>
+Secondly, since you've already done the dirty deed, one might turn off "restart on failure" so one can read the error message that just flashes by now. For all you know the error message might point to file in your sound folder, just giving you a nice hint on what's wrong.
+<P>
+For info re: restart on failure:<BR>
+<A HREF="http://www.bootdisk.com/bootlist/089.htm#6">http://www.bootdisk.com/bootlist/089.htm#6</A>
+<P>
+Thirdly, and more drastic, one might have to remove any add-on PCI cards to see if one of them is 
+causing the problem. ie to find out if your basic hardware at least works.
+<P>
+Fourthly, of course it could be due to some software you've installed and not related to hardware at all. 
+Again, if  you disable "restart on failure", disable all background apps you have set to run on startup, one
+might just get the clue you need. 
+
+
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) More USB One And Two</font></STRONG>
+<P>
+andypaul writes - Two items: 
+<P>
+1. I have an add-on card for my usb connection to my computer, probably about 2 years old.  Is there a 
+utility to tell which version it supports?
+<P>
+Thor answers:<BR>
+No utility that I am aware of other than those that read the same device info that you can get from the 
+device manager. First of all, you need to have SP1 installed if you are using WinXP. That gives USB 2.0 
+support to WinXP, and manufacturers drivers will not likely be necessary. Without SP1, any USB 2.0 
+controller you may have will only be running at USB 1.1 speeds.
+<P>
+If running win98 etc. then you need drivers from the card manufacturer for USB 2.0 support. If you check 
+your windows device manager, and look at the USB controllers listed at the bottom, one of them should 
+say something like "USB Enhanced Host controller" or "EHCI Universal Serial Bus controller".
+(you are looking for the word "enhanced")
+<P>
+If you have nothing but "USB open host controller" listed, then you probably don't have USB 2.0, or the
+drivers aren't correct. Another way to tell is to connect a USB 2.0 device. If you get a warning (in WinXP) 
+about connecting a high speed USB device to a low speed controller, that is a red flag that you may not 
+have USB 2.0 controllers.
+<P><BR>
+2.  Most of the external hard drives list 2.0 usb, will it still work in a 1.1 system, just slower or not at all?
+<P>
+Thor answers:<BR>
+It will most likely work, but at substantially reduced performance. Most USB 2.0 external storage devices 
+are backward compatible with USB 1.1 speed.  In any case, if your computer lacks USB 2.0, then I 
+HIGHLY recommend a Belkin USB 2.0 card. They use the NEC USB controller chip which is probably the
+most widely compatible one out there.
+<P>
+Avoid VIA and ALI-based controller cards like the plague. They have had some really big problems with 
+not operating at USB 2.0 speeds or having problems with USB devices in general. Believe me. If you 
+have an external CD or Harddrive, then you really do want  a good USB 2.0 controller. It's performance 
+will seem like it is an internal drive. At USB 1.1 speeds, copying large amounts of data takes much much 
+longer.
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/6vj1">http://tinyurl.com/6vj1</A>
+<P>Or choose your own level of support: <A HREF="http://tinyurl.com/7k6n">http://tinyurl.com/7k6n</A>
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 800K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P>
+To view the Table of Contents for all previous issues download this:<BR>
+<A HREF="http://www.bootdisk.com/bootlist/toc.zip">http://www.bootdisk.com/bootlist/toc.zip</A>
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+
+
+
+
+
+<P><BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,206 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 245</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 245 December 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 245th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) XP Forgets Folder Settings</a><BR>
+<a href="#2">2) Too Many USB Devices?</a><BR>
+<a href="#3">3) Old Hardware Wont Go Away</a><BR>
+<a href="#4">4) Utility To Test/Tweak Wi-Fi</a><BR>
+<a href="#5">5) Outlook Express Email Alert</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) XP Forgets Folder Settings</font></STRONG>
+<P>
+Andy posted - I have a little issue. I would like to see my folder view to be detail all the time. I have the 
+change the the view to detail and then from tools folder options apply to all the folders. Every couple of 
+days or so it changes back to thumbnails view. Very frustrating. Any Idea or and registry key that will 
+make that permanent?
+<P>
+Rick responded:<BR>
+WindowsXP will remember the settings of up to 400 folders, after that it starts forgetting some. See this 
+from MVP Kelly for a way to increase this number:
+<P>
+<A HREF="http://www.kellys-korner-xp.com/xp_tweaks.htm">http://www.kellys-korner-xp.com/xp_tweaks.htm</A>
+<P>
+Line 2, increase the folder view size limit to 8000
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Too Many USB Devices?</font></STRONG>
+<P>
+Frank inquired - The computer is a Dell Dimension 3100 with XP SP2.  I booted the computer brand new 
+and installed a Lexmark USB all-in-one printer and an HP USB color Laser.  I also installed a USB floppy 
+drive and the keyboard and mouse are both USB.  I tried to install a PNY USB drive, and it wouldn't install.
+I then tried another USB flash drive that I use daily; the name's long since been rubbed of it, so I don't 
+know the brand.  Both USB drives work fine in other computers including other XP SP2 machines,
+<P>
+PcEngWork replied:<BR>
+You might check your USB Root Hubs for Power consumption.
+<P>
+My SanDisk Mini Cruzer 256 Meg consumes 200+ mA of current. Most hubs max out at 500 mA. Because 
+all USB2 devices route to a single Root Hub that may limit your devices. Open Device Mgr. expand the Universal Serial Bus Controller category. Double Click each Hub, Power (TAB) and check the Power Required column. Usually, the Root Hub associated with the USB2 controller will be the last one in the 
+listing.
+<P>
+Rick adds:<BR>
+Try a powered hub, you may have exceeded the power limitations of the system's ports.
+<P>
+Rock suggested:<BR>
+[As a review, you also might want to check out:]
+<P>
+General USB troubleshooting in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=310575">http://support.microsoft.com/?kbid=310575</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Old Hardware Wont Go Away</font></STRONG>
+<P>
+gonelzi asked - A scanner I used to have is still appearing on device lists in photo editing programs.
+<P>
+I have removed the software for it and it does not appear in the Scanners and Camera list in the control 
+panel. Yet, it still is listed as a device in programs like Adobe Photoshop. It doesn't not come up in the 
+device manager and it is not listed in my hardware profiles.
+<P>
+Dave P. replies:<BR>
+To display hidden devices, non-Plug and Play devices, and devices not attached to the computer 
+(commonly known as "ghosted" or "phantom" devices) Save the following two lines as a file then execute.
+<P>
+--------------------------setdev.bat---------------------<BR>
+set DEVMGR_SHOW_NONPRESENT_DEVICES=1<BR>
+start devmgmt.msc<BR>
+---------------------------------------------------------
+<P>
+Then, View | Show Hidden Devices to remove or reconfigure these devices. Do not edit the registry.
+<P><BR>
+*** Or, simply hit Run and type: devmgmt.msc and then View | Show Hidden Devices. Then one can 
+highlight and Uninstall them. 
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Utility To Test/Tweak Wi-Fi</font></STRONG>
+<P>
+PeterM inquired - I just set up a wireless connection in my house, and I wonder if there is a program that 
+can tell me if I have someone using my wireless system. I use Win XP Home, with all updates and I use 
+Zone Alarm. I think I set up my Linksys WRT54GS device the right way, but that stuff is basically Greek to 
+me.
+<P><BR>
+*** My son has a PSP [Play Station Portable] and he has a ball when I pick him up or drop him off and he
+sees how many wireless networks there are and the signal strength. I live in a crowed area and basically 
+the networks just popup one after another. Only about 1 in 10 are secure from what I can tell. 
+<P>
+Personally, I wasn't aware of any third party utility that could tell you if somebody was using your wireless setup, so I did a bit of research and found this:
+<P>
+Wi-Fi Defense:<BR>
+<A HREF="http://www.otosoftware.com/wireless.asp">http://www.otosoftware.com/wireless.asp</A>
+<P>
+A review:<BR>
+<A HREF="http://www.windowsusers.org/wifi_defense.html">http://www.windowsusers.org/wifi_defense.html</A>
+<P>
+Yes there are free ways to secure your network without using any additional software and that seems to 
+be what PeterM did first. So I'm not going into that now as the question was only to ask if there was a way 
+to check his work. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Outlook Express Email Alert</font></STRONG>
+<P>
+effdee inquired - OE has a mail notification sound when new mail has arrived. But if your email account is 
+with Hotmail there is no mail notification sound. Is there a way to have one?
+<P>
+Try:
+<BR>
+<A HREF="http://www.accuratesolution.net/oema.htm">http://www.accuratesolution.net/oema.htm</A>
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+<P>
+BONUS -  You will also be provided with a link to download issues #140 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

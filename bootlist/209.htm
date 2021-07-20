@@ -1,0 +1,217 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 209</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 209 February 2005
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 209th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Network Icon Not Working</a><BR>
+<a href="#2">2) Fastest Way To Get To/Modify A Registry Key</a><BR>
+<a href="#3">3) Bypass Username/Password Prompt</a><BR>
+<a href="#4">4) AVI To DVD</a><BR>
+<a href="#5">5) Fastest Way To Backup The Registry</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Network Icon Not Working</font></STRONG>
+<P>
+Blake complained - Windows XP, SP2, up to patch level.
+<P>
+I double-click the Network Connections shortcut in control panel, nothing happens.  I right click the My 
+Network Places and click Properties - nothing happens.  Everything else runs fine.
+<P>
+Ramesh suggested:<BR>
+Click Start/Run and type this command:
+<P>
+regsvr32 netshell  
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Fastest Way To Get To/Modify A Registry Key</font></STRONG>
+<P>
+Chuck wrote - If I'm reading thru Microsoft (or other) documents, and find a registry reference, such as in 
+the [following] example [of a specific key I was told to change], what's the fastest way of examining that 
+entry in my registry?
+<P>
+[In other words, does] anybody know of a utility that lets me copy and paste (or dream on - right click?) a 
+key such as "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netbt\Parameters\", and 
+open the registry key easily?
+<P>
+The only way I know is to:<BR>
+1)  Start Regedit<BR>
+2)  Open HKLM<BR>
+3)  Open System<BR>
+4)  Open CurrentControlSet<BR>
+5)  Open Services<BR>
+6)  Open Netbt<BR>
+7)  Open Parameters
+<P>
+What a pain.  
+<P>
+###  Begin Example [This is where an MS KB article asks me to change a value for a key. If you have
+to change multiple keys in different areas it can be quite annoying]
+<P>
+RESOLUTION<BR>
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems that may require you 
+to reinstall your operating system. Microsoft cannot guarantee that you can solve problems that result 
+from using Registry Editor incorrectly. Use Registry Editor at your own risk.
+<P>
+To resolve this issue, use Registry Editor (Regedit.exe) to locate the following key in the registry:
+<P>
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netbt\Parameters\ Change the value of 
+the EnableProxy value in the preceding registry key to 0 or 1, quit Registry Editor, and then restart your computer. 
+<P>
+###  End Example
+<P>
+Ramesh answers:<BR>
+Try RegJump from Sysinternals.com:<BR>
+<A HREF="http://www.sysinternals.com/ntw2k/source/misc.shtml#regjump">http://www.sysinternals.com/ntw2k/source/misc.shtml#regjump</A>
+<P>
+<A HREF="http://www.sysinternals.com/files/regjump.zip">http://www.sysinternals.com/files/regjump.zip</A>
+<P>
+Usage Example - Click Start/Run and type this:
+<P>
+C:\Regjump "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services"
+<P>
+Assuming regjump.exe file is placed in C:\
+<P><BR>
+*** Ramesh also said a program called 12ghosts had a function that does the same with a nice interface.  
+Yes, I tried 12ghosts yet again, and yes, it was fun and worked but it was just a tad too intrusive for me to 
+actually post the link :)  Easy to find tho using google if you want to try it out. At least it uninstalled OK. 
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Bypass Username/Password Prompt</font></STRONG>
+<P>
+Grimbo inquired - Using XP Pro.  How do I reset my system so that it loads everything up without asking 
+for username and password?
+<P>
+mark answered:<BR>
+Click Start, Run and type "control userpasswords2", and click Ok. Uncheck "Users must enter a user 
+name and password to use this computer" option, and click Ok. Type-in the username and credentials.
+<P>
+Ramesh added:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=315231">http://support.microsoft.com/?kbid=315231</A>
+<P><BR>
+*** Or, download and install tweakui for xp and use its auto-logon feature.
+<P>
+<A HREF="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx">http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) AVI To DVD</font></STRONG>
+<P>
+Murgi asked - I have a number of video clips downloaded from the Internet (mainly AVI files). They play 
+on the computer but not on my new DVD player that supports a number of other formats. Since I want to 
+watch them on the TV set, I need to convert them first  into a recognized format before burning them to 
+DVD or CD. I have tried a number of programs, but some were either too complicated or too slow. 
+<P>
+colin provided:
+<P>
+<A HREF="http://www.tmpgenc.net/e_main.html">http://www.tmpgenc.net/e_main.html</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Fastest Way To Backup The Registry</font></STRONG>
+<P>
+KickingFox asked - For Windows 98 and Windows XP what's the quickest way to make backups of
+the registry without typing any dos commands or installing a third party utility?
+<P>
+Ron M. answers:
+To create a registry backup in Windows 98/98SE/Me use Start - Run and enter the following command:
+<P>
+scanregw /backup
+<P>
+In Windows XP you need to create a manual restore point using Start | All Programs | Accessories | 
+System Tools | System Restore.
+<P><BR>
+*** In case you've forgotton how to go back to a previous win9X registry boot to dos command prompt 
+only  and type:
+<P>
+scanreg /restore
+<P>
+Then choose the date [restore point] you want to go back to.
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on
+this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

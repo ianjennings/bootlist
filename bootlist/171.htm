@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 171 </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 171 July 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 171st Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Set XP Explorer To Open C: Instead Of My Documents</a><BR>
+<a href="#2">2) Delayed Write Failed</a><BR>
+<a href="#3">3) My Password Doesn't Work For Administrator Logon</a><BR>
+<a href="#4">4) Ten Dollar ISP With Newsgroups</a><BR>
+<a href="#5">5) I Swear I Don't Have Two CPUs</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Set XP Explorer To Open C: Instead Of My Documents</font></STRONG>
+<P>
+Timmy asks - Is there anyway I can get Windows Explorer to open my C drive initially rather than 
+opening My Documents?
+<P>
+Carey F. points to:<BR>
+<A HREF="http://support.microsoft.com/?scid=307856">http://support.microsoft.com/?scid=307856</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Delayed Write Failed</font></STRONG>
+<P>
+Bendo writes - Windows XP-Delayed Write Failed. Windows was unable to save all the data for the file [filename]. The data has been lost. This error may be caused by a failure of your computer hardware or network connection. Please try to save this file elsewhere. How do I solve this problem? 
+<P>
+PcEngWork answers:<BR>
+Most modern drives employ Write behind caching. This means that data to be written to the drive is held temporarily, until the drive is available for writes and then the data is flushed to the drive.
+<P>
+Whenever this happens either the disk or the controller failed to write the data to the drive. You should 
+look at the System Event log, as these types of errors get logged there. It is also a good idea to see how 
+many instances of this error occurred.  Sometimes it's a single event that may not happen again for a
+long time - or it could be an indication of a drive beginning to fail. 
+<P>
+I would recommend you do a Chkdsk C: /R to verify the integrity of the drive. IDE controllers fail, but not 
+that often so it's most likely the drive that triggered the fault. Just do the check disk and monitor the 
+System logs to see if additional errors of these type happen in the future. A reboot is in order as well, to
+save your Registry/Settings to the drive.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) My Password Doesn't Work For Administrator Logon</font></STRONG>
+<P>
+NoWeaKnESS inquires - I am attempting to repair my system. So I pop in the WinXP CD, select the repair option etc etc... then it asks me to enter an administrator's password. My password doesn't work. Is there 
+a set admin password? Or what is going on?
+<P>
+Bruce C. answers:<BR>
+The password being requested is that of the built-in Administrator account, not the password for any other administrative user accounts you may have created.  Unless you've deliberately set the Administrator's password via the Management Console (_not_ the Control Panel), it's probably still blank.  WinXP Pro 
+asks you to set the Administrator's password during installation, but WinXP Home doesn't.
+<P><BR>
+*** In other words just hitting Enter should work for blank passwords :)
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Ten Dollar ISP With Newsgroups</font></STRONG>
+<P>
+David asks - I'm looking for one of those ten dollar per month 48 state dial-up ISPs that also have AXS to 
+newsgroups included in the price.  Is there such an animal?
+<P><BR>
+*** Seems to be tho I haven't tested this one out yet:
+<P>
+<A HREF="http://www.newsguy.com/allinone.htm">http://www.newsguy.com/allinone.htm</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) I Swear I Don't Have Two CPUs</font></STRONG>
+<P>
+Tim questions - Ok, I recently changed my CPU in my PC.  I was able to boot up my computer fine and my 
+new processor was detected fine by both my motherboard and WinXP, except, WinXP thinks that I have 
+two of them.  My motherboard doesn't even have two slots.  I am not used to having two CPU monitoring 
+graphs in the task manager My specs are as follows:
+<P>
+Processor:  P4 2.8GHz, 800MHz FSB, HT Tech, Prescott make<BR>
+Motherboard:  ASRock P4S55FX+
+<P>
+R. M. responds:<BR>
+Your processor is a Hyperthreaded CPU. It's one physical processor, functioning in XP as two 
+independent CPUs. This is normal, you don't need to make any changes. However, you can turn off Hyperthreading support in the Motherboard BIOS settings. But if you do, you'll loose HT support for the
+programs that support it.
+<P>
+Miha P. adds:<BR>
+You really have only one processor, but it is built on Hyper Threading technology (that is what that HT 
+Tech means in your specification). That is why you see two processors in Task Manager. What you can 
+do in Task Manager under Performance Tab click on View | CPU History | One Graph for all CPUs.
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 950K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

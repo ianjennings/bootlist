@@ -1,0 +1,262 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 216</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 216 March 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 216th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) 34 Minute XP Install Problem</a><BR>
+<a href="#2">2) CD-RW Drive Installation Protocols</a><BR>
+<a href="#3">3) Windows Running Slow On Laptop</a><BR>
+<a href="#4">4) Basic Scanner Problem Troubleshooting</a><BR>
+<a href="#5">5) Formatting C: When Using XP</a><BR>
+
+
+
+
+<P><BR>
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) 34 Minute XP Install Problem</font></STRONG>
+<P>
+JW asked - Hello I just built a new system with an p4/abit vt7/ mb and maxtor hd. When I try to install xp at 
+around 34 minutes I start getting device installer errors examples are display, batt, keyboard, etc.  After I 
+click on all the messages to clear then a blue screen pops up that reads kernel data inpage error.
+<P>
+Malke points to:<BR>
+This sounds like your [problem]:
+<P>
+Setup stops responding with 34 minutes remaining:<BR>
+<A HREF="http://support.microsoft.com/?kbid=828267">http://support.microsoft.com/?kbid=828267</A>
+<P><BR>
+*** Essentially the same advice you may have seen here. ie, when installing your OS for the first time
+or re-installing it, disconnect all your external devices. Or, if it's a new system you've just built yourself, do 
+the first install with only cpu, video, and ram in place. Add any other cards later once windows is working
+and you have your video and/or motherboard drivers in place, including of course, any onboard sound
+or NIC drivers.  Then add  your external devices one at a time. 
+<P>
+If you think about it, it makes sense. XP and/or even win98 is NOT likely to have the right drivers for your 
+brand new hardware. Or even have the capability to find it correctly. That's why it's often necessary to 
+install the drivers first for many new devices as they include the files that the OS needs to simply ID the 
+new hardware correctly. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) CD-RW Drive Installation Protocols</font></STRONG>
+<P>
+fiesty inquired - This is the first CD-RW I have ever installed so I'm hoping it's just human error that is not allowing it to work.  I did everything I was suppose to do to install this new driver.  It is replacing an older 
+CD-RW drive.  The computer itself is working but even when I put in a cd to listen to, nothing happens.  I 
+was even given the software to use and it wont even start up on it's own.  Please tell me what I need to do 
+to get this working.
+<P>
+Jabez answered:<BR>
+Is this your only CD drive installed on your machine? If you have more than 1, you got to set the jumpers 
+for both the drives.  If this is the only CD drive, try removing it and set it to the Primary jumper setting 
+[assuming it's on the secondary channel] (please check the documentation).
+<P>
+Here are some valuable troubleshooting tips for you to refer to to check if you have everything correct:
+<P>
+How to troubleshoot CD-ROM drive problems in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=314096">http://support.microsoft.com/?kbid=314096</A>
+<P>
+How to Troubleshoot Issues with Reading CD, CD-R, CD-RW, and DVD Discs:<BR>
+<A HREF="http://support.microsoft.com/?kbid=321641">http://support.microsoft.com/?kbid=321641</A>
+<P>
+IDE/ATA Configuration and Cabling:<BR>
+<A HREF="http://www.pcguide.com/ref/hdd/if/ide/conf_Performance.htm">http://www.pcguide.com/ref/hdd/if/ide/conf_Performance.htm</A>
+<P><BR>
+*** Or if you open the case and only find one IDE cable and you want the drive as a Slave to the Master
+hard drive just like the old one was, make sure the jumper is set the same as the old drive eg it may
+have been set to cable select [CS] or it may have been set to Slave [SL]. 
+<P>
+In theory, if you have a standard CD read-only drive on it's own channel with no other drives, it "shouldn't" 
+matter if its set to slave or master. However, often CD burners like to be Master and often it even says so 
+in the docs. 
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Windows Running Slow On Laptop</font></STRONG>
+<P>
+Brian wrote - Windows on My Laptop seems to be running slow.  Took off TSR's and Startup files.  Any 
+services can be shut off to speed it up?
+<P>
+Rick R. replied:<BR>
+How to Troubleshoot By Using the Msconfig Utility in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=310560">http://support.microsoft.com/?kbid=310560</A>
+<P>
+HOW TO: Perform Advanced Clean-Boot Troubleshooting in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=316434">http://support.microsoft.com/?kbid=316434</A>
+<P>
+Ron M adds:<BR>
+How much RAM does your laptop have? Windows XP performance can be very sensitive to the amount 
+of installed RAM, especially if there is less than 512 mb total.
+<P>
+Check for your actual page file usage with a free utility developed by MVP Bill James.  Get it from:
+<P>
+<A HREF="http://www.dougknox.com/xp/utils/xp_pagefilemon.htm">http://www.dougknox.com/xp/utils/xp_pagefilemon.htm</A>
+<P>
+Or from:<BR>
+<A HREF="http://billsway.com/notes_public/WinXP_Tweaks/">http://billsway.com/notes_public/WinXP_Tweaks/</A>
+<P>
+If that utility shows actual page file usage of 50 mb or more on a regular basis then it is very likely that the performance will benefit from adding more RAM.
+<P>
+One other note.  If performance is a major concern then use the laptop with the a.c. adaptor plugged in.  
+Pretty much all laptops drop into "low gear" when running on the battery so as to prolong battery life.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Basic Scanner Problem Troubleshooting</font></STRONG>
+<P>
+markrobins posted - [My] scanner software fails to be completely removed using the [Add/Remove] 
+feature. [It's] unable to locate files in system which this feature is picking up on. [I'm] unable to reinstall 
+[the] scanner software whilst windows registers [says] this software [is] still installed.
+<P>
+Jabez provides:<BR>
+Under this page:<BR>
+<A HREF="http://www.smartcomputing.com/Editorial/article.asp?article=articles/2004/w1509/32w01/32w01.asp">http://www.smartcomputing.com/Editorial/article.asp?article=articles/2004/w1509/32w01/32w01.asp</A>
+<P>
+Remove Smart Panel entries from the WinXP Registry. After you remove the Epson software, you'll need 
+to clear your WinXP Registry of Smart Panel entries. The easiest way to do this is to download 
+DelReg2.5.exe from NewSoft, the author of Smart Panels. You can download the file at:
+<P> 
+<A HREF="http://www.newsoftinc.com/patch/esp/2.5/DelReg25.exe">http://www.newsoftinc.com/patch/esp/2.5/DelReg25.exe</A>
+<P>
+Save the file to your computer and then double-click the file and follow the on-screen instructions.
+<P><BR>
+*** While I usually dont publish super specific hardware questions and answers, Epson is quite popular 
+and, the first link addresses MANY types of basic scanner troubleshooting issues. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Formatting C: When Using XP</font></STRONG>
+<P>
+flopalock questions - Can someone post some good links on instructions for reformatting the hard drive in
+ XP?.
+<P>
+Mike replied:<BR>
+How to partition and format a hard disk in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=313348">http://support.microsoft.com/?kbid=313348</A>
+<P>
+Using the XP Installation CD to Format Drives:<BR>
+<A HREF="http://www.theeldergeek.com/formatting_drives_using_xp_cd.htm">http://www.theeldergeek.com/formatting_drives_using_xp_cd.htm</A>
+<P>
+How do I format a NTFS, Fat/Fat32 drive with XP installed?:<BR>
+<A HREF="http://www.michaelstevenstech.com/format_XP.htm">http://www.michaelstevenstech.com/format_XP.htm</A>
+<P>
+Ken B. adds<BR>
+Just boot from the Windows XP CD (change the BIOS boot order if necessary to accomplish this) and 
+follow the prompts for a clean installation (delete the existing partition by pressing "D" when prompted, 
+then create a new one).
+<P>
+You can find detailed instructions here:<BR>
+<A HREF="http://michaelstevenstech.com/cleanxpinstall.html">http://michaelstevenstech.com/cleanxpinstall.html</A>
+<P>
+Or here:<BR>
+<A HREF="http://windowsxp.mvps.org/XPClean.htm">http://windowsxp.mvps.org/XPClean.htm</A>
+<P>
+Or here:<BR>
+<A HREF="http://www.webtree.ca/windowsxp/clean_install.htm">http://www.webtree.ca/windowsxp/clean_install.htm</A>
+<P>
+However why do you want to reformat and reinstall? In my view, it's almost always a mistake. With a 
+modicum of care, it should never be necessary to reinstall Windows (XP or any other version). I've run 
+Windows 3.0, 3.1, WFWG 3.11, Windows 95, Windows 98, Windows 2000, and Windows XP, each for the 
+period of time before the next version came out, and each on two machines here. I never reinstalled any 
+of them, and I have never had anything more than an occasional minor problem.
+<P>
+It's my belief that this mistaken notion stems from the technical support people at many of the larger OEMs. Their solution to almost any problem they don't quickly know the answer to is "reformat and reinstall." 
+That's the perfect solution for them. It gets you off the phone quickly, it almost always works, and it 
+doesn't require them to do any real troubleshooting (a skill that most of them obviously don't possess in 
+any great degree).
+<P>
+But it leaves you with all the work and all the problems. You have to restore all your data backups, you 
+have to reinstall all your programs, you have to reinstall all the Windows and application updates, you 
+have to locate and install all the needed drivers for your system, you have to recustomize Windows and 
+all your apps to work the way you're comfortable with.
+<P>
+Besides all those things being time-consuming and troublesome, you may have trouble with some of 
+them: can you find all your application CDs? Can you find all the needed installation codes? Do you have 
+data backups to restore? Do you even remember all the customizations and tweaks you may have 
+installed to make everything work the way you like?
+<P>
+Occasionally there are problems that are so difficult to solve that Windows should be reinstalled cleanly. 
+But they are few and far between; reinstallation should not be a substitute for troubleshooting; it should be 
+a last resort, to be done only after all other attempts at troubleshooting by a qualified person have failed.
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

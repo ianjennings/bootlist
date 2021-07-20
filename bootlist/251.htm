@@ -1,0 +1,228 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 251</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 251 January 2006
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 251st Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Max File Name - Path Name</a><BR>
+<a href="#2">2) 3 SATA HDDs But Only 2 Slots</a><BR>
+<a href="#3">3) Difference Between XP Home And Pro</a><BR>
+<a href="#4">4) Reduce Video Acceleration To Fix Mouse Problem?</a><BR>
+<a href="#5">5) Can I Change Large To LBA?</a><BR>
+<a href="#6">6) Firefox Gaining Real Ground</a><BR>
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Max File Name - Path Name</font></STRONG>
+<P>
+peter asked -  Windows XP Pro SP2 NTFS Max file name/path length allowed 255/260. Seems to be a bug. For example I have a 
+mp3 file with total path/file name lengths of 180 characters. When I add 17 characters to the path (folder name) where the file is (now 
+total 197) the file isn't accessible anymore. Doubleclick to the file name doesn't launch media player, and I can't  delete this file 
+anymore.
+<P><BR>
+*** Personally, tho I am still a fan of 8+3 filenames and 8 character folder names, I also believe that it's good housekeeping to try to
+keep your file and folder names as simple as possible. I'd suggest 25 characters max for either. I dont see the need, for example, to
+have the entire band's history included in the filename of their just released MP3. 
+<P>
+Also, it is incorrect that it's a bug. It's actually just a "feature" of Windows. Note that the "path" name is part of the total number of characters XP, or your programs can see/use. eg the path name includes ALL the characters in your directory\subdirectory\filename.
+eg Directory names are PART of the path name. So, if you have large directory names you may run into limits on the the size of your filenames. 
+<P>
+In addition, really long folder and path names makes it MUCH harder to, lets say, delete or rename files from a dos boot if one has
+to use a bootcd/floppy to repair an XP PC that wont start. Yes if your drive is in NTFS there are a few free NTFS drivers that will allow you to delete, move, rename files etc.  
+<P>
+Wesley V. added:<BR>
+With XP SP1, The system PATH environment variable is limited to 1023 characters, plus the terminating null character, for a total of 1024 characters. With XP SP2,  The PATH environment variable limit is increased to 2,048 characters. 
+<P>
+That includes the file name.
+<P>
+Windows XP cannot find a program's executable files or DLL files:<BR>
+<A HREF="http://support.microsoft.com/?kbid=832978">http://support.microsoft.com/?kbid=832978</A>
+<P>
+Many Windows [and third party non-Microsoft] programs expect the maximum path length to be shorter than 255 characters. 
+Therefore, these programs only allocate enough internal storage to handle these typical paths. NTFS does not have this limit and it 
+can hold much longer paths.
+<P>
+<A HREF="http://support.microsoft.com/?kbid=320081">http://support.microsoft.com/?kbid=320081</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) 3 SATA HDDs But Only 2 Slots</font></STRONG>
+<P>
+PackRat2112 questioned - I have 3 hard sata drives that I want to install in the computer that I'm building, but the motherboard only 
+has two sata "slots" on it. is there a way?
+<P>
+old jon answered:<BR>
+Get yourself a SATA PCI card and plug it into a spare PCI slot.  One example here:
+<P>
+<A HREF="http://www.cluboc.net/reviews/interface_cards/VantecSATA/">http://www.cluboc.net/reviews/interface_cards/VantecSATA/</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Difference Between XP Home And Pro</font></STRONG>
+<P>
+bob posted - Can someone tell me what the major difference is between xp home and xp pro?
+<P><BR>
+*** The major difference is about $100.
+<P>
+Rock added:
+<P>
+<A HREF="http://www.winsupersite.com/showcase/windowsxp_home_pro.asp">http://www.winsupersite.com/showcase/windowsxp_home_pro.asp</A><BR>
+<A HREF="http://www.microsoft.com/windowsxp/whichxp.asp">http://www.microsoft.com/windowsxp/whichxp.asp</A>
+<A HREF="http://www.microsoft.com/windowsxp/home/howtobuy/choosing2.asp">http://www.microsoft.com/windowsxp/home/howtobuy/choosing2.asp</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Reduce Video Acceleration To Fix Mouse Problem?</font></STRONG>
+<P>
+Somebody suggested - If your mouse is freezing it may, as many people already know, be due to spyware or a virus. But one thing I 
+tried first on my computer on the advice of a good geek is to reduce the hardware acceleration as follows:
+<P>
+Display Properties | Settings (tab) | Advanced (btn) | Troubleshoot (tab) | Hardware Acceleration. I reduced the hardware acceleration 
+by one level -- the one that is supposed to disable cursor and bitmap accelerations. The description there even says "Use this 
+setting to correct problems with mouse pointer."  As soon as I did it the mouse pointer came unstuck. Didn't need to reboot to get it
+unstuck as I have been doing the last two weeks.
+<P><BR>
+*** Grin. I like this one for two reasons. First, offhand one may not think of trying to tweak display settings to "fix" a mouse problem. And second, you dont see the "mouse" message until you turn down the acceleration one notch. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Can I Change Large To LBA?</font></STRONG>
+<P>
+louloizides asked - When I originally installed my lard drive, I had the mode in the bios set to Large instead of LBA by mistake. Now I want to set it to LBA, but when I do this I always get an error upon booting that says "NTLDR is missing". This seems to only be a problem with the bootsector because when I boot off of a disk I can read everything on the drive just fine (I kept it FAT32). Is there a 
+way to convert the bootsector so that ntldr works ok?
+<P>
+Pegasus responded:<BR>
+If you formatted your disk under the Large geometry settings then you must leave it at this setting. If you changed it and managed somehow to write to the disk then you would most likely corrupt the file system. The file ntldr is only the tip of the iceberg!
+<P><BR>
+*** Quite true. As an aside, by habit anytime I even go to unscrew the cover on anybodies case I first check and write down the hard 
+drive settings from the bios. Of course on most modern pcs it's all set to AUTO and there's nothing to write down. But, it's still 
+important to check especially for older computers.  
+<P>
+The point is, anytime you play around mechanically with a pc it could go to default cmos settings, which does happen still on 
+occasion when putting in ram or changing cards.  With older pcs in addition to the LBA/Normal mode setting I also record the cyl/heads/sectors.  
+<P>
+One can even go as far as recording the serial port on/off settings or others, that may go to default when working on the insides of a 
+pc if the bios gets reset to defaults. Also a good idea to do before you flash.
+
+
+<P><BR>
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6) Firefox Gaining Real Ground</font></STRONG>
+<P>
+I have always believed that one should design websites to be compatible and fully functional in AOL, IE, Netscape, and any other 
+popular browser.  Others have said: "Why waste time I'm just going to design for IE as that's the most popular".  
+<P>
+I was, in this article, looking forward to elaborating on several very noteworthy reasons why one should design for "all" the most 
+popular browsers, but it seems moot now that I look at some statistics I gathered to write this section. As I recall, perhaps 2 years
+ago 95% of my visitors to bootdisk.com used IE. These are some stats for December 2005 I gathered which shocked me:
+<P>
+IE 66%<BR>
+Firefox 25%<BR>
+Netscape 5%<BR>
+Other 4%
+<P>
+As a comparison, my son who runs a somewhat popular artists site for web developers just entering the job market has these stats:
+<P>
+IE 53%<BR>
+Firefox 41%<BR>
+Other 6%
+<P>
+My site sees users of all ages. My son's site caters to the 18 to 25 year old visitor. Of course I realize that with just 2 data points one 
+cant come to a conclusion [Yes I got A's on both of the statistics classes I took at Virginia Tech]. This is just a sample. 
+<P>
+OK if it's not broke dont fix it.  But consider this: If you are asking for a strategic link on another website and in your email to the
+Webmaster you note your URL, and he/she is using Firefox as  their default, and it doesn't display or operate properly, will you get a 
+return "yes or no" email? Or will your inquiry simply be ignored/deleted. 
+<P>
+But, it does seem to me that one should now seriously consider designing for Firefox or Netscape first, as if you do, it will "should" display and work correctly in IE, AOL, most all other browsers.  Same principle as years ago if you designed for Netscape your page "should have" worked OK in IE and the rest of the bunch. 
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+<P>
+BONUS -  You will also be provided with a link to download issues #140 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ: <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

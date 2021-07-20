@@ -1,0 +1,203 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 217</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 217 April 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 217th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) The Ins And Outs Of System Restore</a><BR>
+<a href="#2">2) C:\Program Files\Common Files</a><BR>
+<a href="#3">3) Make XP Show Both Date And Time</a><BR>
+<a href="#4">4) My Game Needs 64 RAM To Run But I Have 512</a><BR>
+<a href="#5">5) How To Clear The XP Pagefile At Shutdown</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) The Ins And Outs Of System Restore</font></STRONG>
+<P>
+sneakemail asked - Can someone tell me the extent restore points can restore a system to? What exactly
+gets restored? If I uninstalled MS Word using add/remove programs can I use restore points to recover 
+the deleted files?
+<P>
+Ron M. responds:<BR>
+No, [you cant use system restore to recover deleted files.]
+<P>
+See MVP Bert Kinney's System Restore pages:<BR>
+<A HREF="http://home.earthlink.net/~mvp_bert/index.html">http://home.earthlink.net/~mvp_bert/index.html</A>
+<P>
+Here are a couple of excerpts from those pages:
+<P>
+System Restore is a tool that allows you to roll the system back or restore it to a previous state in order 
+to correct issues caused by the system becoming unstable. This utility should be used whenever you
+suspect that the system is improperly configured, as the result of installing incompatible software or 
+hardware or making inappropriate configuration changes.
+<P>
+System Restore monitors system changes and saves the system state as a restore point. If a system 
+problem develops as a result of a system change, the user can return the system to a previous state 
+using the data from a restore point.
+<P>
+Applications and the system can create restore points when system changes occur. System Restore 
+also creates checkpoints every 24 hours of absolute time. It can also be configured to create restore 
+points at regular intervals. In addition, users can create restore points at any time. 
+<P>
+System Restore does not restore user data or documents, so it will not cause users to lose their files, 
+e-mail, browsing history, or favorites.
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) C:\Program Files\Common Files</font></STRONG>
+<P>
+Will wrote - My "Common Files" folder at C:\Program Files\Common Files is over 350 MB. Can I delete it 
+safely or do programs need it to be there?
+<P>
+Ron M. explains:<BR>
+Unless you are *absolutely certain* that all of the applications which use these files have been uninstalled
+from your computer it is not safe to remove them.
+<P>
+This folder contains application program related files that are, or can be, used by more than one 
+application program.  So rather than have each application install its own copy of these files the 
+"Common files" folder is used so that only a single copy is needed and that copy can be used "in 
+common" by all of the applications that need it.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Make XP Show Both Date And Time</font></STRONG>
+<P>
+mmiller99 inquired - Is there a way to get XP professional to show the date next to the time in the lower 
+right hand corner (bottom toolbar)?
+<P>
+Ken B. answered:<BR>
+Expand the Task Bar to two (or more) lines high. Or use a  third-party program, such as the freeware 
+TCLock.
+<P>
+Alex adds:<BR>
+Right-click the taskbar and click 'Lock the Taskbar'. Then extend the taskbar upwards. You can now see 
+the date and the clock together. Then right-click the taskbar and click 'Lock the Taskbar' again. Done!
+<P><BR>
+*** I do like TClock.   Here's a download site for the last, and possibly final version 1.2:<BR>
+<P>
+<A HREF="http://shii.org/tclock">http://shii.org/tclock</A>
+<P>
+If that site goes down or is busy I will always have TClock on my Utilities page. This is the IP for the time
+server I've been using for years 64.236.96.53
+<P>
+Or, one can find an alternate time server and just enter in that IP in the TClock2 Properties | Synchronize | Server tab.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) My Game Needs 64 RAM To Run But I Have 512</font></STRONG>
+<P>
+Amy asks - My Dad just built this nice little pc for me to take back to college. Well now I'm here and want 
+to play a game but it says it needs 64 megs of ram to run. The computer has 512 megs of ram so I'm at a
+loss at what to do. Dad's back on a sub now for the Navy so I cant call him. 
+<P><BR>
+*** It's the video ram that your game is looking for. Your computer has an onboard video card and by
+default many systems have it set to only share [allocate] 32 megs of the 512 for video. Go into your bios 
+and look for the place to set it up to to 64. For example, on the computer that I'm fixing now, its in:
+<P>
+Advanced | AGP Bridge Configuration | Onboard Video Memory
+<P>
+Which allows me to change it to 16, 32, or 64. Other systems let you go even higher, but only set it for what
+you need for the game as the more you use for video the less you have for windows. Your Dad was pretty
+smart tho putting in at least 512 for a student system. 
+<P>
+Please note that different bios's will/may have the setting you are looking for labeled differently so just look 
+around and you'll find it.  It's in there someplace. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) How To Clear The XP Pagefile At Shutdown</font></STRONG>
+<P>
+FrizBOT phoned - Hi guy. I have a customer who runs a check cashing service who wants to make sure
+his business pc as secure as possible. He "heard" that passwords may remain the the pagfile so he's 
+looking for a way to clear that file on shutdown. Is there an easy way to do this without risking installing a
+third party application? 
+<P><BR>
+*** Yes.
+<P>
+<A HREF="http://support.microsoft.com/?kbid=314834">http://support.microsoft.com/?kbid=314834</A>
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

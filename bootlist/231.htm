@@ -1,0 +1,211 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 231</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 231 August 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 231st Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Can You Force Explorer To Ignore File Copy Errors?</a><BR>
+<a href="#2">2) Feedback Re: Win98 Network Browsing Problem</a><BR>
+<a href="#3">3) NTFS Quick Or Regular Format</a><BR>
+<a href="#4">4) Out Of Memory Message While Doing A Full Format</a><BR>
+<a href="#5">5) Put The TweakUI Icon In Control Panel</a><BR>
+<a href="#6">6) Edit The Right Click XP Menu</a><BR>
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Can You Force Explorer To Ignore File Copy Errors?</font></STRONG>
+<P>
+Tony posted - Not to ask too stupid a question, but is there a way to get Windows Explorer (the file 
+manager, not Internet Explorer the Internet browser) to continue coping if it finds an error?  In other words 
+to act like xcopy's "/c" option?
+<P>
+stealth answered:<BR>
+Unfortunately: NO
+<P>
+Patrick K. suggested:<BR>
+I'll suggest instead using FileSync. Which will indeed keep copying, and keep track.
+<P>
+<A HREF="http://www.fileware.co.uk/">http://www.fileware.co.uk/</A>
+<P><BR>
+*** To save you time doing a xcopy /? to find out what the /c option is - it's just an option to keep on
+copying files even if an error is encountered during the process. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Feeback Re: Win98 Network Browsing Problem</font></STRONG>
+<P>
+Pradip S. wrote to comment regarding Issue 230 Item 4 - Problems Browsing Network On Windows 98 LAN
+<P>
+I have also found a problem of Win98 networking of a different type. 
+<P>
+On many installations with Ethernet card & cables functioning properly forget about browsing the network even the local machine is invisible. To solve this problem I simply have to logoff + logon & the network neighborhood comes up nice & proper.  
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) NTFS Quick Or Regular Format</font></STRONG>
+<P>
+mhsmom asked - What's the difference between formatting "ntfs" or "ntfs quick" other than the obvious (speed)?
+<P>
+Carey F. answered:<BR>
+Differences between a Quick format and a regular format during a "clean" installation of Windows XP:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=302686">http://support.microsoft.com/?kbid=302686</A>
+<P>
+pcbutts1 said:<BR>
+A quick format creates the file system structure on the volume without verifying the integrity of every 
+sector in the volume, which increases the formatting speed. If the volume is already formatted and you 
+are sure the disk is not damaged, you can use this option. A full format identifies and tracks bad sectors 
+so that they are not used for storing data.
+<P>
+Anando added:<BR>
+FAT & NTFS File Systems in Windows XP:
+<P>
+<A HREF="http://www.aumha.org/win5/a/ntfs.php">http://www.aumha.org/win5/a/ntfs.php</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Out Of Memory Message While Doing A Full Format</font></STRONG>
+<P>
+James M. telephoned - I was having major problems with my computer so I decided to format it and
+start from scratch with my Windows 98 boot disk. I'm going to put XP on afterwards but I want a 60 gig
+FAT32 partition for XP so this is the only way to do it since XP will not allow greater than 32 gig FAT32
+partitions unless you set them up first in Dos. My problem is that I get an "Out of memory" message while 
+formatting and it stops. 
+<P><BR>
+*** The problem you are having is probably due to a bad hard drive. When using a bootdisk to format
+you are limited to the the basic 640K of ram thereabouts. So, even tho format.com and the associated
+running apps loaded with the bootdisk hardly use any ram, when you do a full format it tries to save 
+"bad sector" data in ram to write it to the drive after the format is complete. If you have a lot, or just too 
+many bad sectors than you run out of ram to temporarily save the data to. 
+<P>
+In this case you can try a zero fill, or the hard drive repair utility from your hard drive maker to see if it can
+fix the problems with your hard drive. And then try format again. 
+<P>
+Chances are tho, since James was having major problems before, he may have just uncovered the root 
+of the problem. 
+<P>
+As a review, the basic 640K or 655,360 Bytes of ram is called Conventional Memory. [640K X 1,024 Bytes
+per K = 655,360]. Anybody remember tweaking config.sys and/or autoexec.bat to get more free
+conventional ram to run those dos games?  
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Put The TweakUI Icon In Control Panel</font></STRONG>
+<P>
+oldad inquired - Before XPS Pro (Win 95,98,98SE) I always had a TweakUI icon in Control Panel.  Now I 
+do not and have tried everything I could think of to add it. No luck.  Dell Tech with Dell XPS Elite Support Group, now outsourced to India, says impossible.  Is it possible to put one in control panel?
+<P>
+Carey F. answered:<BR>
+Adds TweakUI for Windows XP to the Control Panel:
+<P> 
+<A HREF="http://www.dougknox.com/xp/scripts_desc/xp_addtweak.htm">http://www.dougknox.com/xp/scripts_desc/xp_addtweak.htm</A>
+
+
+<P><BR>
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6) Edit The Right Click XP Menu</font></STRONG>
+<P>
+Mervian wants to know - (Win XP Home SP2) Right-click menu seems rather bloated - any way to delete 
+[the] items I never use?
+<P>
+Rich B. wrote back:<BR>
+See if this is any help:
+<P>
+<A HREF="http://windowsxp.mvps.org/context_folders.htm">http://windowsxp.mvps.org/context_folders.htm</A>
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,216 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 214</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 214 March 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 214th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Fresh XP Install On A SATA Hard Drive</a><BR>
+<a href="#2">2) Laptops, Standby, And Video Drivers</a><BR>
+<a href="#3">3) Large AVI Causes Explorer To Use 100% CPU</a><BR>
+<a href="#4">4) Ghost Clone Failed On 2 Different PCs</a><BR>
+<a href="#5">5) How To Clear Recent Docs In XP</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Fresh XP Install On A SATA Hard Drive</font></STRONG>
+<P>
+Gary R asked - Putting together a new system, I figured I might as well get SATA drives (wont be using 
+RAID), but a quick search shows a lot of problems installing XP.  It doesn't recognize the drive when 
+booting from the CD, needs drivers via floppy, drive disappears later, etc...
+<P>
+Is this to be expected if I get the SATA drives?  It will be a clean install on a new drive.  Will I need to slap 
+in a floppy drive to install drivers before I can install XP?   And is this one of those things that's likely to be 
+a source of problems?  (if so, it's not worth it to me, I'll stick with IDE).
+<P>
+Karl B answered:<BR>
+I have done it several times with no problems.  You just have to F6 the initial installation to load the RAID 
+drivers for the on board SATA.  Even though it is not RAID per se, it still runs on a RAID channel, so you 
+have to install the drivers before you install the O/S.
+<P>
+RonK said:<BR>
+You will need the floppy drive to install the Sata drivers during the install. At the first part of the install you 
+will be prompted to hit the F6 key to install the Sata drivers. You will have to extract the drivers from the motherboard driver disk onto a floppy.
+<P>
+You should not have any of the other problems you asked about. The sata drives will be fine after the installation.
+<P>
+Jerry adds:<BR>
+The main, and probably only, issue will be the requirement to install the SATA drivers from the floppy 
+when XP asks for it during initial setup.
+
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Laptops, Standby, And Video Drivers</font></STRONG>
+<P>
+debrah posted - My laptop disabled the standby feature (it was available now it's not).  I checked power management and cannot get it to be enabled.  Has this happened to anyone else?  How do I fix this? 
+<P>
+DJ B. answered:<BR>
+This is usually the result of improperly loaded video drivers.  Check that your video driver is properly 
+installed and if not, or if it's incorrectly identified, reinstall the proper driver.  You should be able to 
+download the driver from your laptop manufacturer's webpage.
+<P><BR>
+*** Often people have standby problems when they upgrade their OS which again, is often a result of not
+having the [proper ] video drivers installed for the OS you just upgraded to.  Also, if standby is locking, 
+not waking up, displaying white screens, etc it generally has to do with the video drivers. 
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Large AVI Causes Explorer To Use 100% CPU</font></STRONG>
+<P>
+MrZULU inquired - When I click on a large AVI file Explorer seems to hang up and use 100% of the CPU.
+This doesn't happen with other large video files only AVIs. Is there a fix? I am using Windows XP.
+<P><BR>
+*** There are two fixes. The first one requires that you have SP1 installed and then put in a call to Microsoft
+for the special [hotfix] download. 
+<P>
+<A HREF="http://support.microsoft.com/?kbid=822430">http://support.microsoft.com/?kbid=822430</A>
+<P>
+The second way is to download and install the SP2 Upgrade. 
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Ghost Clone Failed On 2 Different PCs</font></STRONG>
+<P>
+Robert asked - 
+I bought a copy of Norton Ghost 2003 to Clone drive C on my two computers. I have Windows XP on one 
+and windows XP Pro on the other.  I find that after I Ghost the C drive to the slave on either computer and 
+change the slave to master and attach it to the master ribbon it will not boot up. [I used to do this all the
+time in Windows 98 and never had a problem.]
+<P><BR>
+*** Did you clone using a ghost boot floppy and do the disk to disk clone?
+<P>
+Or, if you did, and restarted the pc right after you ghosted it often messes up the clone you just made. 
+<P>
+Or, assuming you now have only one hard drive in, ie the clone, is the pc still looking for the old drive in the bios?  If you're using cable select and 80 conductor cables are you moving the slave to the end of the 
+cable?  If you're not using cable select are you resetting the jumper on the slave to master/single? 
+<P>
+Your question is asked a lot, even by new techs who've used ghost in dos/win98 often have a niggle in 
+XP. The procedure is explained in the docs of course but ..... Anyway, the mistake most folks make when 
+doing disk to disk clones in XP with Ghost is that the first thing they do is check that the data was copied correctly. When you clone, you end up with 2 Primary Active Drives which on a reboot can immediately 
+damage the clone. Not the hardware of course it's a software thing.
+<P>
+In other words, after you do a disk to disk copy using Ghost shut the pc off, and then connect the clone
+as C: and reboot.  Note this method of using Ghost is employed when you want to replace your old hard 
+drive with a newer, larger hard drive. 
+<P>
+More info:<BR>
+<A HREF="http://tinyurl.com/4usve">http://tinyurl.com/4usve</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) How To Clear Recent Docs In XP</font></STRONG>
+<P>
+Frank wrote - How do you clear the list of "My recent Documents" in XP? In prior versions of Windows this 
+was easy to do.
+<P>
+ByTor responded:<BR>
+Go to your control panel.
+<P>
+Open "taskbar and start menu" click the "start menu" tab.
+<P>
+If "start menu" is ticked hit the customize button, click "Advanced" tab, at the bottom you will see a "clear 
+list" button.
+<P>
+If "classic start menu" is ticked hit the customize button and just click the "clear" button.
+<P>
+Wesley V. pointed to:<BR>
+How To Display, Use, and Clear "My Recent Documents" on the Start Menu in Windows XP:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=307875">http://support.microsoft.com/?kbid=307875</A>
+<P><BR>
+*** A few related super small no install "clearing" utilities:
+<P>
+Clear Recent Documents [For win98, perhaps higher]:<BR>
+<A HREF="http://www.bootdisk.com/casandra/cleardoc.zip">http://www.bootdisk.com/casandra/cleardoc.zip</A>
+<P>
+Clear Recent Files [XP]:<BR>
+<A HREF="http://www.bootdisk.com/casandra/clearrec.zip">http://www.bootdisk.com/casandra/clearrec.zip</A>
+<P>
+Please note that the folders on the website above change names often so if you get a 404 just go to the
+page below to download:
+<P>
+<A HREF="http://www.bootdisk.com/utility.htm">http://www.bootdisk.com/utility.htm</A>
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

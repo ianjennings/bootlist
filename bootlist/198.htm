@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 198</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 198 December 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 198th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) 120 Gig HDD Showing As 32 Gig In XP</a><BR>
+<a href="#2">2) SHERLOCK - The Codec Detective</a><BR>
+<a href="#3">3) CDRW Capacity Reduced For Packet Writing</a><BR>
+<a href="#4">4) Download Managers May Not Be Welcome</a><BR>
+<a href="#5">5) Did Dell Really Sell Me A 3 Gig CPU?</a><BR>
+<a href="#6">6) Firewall And Notebooks</a><BR>
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) 120 Gig HDD Showing As 32 Gig In XP</font></STRONG>
+<P>
+Fred inquires - I have just installed a maxtor 120g slave h/d but when checking it says its only a 32g how 
+do I get windows xp to recognize its a 120 have been stumped for a week.
+<P>
+Dave P. suggests:<BR>
+It probably has a 32 gB fat32 partition on it and the rest of the space [is/maybe] unallocated at this point. 
+You can confirm this in Disk Management.
+<P>
+Art says:<BR>
+Most likely you mistakenly set the cylinder limitation jumper on your hard drive so that it would limit your motherboard's BIOS in recognizing the drive larger than 32 GB. Check the jumper settings diagram on 
+your hard drive and remove the limiting jumper setting.
+<P>
+Sharon F. adds:<BR>
+Format using NTFS instead of FAT32. 
+<P><BR>
+*** All good things to check. Or, the pc may have a 32 gig bios limitation if it's an older pc.  Of course its
+best to check after fdisking/partitioning and formatting that the drive is setup properly before you start 
+adding data as chances are if its not setup right you'll have to repartition/reformat it.  
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) SHERLOCK - The Codec Detective</font></STRONG>
+<P>
+Audio and Video playback problems can often be caused by NOT having the correct codec installed on 
+your computer, or even the wrong version installed. As part of my role as a Microsoft Digital MVP I have 
+created a free utility to help support Windows XP users.  It is called SHERLOCK - The Codec Detective:
+<P>
+<A HREF="http://www.updatexp.com/sherlock">http://www.updatexp.com/sherlock</A>
+<P>
+Perhaps some of your readers will find this useful. Kind Regards, Marc L.
+<P>
+Alternate download URL:<BR>
+<A HREF="http://www.bootdisk.com/shelly/sherlok2.zip">http://www.bootdisk.com/shelly/sherlok2.zip</A>
+ 
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) CDRW Capacity Reduced For Packet Writing</font></STRONG>
+<P>
+davidhoyte wrote - After I have formatted a CR-RW disk to behave like a floppy, its 650 MByte capacity is 
+reduced to about 520 MB. Can you tell me what is in the 130 MB that has gone to making the CD-RW 
+usable as a floppy?
+<P>
+Thor answers:<BR>
+It is space consumed by writing the UDF file system to the disc.  I know it's a pretty large chunk, but that's 
+what it takes, no matter the packet writing program used to format it. It's the UDF file system. Get  700MB 
+discs and then at least you get a little more room to work with.
+<P><BR>
+*** As a comparison, A brand new non-formatted floppy disk comes as a 2 meg disk but when you 
+format it you get 1.44 megs.  If you format it in DMF you get appx. 1.8 megs which is pretty much the
+maximum. So, there is space taken up by the formatting information for both floppy disks and CDs
+that are formatted for packet writing.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Download Managers May Not Be Welcome</font></STRONG>
+<P>
+pumpkinhead posted - I'm trying to download [a program] and it tells me to disable my download 
+manager or it will not go through. [This does not make any sense]
+<P><BR>
+*** Yes it does. It starting to become very common for sophisticated webmasters to configure their pages
+to minimize direct linking to their files. In addition, they often want you to read their ads while you are 
+downloading. A download manager may interfere with those processes. 
+<P>
+Norton Internet Security may also cause problems. If you are using it you may have to temporarily 
+disable its privacy settings or disable it completely to download what you want. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Did Dell Really Sell Me A 3 Gig CPU?</font></STRONG>
+<P>
+Delluser said - I spoke to a dell rep about 3 of my computers. I believe they under-clock their computers.
+I have 3.00 GHz machine and in system properties it is listed as 2.99 GHz, there is no options in the Bios 
+to do anything about this. In the Bios clock speed reads 3.00 Ghz. My other Dells are the same. 1.7 Ghz 
+listed at 1.68 Ghz and 2.40Ghz listed at 2.38 Ghz.
+<P>
+They told me this is normal. I pay for a 3.00 Ghz machine, should I get a 3.00 Ghz machine.
+<P><BR>
+*** Dell is correct and you did get a 3 gig CPU. I remember the first active bios on a P400 I built when you 
+went into it [the bios] you'd see the ACTUAL cpu speed jump around as your watching eg 398, 401, 399 
+etc.  Perfectly normal. 
+<P>
+Ramesh adds:<BR>
+INFO: CPU Speed in System Properties Dialog Box May Differ from Actual CPU Speed:<BR> 
+<A HREF="http://support.microsoft.com/?kbid=311051">http://support.microsoft.com/?kbid=311051</A>
+<P>
+How Processor Speed Is Reported to a Computer:<BR> 
+<A HREF="http://support.microsoft.com/?kbid=312104">http://support.microsoft.com/?kbid=312104</A>
+<P>
+The Processor Speed May Be Reported Incorrectly in Windows XP:<BR> 
+<A HREF="http://support.microsoft.com/?kbid=316965">http://support.microsoft.com/?kbid=316965</A>
+<P><BR>
+*** Grin. Yes I know it seems like an odd question but obviously it's asked a lot as MS has three
+articles on it. I should also note that the same often goes for ram eg windows may report one or two meg
+less than you have. Again nothing to fret about. Of course if windows is reporting lets say 32 or 64 meg
+less ram than you have then you have a motherboard with onboard video that is using the 32 or 64 off the
+the motherboard ram to work. Windows will only report the amount available to use itself.
+<P>
+_Shared_ RAM is something to be aware of  when you buy a new pc. The stickers on front may say 256 
+ram and a 64 meg video card and while that may seem like enough, your PC will run real slow in XP as it 
+only has 192 to work with if the video "card" uses the motherboard ram to work. 
+
+
+<P><BR>
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6) Firewall And Notebooks</font></STRONG>
+<P>
+Ric G. commented on the last issue regarding firewalls:
+<P>
+Consider that using a software firewall on a notebook pc in addition to the router based firewall is very 
+important when leaving the home environment and connecting to the internet at various hotspots and such. 
+<P>
+*** Thanks that's a really good point that I missed. 
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS - You will also be provided with a link to download the previous 100 issues COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

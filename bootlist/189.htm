@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 189</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 189 September 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 189th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) c:\windows\system32\autoexec.nt Error Messages</a><BR>
+<a href="#2">2) XP2 Takes Way Longer To Boot Up</a><BR>
+<a href="#3">3) Bootable RAM Tester Delivered Via .iso CD Image</a><BR>
+<a href="#4">4) Any Problems With A 180 Gig Drive In Win98?</a><BR>
+<a href="#5">5) Check Power Cable First For Rebooting PC</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) c:\windows\system32\autoexec.nt Error Messages</font></STRONG>
+<P>
+michealgwilson wrote - I receive message: c:\windows\system32\autoexec.nt. The system file is not 
+suitable for running MS-DOS and Microsoft Windows applications. Choose Close to terminate the 
+application.
+<P>
+Will D. points to:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=324767">http://support.microsoft.com/?kbid=324767</A>
+<P><BR>
+*** Another link:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=314106">http://support.microsoft.com/?kbid=314106</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) XP2 Takes Way Longer To Boot Up</font></STRONG>
+<P>
+Steve posted - Since installing Windows XP SP2, my computer takes approximately 4 times as long to 
+boot up. Has anyone else experienced the same problem, and if so have you found a solution?
+<P>
+Rock suggests:<BR>
+Do some clean boot troubleshooting:
+<P>
+How to Troubleshoot By Using the Msconfig Utility in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=310560">http://support.microsoft.com/?kbid=310560</A>
+<P>
+How to perform advanced clean-boot troubleshooting in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=316434">http://support.microsoft.com/?kbid=316434</A>
+<P>
+Rock adds:<BR>
+It can take several days and 3 or 4 reboots for it to speed up.  First defrag.  The boot prefetch will kick in 
+after the 3rd reboot.  It takes several days for the prefetch folder to be rebuilt.  And the in built optimization 
+kicks in every 3 days.  After that defrag again.  If the system is still slow after some days try some clean 
+boot troubleshooting to see what may be hanging up on startup.  A program may need to be 
+uninstalled - reinstalled - upgraded [per what you may find by disabling startup apps using msconfig]:
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Bootable RAM Tester Delivered Via .iso CD Image</font></STRONG>
+<P>
+T. Norcia asks - I have a Computer with no floppy drive. Is there a Memory Tester I can download that
+will boot up to my cd rom drive?
+<P>
+<A HREF="http://www.memtest86.com/">http://www.memtest86.com/</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Any Problems With A 180 Gig Drive In Win98?</font></STRONG>
+<P>
+Boxer inquires - I want to put in a 180 gig drive and install Windows 98 Second Edition and make it one
+large partition. Any things I should watch out for? 
+<P><BR>
+*** For sure scandisk wont work. Defrag may or may not work, most likely it wont work.  Essentially you'll 
+get a [Not enough memory] error message instead. It all has to do with how many allocation units there 
+are on the drive.  
+<P>
+In other words I believe scandisk and defrag wont work if there are more than 4.1 million allocation units 
+[clusters] on a partition for a win98 pc.  System memory has nothing to do with it. 
+<P>
+In the past with smaller drives folks used to get the same error message for essentially the same reason
+but it was caused by third party fdisk and/or cloning utilities that created 4K clusters when they should 
+have been 32K clusters. 
+<P>
+I believe scandisk and defrag will work on drives up to 132 gig which would give you about 4.1 million
+allocation units. Essentially in fat32 with 32K clusters you get 31,250 units/gig more or less. So even if you
+have a 60 gig drive which SHOULD have 32K clusters a third party utility may have made the clusters 
+smaller thus resulting in the exact same problem. 
+<P>
+I'd partition your 180 gig drive in half for best results and use fdisk to create the partitions. AND, before
+you buy that new drive make sure that your motherboard can handle it or use a promise controller. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Check Power Cable First For Rebooting PC</font></STRONG>
+<P>
+Mr. French II asks - My system is spontaneously rebooting for what appears to be no reason. It worked
+fine for ages. Some geeks tell me its my memory and some geeks tell me it's one of my applications or
+drivers.  I haven't added new memory or changed any programs I have. Other's tell me it's overheating. 
+What is your opinion?
+<P><BR>
+*** One has to start at the SOURCE ie the Power Cable to the PC. They lose elasticity over time and a loose
+one may be the root of your problem. Many folks buy new PCs, unplug their old one, and simply connect
+the same power cord to the new computer to save time.  
+<P>
+You'll often notice a loose fitting power cord to the PC. Try a new one first that has a tight fit. Same goes
+for the monitor ie the old AC cords are often reused but may cause glitches. Use the AC cords that come
+with your new PC or monitor. Toss out the old ones. Also plug the new power cord into a different outlet
+on your multiplug and/or surge protector. ie try the easy things first before you open the case and play
+with the RAM or cpu cooler. 
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 1 meg zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

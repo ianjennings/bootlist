@@ -1,0 +1,223 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 207</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 207 February 2005
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 207th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) How Much RAM For New PC?</a><BR>
+<a href="#2">2) Drive Imaging</a><BR>
+<a href="#3">3) Idle Process At 98%</a><BR>
+<a href="#4">4) Basic Vs Dynamic Disks</a><BR>
+<a href="#5">5) On 24/7 Or Off When Not In Use</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) How Much RAM For New PC?</font></STRONG>
+<P>
+Mohawk wrote - I'm buying a new computer. How much ram should I go for? I just do your average basic
+stuff but I want to be prepared for the next version of Windows.
+<P><BR>
+*** 1 gig assuming you have the funds.  It's a nice touch to get the ram you'll need for the future rather than 
+taking the chance later of encountering potential ram card/type/speed incompatibilities.  Also make sure 
+you acquire at least a 7,200 RPM hard drive. 
+<P>
+Currently, a good data point is to see what Dell is offering in it's basic line of Desktops which is now 512 
+megs. Then double that for what you are most likely to need a year or 2 from now.  As a reference, it was 
+only a year or so ago when Dell was putting in 256 standard, while at that time you really should have
+been installing 512 for XP if you were thinking about the future. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Drive Imaging</font></STRONG>
+<P>
+BK asked - I'm trying to move a WIN98/XP Pro dual boot, set up by XP Pro, to a larger Hard Drive. 
+WIN 98 on C: FAT32, XP on D: NTFS.  I set up the new drive the same way (3 partitions) with XP and 
+transferred the files booting from the floppy with the  copy partition Utilities supplied by WDigital. I put the 
+new HD to Master and the tried Single (removing the old HD). I also tried the same setting up the 
+partitions with the WDig software and transferring files again. I ran bootcfg /rebuild from recovery. When I 
+try to boot with the new HD, all I get is WIN98. What am I missing. It seems all the relevant boot files are 
+on the C drive.
+<P>
+Michael S. replies:<BR>
+You need to image the complete drive with something like Drive Image/ BootIT NG, then connect the 
+new drive [set as the master] as the primary master and the drive with the image somewhere else as a 
+slave or secondary master/slave.
+<P>
+Image the drive, shut and disconnect old drive before rebooting. After system is running you can connect 
+the old drive and format for additional storage.
+<P>
+BootIT NG from Terabyte:<BR>
+<A HREF="http://www.terabyteunlimited.com/">http://www.terabyteunlimited.com/</A>
+<P>
+Drive Image from Power Quest:<BR>
+<A HREF="http://www.powerquest.com/">http://www.powerquest.com/</A>
+<P>
+Alex N. adds:<BR>
+You need a proper partition manager that will do an exact copy.  What I use is BootIT NG, from http://www.BootitNG.com ($35 shareware - 30 day full functional trial)
+<P>
+Download, to its own folder, extract from the zip, run the bootitng to make a boot floppy.
+<P>
+With the new drive plugged in as slave/secondary, boot the floppy, Cancel Install, entering maintenance, 
+then click on Partition work.  Highlight your C:, Copy, then on left select  the new drive (HD1), highlight the 
+Free Space in it, and Paste. 
+<P>
+Now click on 'View MBR' and in it highlight the entry for this new 'about to be C' partition  and click the 
+'Set Active'  Click 'Write Standard MBR' and Apply.  
+<P>
+Close out, swap the disks to make the new one the one that boots, and reboot into XP.  The C will now be 
+this copy on the other drive.
+
+ 
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Idle Process At 98%</font></STRONG>
+<P>
+Lorin S. inquired - I've got the very annoying problem that my cpu consumes all the time between 40 and 
+60 percent performance, but idle process is about 98%!
+<P>
+Max B. answers:<BR>
+If it's the 40 - 60% performance, then you should only be concerned if it's like that ALL the time even when 
+you are NOT using the computer (ie not typing, playing games, etc.)
+<P>
+If you're concerned about the 98% idle process dont be. All that is showing is that the CPU is idle 98% of 
+the time (IOW it's NOT doing anything, it's waiting for you to get it to DO something) This is a good thing, 
+not a bad thing.
+<P><BR>
+*** I'd amend what Max said right above to [currently 98% of the cpu is idle]. Off the bat tho Max is on track
+and many folks get worried about the system idle report they see in diagnostics when they shouldn't be. 
+In other words when your sitting there staring at the report and not doing anything else 98% of the cpu is
+available for use and is currently idle which is perfectly logical. 
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Basic Vs Dynamic Disks</font></STRONG>
+<P>
+Paul wrote - I have a Pentium-4 /3.40 GHZ ( hyperthreading) with 1.00GB of RAM running Windows-XP Professional that I use for Video editing.
+<P>
+I have 4 huge SATA hard drives installed (all of them NTFS file system), and just one of them shows as "Dynamic" in the Disk management console, the rest figures as "Basic".
+<P>
+Question: Should I convert the Basic disks to Dynamic, or the Dynamic one to basic? What is the best for 
+handle large video files in Windows-XP?
+<P>
+Mike K. says:<BR>
+Basic disks are probably your best bet.  Dynamic disks are really only useful if you plan to create a 
+fault-tolerant disk set with RAID-5, striping or mirroring.
+<P>
+<A HREF="http://www.winnetmag.com/Articles/Index.cfm?ArticleID=8619">http://www.winnetmag.com/Articles/Index.cfm?ArticleID=8619</A>
+<P>
+ssengupta posted:<BR>
+<P>
+[Here are some information pages]
+<P>
+<A HREF="http://support.microsoft.com/?kbid=314343">http://support.microsoft.com/?kbid=314343</A><BR>
+<A HREF="http://support.microsoft.com/?kbid=309000">http://support.microsoft.com/?kbid=309000</A><BR>
+<A HREF="http://support.microsoft.com/?kbid=308424">http://support.microsoft.com/?kbid=308424</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) On 24/7 Or Off When Not In Use</font></STRONG>
+<P>
+Rob questions - Is it better for computers in general to be left on all the time or put into standby mode vs 
+being turn off? Which is better for the life of the computer? 
+<P><BR>
+*** That is such a common question and for many years past I'd suggest that it did not matter either way. 
+However, these days I feel confident in suggesting that if you're not using the pc, shut it off for longest
+life and minimal hassle down the road. 
+<P>
+We all know modern home computers run hotter and cooling is a prime issue. Running a pc 24/7 means
+that it's sucking in dust 24/7 and that dust is accumulating on all your fans and heatsinks and within your
+power supply. The more dust the hotter your computer runs. The hotter it runs the less life, in theory, it has. Standby wont shut off the fans nor should it. 
+<P>
+Joe offers:<BR>
+I do not think it would make much difference. Most computer components with the exception of optical 
+drives and power supplies if they work out of the box are going to work beyond the point the computer is outdated any way. 
+<P>
+However I vote to shut it down completely. Restarting seems to cure more glitches that occur over the 
+course of using a computer than any thing else you can do so I say start fresh every time you use it within reason. Personal opinion if you are coming back to it within a hour leave it on beyond that shut it off.
+<P><BR>
+*** As an aside we're talking about home/office pcs, not the servers you find in clean non-carpeted rooms
+that run your web domains etc.
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,215 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 175</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 175 August 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 175th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) How To Keep My Dialup Connection Active</a><BR>
+<a href="#2">2) How To Edit Right Mouse Click Menu Items</a><BR>
+<a href="#3">3) 4.3 Gigs Of Temps I Cant Delete</a><BR>
+<a href="#4">4) Looking For XP BLA Type Of Utility</a><BR>
+<a href="#5">5) The Windows Installer Service Could Not Be Accessed</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) How To Keep My Dialup Connection Active</font></STRONG>
+<P>
+Steve asks - I have a dialup ISP and if I go away from my computer I always get disconnected. This often
+happens with file downloads as well. It's really frustrating. Is there anything I can use to keep my
+connection alive? 
+<P><BR>
+*** Try using a pinger:
+<P>
+AC Plug:<BR>
+<A HREF="http://www.iopus.com/acplug.htm">http://www.iopus.com/acplug.htm</A>
+<P>
+Very Small Pinger:<BR>
+<A HREF="http://www.jfitz.com/dos/index.html">http://www.jfitz.com/dos/index.html</A>
+<P>
+FYI I have very few background apps on my pc but one of them AC Plug 1.2.  Their current version is
+2.0 which seems pretty much the same except for that you now get to pick the URL you want to ping. Keep
+in mind that some website hosts don't allow their site to be pinged. Anyway, I asked the Author why this
+change was made and if he had anything else to say regarding AC Plug:
+<P>
+{ACPlug 1.2 used to ping www.iopusemail.com every 5 minutes. Meanwhile we gave up this URL. It also 
+turned out that some people were not comfortable with this solution as the were afraid the software might transmit data back to us (which, of course, it did not). Thus we changed this in version 2.0
+<P>
+As far as tips are concerned, ACPlug is so simple to use, it's hard to think of any insider tip :)
+<P>
+But please have a look at our Internet Macros tip at:<BR>
+<A HREF="http://www.iopus.com/iim-acplug.htm">http://www.iopus.com/iim-acplug.htm</A>
+<P>
+Basically you can use this software to create the ultimate pinger free of charge!}<BR>
+[Thanks Mike from iOpus Software GmbH]
+
+
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) How To Edit Right Mouse Click Menu Items</font></STRONG>
+<P>
+Michael wrote - How do you edit out excess right click menu items and add new? Many links to 3rd party 
+apps- would like to remove if possible. 
+<P>
+Kelly delineates:<BR>
+It depends on where in the right click menu.
+<P>
+Go to Start/Run/Regedit and navigate to:
+<P>
+HKEY_CLASSES_ROOT\*\OpenWithList<BR>
+HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers<BR>
+HKEY_CLASSES_ROOT\Directory\Background<BR>
+HKEY_CLASSES_ROOT\Directory\shell<BR>
+HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers<BR>
+HKEY_CLASSES_ROOT\Drive\shell<BR>
+HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers<BR>
+HKEY_CLASSES_ROOT\Folder\shell<BR>
+HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers
+<P>
+Customizing Right-Click Menu Options in Windows:<BR>
+<A HREF="http://www.jfitz.com/tips/rclick_custom.html">http://www.jfitz.com/tips/rclick_custom.html</A>
+<P>
+ContextEdit lets you control which items appear on your context menu (right-click) in Windows Explorer.
+<P>
+Add, Modify, Disable, Delete Context Menu Listings (Line 23):<BR>
+<A HREF="http://www.kellys-korner-xp.com/xp_tweaks.htm">http://www.kellys-korner-xp.com/xp_tweaks.htm</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) 4.3 Gigs Of Temps I Cant Delete</font></STRONG>
+<P>
+Dave C. wrote - I have spent 3 hours now trying to figure out how to get rid of 56,788 files at about 4.3 GIG's worth of space in my users temp folder!
+<P>
+C:\Documents & Settings\Dave\Local Setttings\Temp
+<P>
+Windows Explorer barfs each and every time I try to delete even one file!
+<P>
+Randy H. suggests:<BR>
+The problem is likely that Windows has some of the files open.  When Explorer encounters a file that it can't delete it stops trying to delete other files.  A simple way around that problem is to go to a Command Prompt window (Start->Run ---   cmd)
+<P>
+In that command prompt window, type:
+<P>
+del /q  "C:\Documents & Setttings\Dave\Local Setttings\Temp\*"<BR>
+or<BR>
+del /q  C:\Documents & Setttings\Dave\Local Setttings\Temp\*<BR>
+<P>
+That should clear out any files that aren't opened. Another solution is to log in as another user and try it.
+<P>
+Alex N. suggests:<BR>
+Use:<BR>
+CD \Documents and Settings\Dave\Local Settings\Temp<BR>
+then:<BR>
+DEL /S /F  *.*
+
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Looking For XP BLA Type Of Utility</font></STRONG>
+<P>
+leroy asks - Looking for a Windows XP boot log analyzer like the old BLA.exe for Windows 95 ( it worked 
+in Windows 98 also).
+<P>
+Carey F. suggests:<BR>
+Windows XP Startup Tracker v3.8:<BR>
+<A HREF="http://www.dougknox.com/xp/utils/xp_starttrack.htm">http://www.dougknox.com/xp/utils/xp_starttrack.htm</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) The Windows Installer Service Could Not Be Accessed</font></STRONG>
+<P>
+DK4JC complains - I get this message anytime I try to install something:
+<P>
+The Windows Installer Service could not be accessed. This can occur if you are running windows in safe mode, or if the Windows Installer is not correctly installed. Contact your support personnel for assistance.
+<P>
+I am not running in safe mode and how do I know if Windows Installer is not installed correctly? 
+<P>
+Error 1719. The Windows Installer service could not be accessed" error message when you
+try to add or remove a program:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=315346">http://support.microsoft.com/?kbid=315346</A>
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 950K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

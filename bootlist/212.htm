@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 212</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 212 February 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 212th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) XP Lost My DVD/CD Drive</a><BR>
+<a href="#2">2) Printing Folder Contents In XP</a><BR>
+<a href="#3">3) I Dont Like USB Keyboards</a><BR>
+<a href="#4">4) Internet Connection Is Hit Or Miss</a><BR>
+<a href="#5">5) Odds And Ends</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) XP Lost My DVD/CD Drive</font></STRONG>
+<P>
+PCGuy wrote - I've got this 1 y/o ThinkPad that has suddenly lost the DVD/combo drive. Nothing shows 
+in My Computer, but the drive is seen in device manager with a yellow exclamation mark saying the 
+driver is installed but cannot connect to the device. Tried to connect an external USB CD drive and get 
+the same results. Could the device drivers be corrupt? How do I extract new ones? 
+<P>
+Kelly suggests:<BR>
+Without knowing more, see if this helps:
+<P>
+Save the file below to your hard drive. Navigate to where you saved it and double click the file. A 
+confirmation dialog will appear when the script is done. You may need to reboot for the change to take 
+effect.
+<P>
+Restore CD/DVD in Explorer:<BR>
+<A HREF="http://www.kellys-korner-xp.com/regs_edits/xp_cd_dvd_fix.vbs">http://www.kellys-korner-xp.com/regs_edits/xp_cd_dvd_fix.vbs</A>
+<P>
+Alex N. suggests:<BR>
+Possibly a driver type file (usually associated with burning software) has gone AWOL, leaving an orphan 
+in registry.  To tidy up, get a registry patch file, cdgone.reg, from:
+<P>
+<A HREF="http://www.aumha.org/downloads/cdgone.zip">http://www.aumha.org/downloads/cdgone.zip</A>
+<P>
+Extract it, r-click on it and merge it into the registry and reboot. You will then need to reinstall any burning software that you use.
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Printing Folder Contents In XP</font></STRONG>
+<P>
+BillP inquired - If you have a folder which contains several or many files, how can you print a list of the 
+names of these files?
+<P>
+WTC suggests:<BR>
+How to add the Print Directory feature for folders in Windows XP:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=321379">http://support.microsoft.com/?kbid=321379</A>
+<P><BR>
+*** Which is why some folks have developed an easier way :)
+<P>
+Print Folder:<BR>
+<A HREF="http://no-nonsense-software.com/download.shtml">http://no-nonsense-software.com/download.shtml</A>
+<P>
+Directory Printer:<BR>
+<A HREF="http://www.karenware.com/powertools/ptdirprn.asp">http://www.karenware.com/powertools/ptdirprn.asp</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) I Dont Like USB Keyboards</font></STRONG>
+<P>
+Molecule complained - Got a new motherboard ( asus p5p800 ) with 4 usb port at the back. If I connect my 
+usb keyboard I cannot get into bios. Put a usb-ps2 adapter and there is no problem. I found in google that
+other people have the same problem with different motherboards. Any ideas? (usb ports ARE enabled in 
+the bios)
+<P><BR>
+*** Look in the bios for a [Enable/Disable USB Legacy Support] or similar sounding line item as by
+default its generally set to Disable. 
+<P>
+RwP adds:<BR>
+Turn off "Fast POST" or [turn on] "Extended Test" (not sure which one it's called).  I'd bet that your USB 
+keyboard doesn't init fast enough [ie in time for you to hit the key to access the bios].  Or, just get another keyboard - one that inits quicker on poweron.
+<P><BR>
+*** The tweak RwP is talking about may or may not slow down the boot time. The exact lingo in the bios 
+will differ depending on your system. For example on my pc its Quick Boot [Enable/Disable].  Also note
+that some big brand pcs have really slimmed down bios options so you may not even have anything
+similar in yours. 
+<P>
+Still, there is no guarantee that a USB keyboard will work either in dos or to access the bios even if all
+the bios options are set perfectly.   Personally, I'd stick with ps/2 keyboards. Why not use the available
+port and avoid any potential trouble when you really need to get into that bios, or use that dos bootdisk/cd 
+for that matter.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Internet Connection Is Hit Or Miss</font></STRONG>
+<P>
+Howie asked - We are using Windows 98SE, Pentium III, 450 MHz, [Broadband] internet connection, 224 
+MB of SDRAM, [internal PCI NIC].
+<P>
+Our internet connection is hit and miss.  Commonly, a "work offline" error box pops up when we first use 
+Internet Explorer or Outlook Express.  The error message states: "No connection to the internet is currently available.  To view internet content that has been saved on your computer click Work Offline.  Click Try 
+Again to attempt to connect".
+<P>
+I re-installed the NIC card driver, and that didn't seem to work.  Outlook Express (OE) doesn't connect on 
+the first try either.  
+<P>
+Jerry G suggested:<BR>
+Un-install the networking, [reboot] and then re-install it again.  [You may need the] installation CD for your operating system.  This should do the fix most of the time.  You can also try to first do a system file 
+compare using the SFC utility. It may fix the fault, if it can find corrupt files and replace them.
+<P>
+Howie posts back:<BR>
+I tried another driver, it appeared to fix my problem.
+<P><BR>
+*** Howie's fix brought up an interesting point. Whether network cards or video cards, etc., if you are
+having an oddball problem there are up to four sources of drivers to try, and they may all be different but 
+all be designed for the same card/chipset. 
+<P>
+1. Drivers that are included in Windows<BR>
+2. Drivers that come from the computer maker<BR>
+3. Drivers from the card manufacturer<BR>
+4. Drivers from the chip maker
+<P>
+For example, when rebuilding older systems fresh I cant even count the number of times I had to find 
+video drivers using the information on the largest chip on the card when the ones from the card maker 
+didn't work or were not available anymore. Often just entering that info into google brings you right where 
+you need to be.  And often the chip makers or card makers drivers are just basic and a much smaller download/install. 
+<P>
+BTW, if you have a problem like Howie did and are using a USB NIC that your broadband company
+installed a common fix if you call them is they come out and install an internal NIC and that usually solves
+it.  
+<P>
+On a related note, if you are using windows update and it says updated drivers are available for any of
+your cards or hardware DO NOT download or install them if everything is working as it should be. Also
+note that while Howie found what fixed his problem, all the other tweaks noted are equally valid things to
+try. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Odds And Ends</font></STRONG>
+<P>
+Just in case you haven't seen either of these yet.
+<P>
+Upcoming Webdesign Software as a free alternative to FrontPage:<BR>
+<A HREF="http://www.nvu.com/">http://www.nvu.com/</A><BR>
+[Thanks Jim B]
+<P>
+Windows Installer Cleanup Utility:<BR>
+<A HREF="http://support.microsoft.com/?kbid=290301">http://support.microsoft.com/?kbid=290301</A>
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table></form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

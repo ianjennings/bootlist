@@ -1,0 +1,200 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 260</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 260 April 2006
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 260th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Virus In System Restore Point(s)</a><BR>
+<a href="#2">2) Older Version Resource</a><BR>
+<a href="#3">3) Computer Wont Start - Keeps Beeping</a><BR>
+<a href="#4">4) FAT32 To NTFS Basics</a><BR>
+<a href="#5">5) IE Archive</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Virus In System Restore Point(s)</font></STRONG>
+<P>
+Strike inquired - My virus scanner is detecting a virus in a directory that I cannot access. The directory is 
+C:\System Volume Information. When I try to open it I get this error:
+<P>
+"C:\System Volume Information is not accessible, access is denied." Is there any way I can get in there and delete the virus file? 
+<P>
+Ken B. replies:<BR>
+You have a virus in one or more System Restore points. Presumably you had a virus and removed it, but not before one or more 
+Restore Points were created.
+<P>
+First of all, recognize that a virus in a Restore Point is completely innocuous and can not hurt you in any way *unless* you restore 
+that Restore Point. So no need to panic.
+<P>
+You have a couple of choices:
+<P>
+1. Turn off System Restore, and turn it back on. That will delete all existing Restore Points, including those with the virus.
+<P>
+2. As new Restore Points are created each day, the oldest ones fall of the end of the chain. So sometime within the next 90 days at 
+most, the virus-laden Restore Point(s) will disappear by themselves.
+<P>
+I would prefer choice number 1 to be safe, but  number 2 is acceptable, *if* you are very careful never to do a restore to a date prior 
+to the one on which you removed the virus.
+<P>
+Bruce C. adds:<BR>
+The System Volume Information is the hidden, protected operating system folder in which WinXP's System Restore feature stores
+information used to recover from errors.  It's really not a good idea for you, or an antivirus application, to directly access the contents
+of that folder, unless you expect to have no future use for the restore points, in which case it would be simpler just to turn off the
+System Restore feature.
+<P>
+To clear viruses or other malware from the "System Volume Information," simply turn off the System Restore feature [Start | All
+Programs | Accessories | System Tools | System Restore, System Restore Settings], reboot, then re-enable System Restore, and 
+reboot one last time.  This will delete all of your Restore Points, including the corrupted one(s), and allow you start with a clean slate.
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Older Version Resource</font></STRONG>
+<P>
+Magnus emailed in regards to the last issue re: Adobe vs. Foxit:
+<P>
+About adobe vs. foxit reader, you can get smaller/older versions of adobe and other programs here:
+<P>
+<A HREF="http://www.oldversion.com/program.php?n=acrobat">http://www.oldversion.com/program.php?n=acrobat</A><BR>
+<A HREF="http://www.oldversion.com/">http://www.oldversion.com/</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Computer Wont Start - Keeps Beeping</font></STRONG>
+<P>
+iain.henry posts - I get 2, followed by 8, followed by 3 bios beeps.  I  have tried with a boot disk, no luck.  Should I try resetting my CMOS/BIOS and if so how do I do that?  Any way to see if it is the motherboard battery?
+<P><BR>
+*** 99% of the time "continuing" beeps while booting are due to:
+<P>
+1. A mis-seated AGP video card, or<BR>
+2. Bad or mis-seated RAM
+<P>
+It's generally NOT the bios battery. ie bad mobo batteries dont cause continuous beeping. 
+<P>
+Ponder said:<BR>
+Anything with 8 is *normally* RAM based.
+<P>
+philo adds:<BR>
+That's probably correct. Most bios error messages are either to do with RAM or video. So just open the machine and reseat the 
+RAM and the video.
+<P><BR>
+*** Blast From The Past - Some of you may remember having the same problem with video card seating when VLB cards were
+the talk of the town. 
+<P>
+<A HREF="http://www.vfxweb.com/index.php?productid=239">http://www.vfxweb.com/index.php?productid=239</A><BR>
+VLB = Vesa Local Bus
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) FAT32 To NTFS Basics</font></STRONG>
+<P>
+NickB asked - During installing my Windows XP pro. I selected to use FAT32 for format the hard disk.  Now after having all software installed, and the system runs smooth, I need to convert the FAT32 to NTFS.  I could not find the windows wizard to help me do that.
+<P>
+Bruce C. replied:<BR>
+You can safely convert your current hard drive to NTFS whenever desired, without having to format the partition and reinstall 
+everything.  As always when performing any serious changes, back up any important data before proceeding, just in case. A little advance preparation is also strongly recommended, so you can avoid any performance hits caused by the default cluster size.
+<P>
+Converting FAT32 to NTFS in Windows:<BR>
+<A HREF="http://www.aumha.org/a/ntfscvt.htm">http://www.aumha.org/a/ntfscvt.htm</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) IE Archive</font></STRONG>
+<P>
+2GoldFish wrote - I'm working on a Windows 98 SE Computer and need to reinstall IE5. I went to the Microsoft website but couldn't
+find it. I dont want IE 6 I want IE 5. Anywhere I can find it on a legit website?
+<P>
+<A HREF="http://browsers.evolt.org/?ie/32bit">http://browsers.evolt.org/?ie/32bit</A>
+
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+<P>
+BONUS -  You will also be provided with a link to download issues #140 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ: <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 240</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 240 November 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 240th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) A Couple Of Fix-It Links</a><BR>
+<a href="#2">2) Run XP From A CD To Stop Abuse?</a><BR>
+<a href="#3">3) Not Really A Kazaa Article</a><BR>
+<a href="#4">4) Hard Time Getting To Safe Mode</a><BR>
+<a href="#5">5) OE And Compacting Files</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) A Couple Of Fix-It Links</font></STRONG>
+<P>
+IE Fix - General purpose repair utility for Internet Explorer to try if it's not working. Link courtesy of d_may :
+<P>
+<A HREF="http://windowsxp.mvps.org/IEFIX.htm">http://windowsxp.mvps.org/IEFIX.htm</A>
+<P>
+File Association Fix Collection. Restores specific default file associations. Link courtesy of Malke:
+<P>
+<A HREF="http://www.dougknox.com/xp/file_assoc.htm">http://www.dougknox.com/xp/file_assoc.htm</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Run XP From A CD To Stop Abuse?</font></STRONG>
+<P>
+Wowbagger posted - Can XP Pro be run off of a CD ROM with a local HDD used for swap and other 
+temporary files?  There are a couple of specific windows applications that need to be run on the machine, but nothing particularly taxing or rooted too deeply in the registry.
+<P>
+I want something that will let me put a CD in the drive, boot, have the computer up and running, take all 
+kinds of abuse by users who don't know any better then at night remove the CD from the drive and lock it 
+up, ready to start over the next morning with a clean slate. Is such a configuration possible?
+<P>
+Malke suggested:<BR>
+No, you cannot run XP from a "live" cd like one of the many live Linux cd's,  Knoppix for example. From 
+your description, the program Deep Freeze from Faronics would suit your needs exactly:
+<P>
+<A HREF="http://www.faronics.com/html/deepfreeze.asp">http://www.faronics.com/html/deepfreeze.asp</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Not Really A Kazaa Article</font></STRONG>
+<P>
+Dr. Lederman phoned - My son has Kazaa and some file he got from it messed up our laptop.  So I called a 
+a computer at-home service to fix it. The young man removed Kazaa with a special program he had but 
+now the laptop cant get on the Internet. He said he'll be back in a day or 2 but I cant wait that long. 
+<P>
+I can use my other PC to get to Internet. What should I try?
+<P><BR>
+*** The young fix-it geek most likely used a spyware cleaner or the special Kazaa removal utility. Often,
+when removing spyware and/or programs that include spyware  you may lose your Internet connection. 
+<P>
+For example, if the tech used KazaaBegone he probably didn't read the part that said you will need
+lspfix to repair the winsock2 afterwards. KazaaBegone is at the bottom of the page along with a link to
+lspfix.zip:
+<P>
+<A HREF="http://www.spywareinfo.com/~merijn/downloads.html">http://www.spywareinfo.com/~merijn/downloads.html</A>
+<BR>
+<A HREF="http://www.cexx.org/lspfix.htm">http://www.cexx.org/lspfix.htm</A>
+<P>
+Two other repair utilities are here which may also be used if your anti-spyware applicaion eg. adaware
+or spybot removes the nasties but leaves you unable to connect. 
+<P>
+WinsockXPFix:<BR>
+<A HREF="http://www.iup.edu/house/resnet/WinsockXPFix.exe">http://www.iup.edu/house/resnet/WinsockXPFix.exe</A><BR>
+<A HREF="http://www.rcrnet.net/downloads/WinsockXPFix.exe">http://www.rcrnet.net/downloads/WinsockXPFix.exe</A> Alternate site<BR>
+<A HREF="http://www.iup.edu/house/resnet/winfix.shtm">http://www.iup.edu/house/resnet/winfix.shtm</A> Directions
+<P>
+TCPfix2:<BR>
+<A HREF="http://www.bootdisk.com/kentucky/tcpfix2.exe">http://www.bootdisk.com/kentucky/tcpfix2.exe</A>
+<P>
+If you have a single pc in you home you might want to download these files in advance, just in case your
+anti-spyware app leaves you with no internet access afterwards. FYI I dont blame the removal utilities
+at all. Spyware damage is just like virus damage. You may kill the bugs, but still have repair work to do
+afterwards. Sort of like termite damage in your home I suppose :)
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Hard Time Getting To Safe Mode</font></STRONG>
+<P>
+BrandonA asked - I need to get into safe mode in XP Pro to roll-back a defunct video driver. But F8 isn't working. Any thoughts?
+<P>
+Torgeir B. replies:<BR>
+You did tap F8 repeatedly early in the computer/Windows startup process?
+<P>
+If F8 doesn't work, you could add the switch /SAFEBOOT:MINIMAL in your Boot.ini file, and then reboot.
+<P>
+Safe-Mode Boot Switches for Windows Boot.ini File:<BR>
+<A HREF="http://support.microsoft.com/kb/239780">http://support.microsoft.com/kb/239780</A>
+<P>
+How to edit the Boot.ini file in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/kb/289022">http://support.microsoft.com/kb/289022</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) OE And Compacting Files</font></STRONG>
+<P>
+Bill T. questioned -  Is there a way to stop outlook express from nagging you to compact the files? I have a large disk drive and feel no need to do the compacting. Is my thinking wrong to not want this?
+<P>
+Frank S. answered:<BR>
+You really do need to let OE compact the folders or they will grow to the point OE won't work at all.  Say 
+Yes and leave the computer alone until it finishes.
+<P>
+PA Bear said:<BR>
+No and yes. You can't stop OE from compacting automatically every 100 times you close it. You can tell
+OE to stop asking you about it by checking the "Don't ask me again" prompt, but then Automatic 
+Compacting will still take place but without warning you.
+<P>
+General OE Caveats:
+<P>
+- Don't use Inbox or Sent Items to archive messages.  Move them to local folders created for this purpose.
+<P>
+- Empty Deleted Items folder daily.
+<P>
+- Disable Background Compacting [N/A in SP2] and frequently perform a manual compact of all OE 
+folders while "working offline".  More at:
+<P>
+<A HREF="http://www.insideoe.com/files/maintain.htm">http://www.insideoe.com/files/maintain.htm</A>
+<P>
+- Do not attempt to close OE via Task Manager or shutdown your machine if Automatic Compacting is 
+taking place (WinXP SP2 only).
+<P>
+- Your anti-virus application's email scanning feature can also cause corruption.  Disable it.  It provides no additional protection.
+<P>
+Frank S. added:<BR>
+OETool has a Compact All button that will reset OE's counter.  You can use this to compact at a more convenient time.
+<P>
+<A HREF="http://www.oehelp.com/OETool/Default.aspx">http://www.oehelp.com/OETool/Default.aspx</A>
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 700K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

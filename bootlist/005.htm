@@ -1,0 +1,564 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 005  </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> </A>Newsletter  005
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+Welcome to the 5th edition of The BootLIST. 
+<P>
+This is a <STRONG>SPECIAL EDITION</STRONG> featuring Kan Yabumoto, Author
+of XXCOPY. 
+
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+
+<BR>
+
+<a href="#0">Introduction</a><BR>
+<a href="#1">1) Brief History Of XXCOPY</a><BR>
+<a href="#2">2) XXCOPY For Cloning The Win9x System Disk</a><BR>
+<a href="#3">3) Ghost, DriveImage And XXCOPY</a><BR>
+<a href="#4">4) XXCOPY - More Than A One-Trick-Pony</a><BR>
+<a href="#5">5) The Feature In XXCOPY That I'm Most Proud Of</a><BR>
+<a href="#6">6) A One-Liner Batch File For You</a><BR>
+<a href="#7">7) XXCOPY Road Map, Near-term And Long Term</a><BR>
+<a href="#8">8) Conclusion For Now</a><BR>
+<P><BR>
+
+
+
+
+
+
+
+<A NAME="0"></A>
+########################################<BR>
+<STRONG><font color="red">Introduction</font></STRONG>
+<P>
+************************************<BR>
+  What is XXCOPY really all about?<BR>
+************************************
+<P>
+
+By Kan Yabumoto    <A HREF="mailto:tech@xxcopy.com">tech@xxcopy.com</A>     2002-02-07<BR>
+(c)2002 Copyright  Kan Yabumoto
+<P>
+
+
+<P>
+Hello, Everyone.  My name is Kan Yabumoto.  I'm the author
+of the XXCOPY software.  It is a great honor to be invited
+to this new exciting newsletter for an article.  The subject
+is of course, XXCOPY.  Its home page is
+<P>
+&nbsp;&nbsp;    <A HREF="http://www.xxcopy.com">http://www.xxcopy.com</A>
+<P>
+Rather than boring you all to the death by parading the
+myriad of features in XXCOPY, I would like to pick a few
+topics and give you my side of the story.
+<P>
+I've been using a lot of software products just like you,
+and I seldom come into contact with the author of the program.
+So, let me make myself available to you and discuss the
+product's history, the primary goal, and the near-term and
+long-term road map of XXCOPY development.  Also, I would like
+to brag about a feature in XXCOPY that I'm most proud of.
+<P>
+After all, XXCOPY is just a file-copy utility.  In order for
+XXCOPY to stand out from the crowd in the competition,  it has
+to offer to the user something unique.  We wanted to make
+XXCOPY irresistible to those who give it a try.
+<P>
+Many of you must have come to know XXCOPY for a particular
+purpose.  I hope you found it useful for what you had in mind.
+But, chances are, you are still wondering why XXCOPY is so
+often talked about in various newsgroups lately.
+<P>
+From my point of view, many favorable comments about XXCOPY
+by others are often picking just one of the many virtues of
+XXCOPY.  By observing the newsgroups at the sideline, I
+often find myself frustrated by the fact people talk about
+the relatively "minor" features of the tool.  The real
+power of XXCOPY seems to be largely untapped by most users.
+<P>
+So, here I am, trying to de-mystify the tool and set the
+record straight.  What is XXCOPY all about?
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1. Brief History Of XXCOPY</font></STRONG>
+<P>
+  XXCOPY debuted in the Internet as a freeware in November,
+  1999.  But it's predecessor, DCOPY (and DCOPY32) was born
+  around 1994.  It has been a bundled utility program in
+  our DATMAN package (DATMAN makes a tape drive behave like
+  a disk.  Visit <A HREF="http://www.datman.com">http://www.datman.com</A> for details).  Its
+  modest goal was to circumvent the problem of Microsoft's
+  XCOPY which often got stuck in a script (batch file) when
+  files are transferred to a NetWare file server for backup.
+<P>
+  The file-sharing problem in a multi-tasking and networking
+  environment has always been a common headache. The problem
+  will be with us forever.  When a file is exclusively opened
+  by one program, the next program which attempts to access
+  it has no choice but to let the first program be done with it.
+  The trouble with Microsoft's XCOPY was that it gave the
+  user the infamous "R(etry) or A(bort)" choice --- you either
+  try it again which usually gets you nowhere, or abort the
+  whole backup operation.  But worst of all, the situation
+  makes the batch script sit there idle (Microsoft later
+  added the much-needed third, F(ail) option in the prompt
+  along with the /C switch to prevent a failed copy from
+  ruining the rest of the backup operation).  DCOPY had that
+  capability long before Microsoft corrected its XCOPY.
+<P>
+  We always listen to the users.  Later, we found ourselves
+  adding many more backup-related features to DCOPY.  But,
+  after many more switches were added, one key principle
+  remains the same: the latest XXCOPY's command line syntax
+  is still compatible with Microsoft's XCOPY.
+<P>
+  When we released XXCOPY to the general public in late 1999,
+  our motivation was to provide something for free in the
+  Internet to attract more traffic to our main DATMAN.COM
+  web site.  We gave it the new name, XXCOPY which correctly
+  characterizes the nature of the product; the behavior stays
+  very close to that of XCOPY.  This makes the user's first
+  experience with XXCOPY relatively painless, provided that
+  he already knows Microsoft's XCOPY fairly well.
+<P><BR>
+
+
+
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2. XXCOPY For Cloning The Win9x System Disk.</font></STRONG>
+<P>
+  Soon after the XXCOPY freeware version became more widely
+  circulated, a few people discovered its usefulness in
+  duplicating the Windows 9x system disk.  I'm not sure
+  exactly who mentioned this usage first.  At various
+  newsgroups, XXCOPY was recommended to others for disk
+  cloning purposes.  At that time, many people were using
+  Microsoft's XCOPY for this.  We still see plenty of
+  users run the following command for this purpose.
+<P>
+&nbsp;&nbsp;    XCOPY  C:\  D:\  /h /e /k /r /y
+<P>
+  Being compatible with XCOPY, XXCOPY can be run using
+  exactly the same combination of switches
+<P>
+ &nbsp;&nbsp;   XXCOPY C:\  D:\  /h /e /k /r /y
+<P>
+  But, I was recommending an improved variation,
+<P>
+&nbsp;&nbsp;    XXCOPY C:\  D:\  /ks /h /e /r /q /y /bi /zy
+<P>
+  In order to help memorize this long combination, I
+  came up with the following mnemonic for it;
+  "Kiss Her Quick, Yes, But I'm busy."  But, it requires
+  photographic memory.  So, I devised a shortcut switch
+  in XXCOPY that is a direct substitution of the longer
+  combination. That is how the /CLONE switch came to life.
+<P>
+  Now, the command is much easier to remember.
+<P>
+&nbsp;&nbsp;    XXCOPY C:\  D:\  /CLONE
+<P>
+  Of course, we could have advocated a batch file to achieve
+  the similar goal.  But, this shortest form as a built-in
+  switch was an instant success.  Then, I wrote a special
+  manual with step-by-step instructions for this operation.
+<P>
+  &nbsp;&nbsp;  <A HREF="http://www.xxcopy.com/clone">http://www.xxcopy.com/clone</A>
+<P>
+  If you help others by mentioning the /CLONE switch for
+  duplicating the Win9x system disk, I hope you also add
+  this pointer in your advice so that the new user will not
+  have to wonder "What's next?"  after he runs the /CLONE
+  operation and still does not have a bootable disk.
+  The MBR, the boot sectors, etc. must be properly
+  initialized in order to have a bootable system disk.
+<P>
+  Now, you know why we did not develop XXCOPY for disk clone
+  operations.  Nor was the very /CLONE operation specifically
+  designed for cloning!  It is simply a natural consequence
+  of making a versatile tool for many purposes.  The /CLONE
+  switch remains a mere convenience feature in XXCOPY to
+  ease the typing and memorizing.
+<P><BR>
+
+
+
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3. Ghost, DriveImage And XXCOPY</font></STRONG>
+<P>
+  The /CLONE switch made XXCOPY a free alternative to
+  Norton Ghost and PowerQuest's DriveImage.  I have great
+  respect for both of these products.  In newsgroups, we find
+  so many people asking the same question over and over
+  again.  Here's a typical thread:
+<P>
+  Q: I just bought a 20GB hard disk and I want to replace my
+     Win98 system disk with the new one.  Tell me how?
+<P>
+  A: Most hard disks come with a utility to do just that.
+     Otherwise, buy Ghost or DriveImage, or try freeware XXCOPY.
+<P>
+  Some people adamantly suggest Norton Ghost.  Not only do they
+  recommend it for the one-time system cloning operation, they
+  also advocate the use of Ghost for daily/weekly backup.  That
+  is fine.  But, many say they chose XXCOPY and they are happy
+  with it.  After all, when you buy a $90 disk, would you spend
+  an additional $50 just for this one-time operation?
+<P>
+   &nbsp;&nbsp; ---------------------------------------------------------<BR>
+    &nbsp;&nbsp; I hear the Ghost software that one bought two years ago<BR>
+    &nbsp;&nbsp; cannot do well in cloning the XP disk.  Thus, the $50<BR>
+    &nbsp;&nbsp; price tag is not a one-time investment for a good tool,<BR>
+    &nbsp;&nbsp; but rather a recurring expense like an annual<BR>
+    &nbsp;&nbsp; subscription.  I suspect many Ghost advocates are <BR>
+    &nbsp;&nbsp; professional system integrators or consultants who buy<BR>
+    &nbsp;&nbsp; Ghost as his tool for everyday work.  But they must<BR>
+    &nbsp;&nbsp; not forget that they are talking to one-time users.<BR>
+   &nbsp;&nbsp; ---------------------------------------------------------
+<P>
+  XXCOPY works great for this purpose.  It works better
+  than the XCOPY method by not taking chances with the short
+  filename (SFN) (see http://www.xxcopy.com/xxcopy03.htm
+  for detail).  XXCOPY preserves the SFN when files are copied
+  using the long filename (LFN), whereas most other programs
+  (including Microsoft's tools) neglect this aspect.
+<P>
+  XXCOPY's /CLONE command can be used for subsequent daily
+  backup without any change (by leaving the old disk in D:
+  as a backup drive after the disk swap).  The incremental
+  backup will run much faster than Ghost or DriveImage for
+  this purpose.  Moreover, in a relatively rare instance of
+  either of the disks (original or the newly cloned one)
+  having a bad sector, a disk imaging software such as Ghost
+  usually cannot handle the bad sector unless the two drives
+  have bad sectors in exactly the same positions.
+<P>
+  It is quite amazing that both approaches work.  It's like
+  traveling from New York to New Delhi, via Hawaii or via
+  Europe.  We fly to totally opposite directions at first.
+  In the middle, we are thousands of miles apart.  Yet, we
+  arrive at the same goal.
+<P>
+  Am I saying XXCOPY is better than Ghost or DriveImage?  No.
+  I say it is just plain silly to compare apples and oranges.
+  But, since it continues to be a hot issue, let me briefly
+  give my advice to the disk cloning issue once and for all.
+<P>
+  My answer to the Win9x/ME disk clone question:
+<P>
+ -------------------------------------------------------------<BR>
+&nbsp;&nbsp;   Try XXCOPY Freeware first (be sure to read the XXTB #10).<BR>
+&nbsp;&nbsp;   If it fails, use Ghost or DriveImage that fits your budget.<BR>
+ -------------------------------------------------------------
+<P>
+  Honestly, I shouldn't waste my energy on this small issue.
+  XXCOPY has never been designed for and will never be made
+  for disk imaging.  It happens to work great when one
+  wants to make a bootable system disk for Win9x/ME.
+<P>
+  As of this writing, we do not have a similar recipe for
+  making a bootable WinNT/2K/XP disk using only XXCOPY.
+<P><BR>
+
+
+
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4. XXCOPY - More Than A One-Trick-Pony</font></STRONG>
+<P>
+  When you have done your first /CLONE job with XXCOPY
+  and you are happy with it, XXCOPY is not finished yet.
+  It has just demonstrated its versatility in one of the
+  many things that it is capable of.  Let me emphasize it:
+<P>
+  &nbsp;&nbsp;  XXCOPY is not a one-trick-pony, not just for /CLONE.
+<P>
+  When you run XXCOPY /HELP for the first time to obtain the
+  help text, the sheer volume will probably overwhelm you.
+  The good news is, you need not learn them all at once.
+  Take time.  Learn one feature at a time and use it
+  repeatedly and explore some more.
+<P>
+  Here is a non-exhaustive list of what those switches do.
+<P>
+ &nbsp;&nbsp;  a. select files by filetime, size, attributes, etc.
+<P>
+  &nbsp;&nbsp; b. specify exclusion pattern (files and directories)<BR>
+  &nbsp;&nbsp;    specify inclusion pattern (filename patterns only)
+<P>
+  &nbsp;&nbsp; c. create log file and name-list file.
+<P>
+  &nbsp;&nbsp; d. modify behaviors of all the above and much more...
+<P>
+  In essence, the great majority of file management activities
+  you want to carry out are probably supported by XXCOPY already.
+  But you need to find out which switch to use and that can be
+  difficult.  My favorite reference page for that is:
+<P>
+  &nbsp;&nbsp;  <A HREF="http://www.xxcopy.com/xxcopy27.htm">http://www.xxcopy.com/xxcopy27.htm</A>
+<P>
+  This page deliberately avoids the alphabetical order; instead,
+  the listing is ordered by the functionality of the switches.
+  It is even more useful as an overview of all the available
+  switches using the functional classification in mastering the
+  galaxy of XXCOPY command switches.  I highly recommend it.
+<P>
+  Let me conclude this section with some more examples:
+<P>
+   &nbsp;&nbsp;xxcopy \src\ \dst\ /da#10      // files modified within 10 days<BR>
+   &nbsp;&nbsp;xxcopy \src\ \dst\ /da:2002-2  // files modified after Feb 2002.<BR>
+   &nbsp;&nbsp;xxcopy \src\ \dst\ /sz:-100m   // files up to 100 MB long<BR>
+   &nbsp;&nbsp;xxcopy \src\ \dst\ /ats        // files with system attribute<BR>
+   &nbsp;&nbsp;xxcopy \src\ \dst\ /x*.tmp     // exclude files that end by .TMP
+<P>
+  Rather than showing all of the 200+ switches, I let your
+  educated guess extend this short list to what kind of cases
+  the other 200+ switches might do for you.
+<P><BR>
+
+
+
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5. The Feature In XXCOPY That I'm Most Proud Of</font></STRONG>
+<P>
+  If there is a defining feature in XXCOPY, this is it. 
+  The feature called "Wild-Wildcard" is the crown jewel of
+  the program.  It opens up new ways to look at the files
+  and directories.  Forgive my complacency here, but I want
+  you to feel my enthusiasm for it and learn the feature.
+<P>
+  From the user's point of view, the Wild-wildcard feature
+  allows you to place as many wildcard characters and at
+  any position in the source specifier.  It's quite elegant.
+<P>
+  Programming this feature was a little hard.  Then, handling
+  the exclusion items with wildcards made it more difficult.
+  Now, to implement all this with a great execution efficiency,
+  was the most challenging experience in the entire project.
+  But, inventing this type of unique and powerful feature
+  brings joy to the programming profession.
+<P>
+  Here's an example of that.
+<P>
+   &nbsp;&nbsp; xxcopy c:\micro*\*\cache*\*\*.jpg  d:\myimages\
+<P>
+  If you know what "*" does to a filespec at the end of a
+  fully spelled-out path, you can reasonably guess what it
+  does when it appears in the middle of a multi-level pathspec.
+<P>
+  If you are confused and prefer not to know it, that is fine.
+  You can use XXCOPY without knowing anything about this feature.
+  On the other hand, if you are intrigued by it, let me briefly
+  explain.  It's a liberal application of wildcards ( * and ?).
+<P>
+  One way to look at this is to view the feature as an extension
+  of the /S switch.  See the difference of the following lines:
+<P>
+ &nbsp;&nbsp;   xxcopy c:\mydir\myfile.*      // one directory level<BR>
+ &nbsp;&nbsp;  xxcopy c:\mydir\myfile.* /s   // multi-level subdirectories
+<P>
+  Most XCOPY users are quite familiar with the /S switch that
+  allows the file pattern (myfile.*) to appear anywhere inside
+  the subdirectories under the c:\mydir\ directory.  The
+  file may appear immediately inside the c:\mydir\ directory
+  or it may be in second, third or any level of subdirectory.
+<P>
+  Now, we introduce a new notation to denote the effect of /S:
+<P>
+  &nbsp;&nbsp;  xxcopy c:\mydir\myfile.*   /s   // multi-level subdirs<BR>
+  &nbsp;&nbsp; xxcopy c:\mydir\*\myfile.*      // equivalent to the above
+<P>
+  When it has the single-star (..\*\..) sequence, it signifies
+  that the item(s) at the right hand side can be at any level of
+  subdirectory.  The two command lines behave exactly the same.
+<P>
+  Once we agree upon how the sequence works when it is placed
+  immediately left to the filename pattern, we can shift the
+  occurrence of the single-star sequence to any other place.
+  In short, this notation lets you apply the mechanics of /S on
+  the subdirectory level other than the lowest (rightmost) level.
+<P>
+ &nbsp;&nbsp;   xxcopy c:\mydir\*\xyz\myfile.*  // the /S switch can't do this
+<P>
+  Another innovation in the wild-wildcard feature is to allow
+  wildcards (both * and ?) to appear for any number of times.
+<P>
+  &nbsp;&nbsp;  xxcopy c:\*\*dir\*\xyz?\*\myfile.*    // can really go wild.
+<P>
+  So, let us wrap up this section with one more example:
+<P>
+  &nbsp;&nbsp;  xxcopy c:\abc\*\xyz\*.jpg
+<P>
+  The xyz subdirectory can be anywhere under c:\abc;
+<P>
+  &nbsp;&nbsp;  c:\abc\xyz\john.jpg<BR>
+  &nbsp;&nbsp; c:\abc\def\xyz\paul.jpg<BR>
+  &nbsp;&nbsp;  c:\abc\def\ghi\xyz\john.jpg
+<P>
+  All the above are selected with c:\abc\*\xyz\*.jpg
+<P><BR>
+
+
+
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6. A One-Liner Batch File For You</font></STRONG>
+<P>
+  Who in their right mind need to go wild with the Wild-Wildcard?
+<P>
+  You seldom need to go very wild in filespec.  But, the ultimate
+  flexibility in XXCOPY becomes very handy when you look for
+  something in your disk.  Since you don't want to remember
+  the XXCOPY switches that work best for file searches, a batch
+  file really makes your life easier.
+<P>
+  Here is my favorite batch file:
+<P>
+  &nbsp;&nbsp;  where.bat<BR>
+  &nbsp;&nbsp;-----------------------------------------------------<BR>
+  &nbsp;&nbsp;  xxcopy /lzdl/s/h %1 %2 %3 %4 %5 %6 %7 %8 %9<BR>
+  &nbsp;&nbsp; -----------------------------------------------------
+<P>
+   It is a file-finder script.  It often works best with a
+   pathname that starts with the root (but need not to).
+   With this batch file, I sometimes go quite wild.
+   You may add any "adjective" using the xxcopy switches
+<P>
+    examples:
+<P>
+   &nbsp;&nbsp; where \windows\*\cache*\   // list all in cache dirs<BR>
+   &nbsp;&nbsp; where \*\temp*\  /sz:0     // zero-byte files in temp dirs<BR>
+   &nbsp;&nbsp; where \          /da#10m   // made in the past 10 min<BR>
+   &nbsp;&nbsp; where \mydir\ \ref\   /u   // files common in both dirs
+ <P>
+   This simple batch script exemplifies the flexibility of
+   XXCOPY by allowing many ways to select files.  For instance,
+   the fourth example above shows off some nifty combination.
+<P><BR>
+
+
+
+<A NAME="7"></A>
+########################################<BR>
+<STRONG><font color="red">7. XXCOPY Road Map, Near-term And Long Term</font></STRONG>
+<P>
+  Lately, I started to realize a disturbing fact in XXCOPY's
+  user community.  I enjoy relating my experience in early
+  days of CP/M, MS-DOS and so on with XXCOPY users who reminisce
+  their stories with me.  But I suspect that the average age
+  of the XXCOPY users is higher than that of the whole computer
+  professionals (I'm afraid the same is true to BootDisk.Com)!
+<P>
+  We often hear from people at IT departments' supervising
+  positions saying their young system administrators prefer
+  clicking the mouse button a few thousand times to taking the
+  time and edit a five-line batch file.  Sadly, it may be true.
+<P>
+  If we continue the command line-only design, XXCOPY will
+  repeat the demise of the dinosaurs.  We have no illusion.
+  So, Graphical User Interface (GUI) is the future of XXCOPY.
+<P>
+  In the near term, a simplistic GUI-based program will satisfy
+  novice users' need for XXCOPY.  Since it will omit most
+  advanced features, this product can be finished first.
+<P>
+  We also want to introduce a GUI application which helps the
+  user find the right switches for file management operations.
+  Since it presents nearly all XXCOPY switches in a well-
+  organized fashion, it takes longer to develop; hence, it
+  will be released at a later date.
+<P>
+  In the past, we have been contacted by a few individuals
+  who wanted to develop a GUI-based front end program which
+  runs side by side with the XXCOPY program.  We welcome
+  initiatives from interested parties who might work with us
+  for a loose, non-exclusive partnership.
+<P><BR>
+
+
+
+<A NAME="8"></A>
+########################################<BR>
+<STRONG><font color="red">8. Conclusion For Now</font></STRONG>
+<P>
+  In conclusion, I tried to make XXCOPY a worthwhile program
+  for nearly everybody who is eager to learn its rich set of
+  file management operations.  My publicly stated goal for
+  this program is:  One day, XXCOPY will be called:
+<P>
+  &nbsp;&nbsp;  The Undisputed King of the File Management Utilities.
+<P>
+  Lastly, I hope this will not be my last time in this
+  newsletter.  If you have questions, please send me your
+  comments to <A HREF="mailto:www.xxcopy.com/xxcopy27.htm">bootdisk@xxcopy.com</A>.  I will respond to you in
+  my next appearance here (whatever name you use in the
+  Email (but not your Email address) will appear in it).
+<P>
+  Alternatively, you may post your question to the XXCOPY
+  discussion group, or join the group and/or subscribe the
+  Email delivery of the messages.
+<P>
+  To post your message, send Email to: <A HREF="mailto:www.xxcopy.com/xxcopy27.htm">xxcopy@yahoogroups.com</A>
+  To subscribe the messages: <A HREF="mailto:www.xxcopy.com/xxcopy27.htm">xxcopy-subscribe@yahoogroups.com</A>
+<P>
+  It is a Yahoo-sponsored group (with some ads), and a great
+  place to meet other XXCOPY users who are quite eager to
+  help newbies with their experience.  I will also post my
+  message there when a clarification is needed.  It is also
+  the place where announcements about XXCOPY are made.  For
+  example, a new XXCOPY beta version is always announced in
+  the discussion group, first.  You can post your suggestion
+  for a new feature there.  It's like a Usenet newsgroup
+  specialized in XXCOPY except responses usually arrive much
+  more quickly.  The archived messages (> 1500) are a gold mine
+  to retrieve past messages using the keyword search.
+<P>
+  So, please join the "XXCOPY Revolution".
+<P>
+Kan Yabumoto<BR>
+Naperville, Illinois.
+<P>
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
+<P>
+
+Click <A HREF="mailto:service@bootdisk.com?Subject=ADD">Here</A> to subscribe to The BootLIST
+<P>
+Click <A HREF="mailto:service@bootdisk.com?Subject=REMOVE">Here</A> to UNsubscribe to The BootLIST
+<P>
+Or just send a note to service@bootdisk.com with ADD in the Subject Line<BR>
+ to subscribe or REMOVE in the Subject Line to UNsubscribe.<BR>
+Thanks.  Ed Jablonowski
+<P>
+<A HREF="http://www.bootdisk.com/bootlist.htm">http://www.bootdisk.com/bootlist.htm</A> </A>
+<P>
+
+
+
+</BODY>
+</HTML>

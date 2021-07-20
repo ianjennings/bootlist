@@ -1,0 +1,215 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 227</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 227 June 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 227th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) FAT32 To NTFS Basics</a><BR>
+<a href="#2">2) Advanced Software Install</a><BR>
+<a href="#3">3) Problem Installing MS Updates</a><BR>
+<a href="#4">4) Is Indexing Service Needed?</a><BR>
+<a href="#5">5) More On AMD XP3200 Showing As XP2500</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) FAT32 To NTFS Basics</font></STRONG>
+<P>
+RonD inquired - My computer was set up with FAT32 on both Hard Drives. Is there a way to convert to 
+NTFS with out wiping out all my data? Also without Backing it up?
+<P>
+Ken B. said:<BR>
+Sure. To convert to NTFS, you use the CONVERT command. But first read:
+<P>
+<A HREF="http://aumha.org/win5/a/ntfscvt.php">http://aumha.org/win5/a/ntfscvt.php</A>
+<P>
+Because there's an issue regarding cluster size that isn't obvious.
+<P>
+Converting without backing up is foolhardy. Conversion is a big step, affecting everything on your drive. 
+When you take such a big step, no matter how unlikely, it is always possible that something could go 
+wrong. For that reason, it's prudent to make sure you have a backup of anything you can't afford to lose 
+before beginning.
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Advanced Software Install</font></STRONG>
+<P>
+Ray questioned - Can someone advise me how to make the software installed available to all users on a computer. 
+<P>
+Wesley V. replied:<BR>
+Installing and running software in Windows XP:<BR>
+<P>
+<A HREF="http://www.rickrogers.org/xpsware.htm">http://www.rickrogers.org/xpsware.htm</A>
+<P>
+Bruce C. adds:<BR>
+You may experience some problems if the software was designed for Win9x/Me, or if it was intended for WinNT/2K/XP, but was improperly designed. Quite simply, the application doesn't "know" how to handle 
+individual user profiles with differing security permissions levels, or the application is designed to make to
+make changes to "off-limits" sections of the Windows registry or protected Windows system folders.
+<P>
+For example, saved data are often stored in a sub-folder under the application's folder within 
+C:\Program Files - a place where no inexperienced or limited user should ever have write permissions.
+<P>
+It may even be that the software requires "write" access to parts of the registry or protected systems 
+folders/files that are not normally accessible to regular users.  (This *wont* occur if the application is 
+properly written.)  If this does prove to be the case, however, you're often left with three options:
+<P>
+Either grant the necessary users appropriate higher access privileges (either as Power Users or local 
+administrators), explicitly grant normal users elevated privileges to the affected folders and/or part(s) or 
+the registry, or replace the application with one that was properly designed specifically for WinNT/2K/XP.
+<P>
+Some Programs Do Not Work If You Log On from Limited Account:<BR>
+<A HREF="http://support.microsoft.com/?kbid=307091">http://support.microsoft.com/?kbid=307091</A>
+<P>
+Additionally, here are a couple of tips suggested, in a reply to a different post, by MS-MVP Kent W. 
+England:
+<P>
+If your game or application works with admin accounts, but not with limited accounts, you can fix it to allow limited users to access the program files folder with "change" capability rather than "read" which is the 
+default.
+<P>
+C:\>cacls "Program Files\appfolder" /e /t /p users:c
+<P>
+Where "appfolder" is the folder where the application is installed.
+<P>
+If you wish to undo these changes, then run
+<P>
+C:\>cacls "Program Files\appfolder" /e /t /p users:r
+<P>
+If you still have a problem with running the program or saving settings on limited accounts, you may need 
+to change permissions on the registry keys. Run regedit.exe and go to HKLM\Software\vendor\app,
+where "vendor\app" is the key that the software vendor used for your specific program. Change the 
+permissions on this key to allow Users full control.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Problem Installing MS Updates</font></STRONG>
+<P>
+cherrieweb wrote - I downloaded the new updates from Microsoft, they were unable to be installed.  Is 
+there anything I can do to install them.  I do have automatic updates on.
+<P>
+PA Bear answered:<BR>
+To assure a clean, troublefree install of anything (including Windows Updates), your anti-virus application should be disabled and all other running processes closed (e.g., IE, mail client, Office) before beginning 
+the install.
+<P>
+Richard U. added:<BR>
+I had the same problem on one of my machines. Three out of seven updates installed fine. The remaining four did not. ZoneAlarm was blocking the installs.
+<P>
+To install them manually I had to turn off ZoneAlarm Security Suite (I could do this because I am also 
+behind a router so I was still protected). I then went to the WUupdate folder on my C: drive and ran the four updates from there. I chose NOT to reboot after doing each install. Then, after installing the last one, I 
+rebooted.
+<P>
+With ZA running I was not able to do this.
+<P><BR>
+*** Zone Alarm is just an example. Yes many of us install software all the time without turning off any
+background programs.  Still, sooner or later you'll get stuck and you'll have to do it the correct way :)
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Is Indexing Service Needed?</font></STRONG>
+<P>
+Mr. French asked - I heard indexing service is not needed and can slow down your pc. Is this correct and
+if so, how do I turn it off?
+<P>
+Harry O. replied:
+<P>
+How to turn off Indexing Services - Right click the C drive and select Properties. Uncheck the box next to Indexing and also check the box on the popup that asks if you want to turn off indexing on subfolders. 
+Indexing Services is unnecessary. It creates a database for faster file searching but often causes a 
+[slowdown] in system performance.
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) More On AMD XP3200 Showing As XP2500</font></STRONG>
+<P>
+Vince S. emailed:
+<P>
+The question in bootdisk issue 226 regarding the AMD XP3200 showing up as a XP2500.
+<P>
+If the front side buss (FSB) is set incorrectly in the motherboard bios it may well show up as a XP2500. For 
+a AMD XP3200 the front side buss setting is usually 400 MHz and the clock speed 2.2 GHz. Some 
+Motherboards default power up the first time set to the lowest FSB setting to prevent frying the CPU. If the 
+Bios FSB is set correctly it will show XP3200 in the Bios on power up. The confusion most people have is thinking the XP3200 is the clock speed and it is not. It is the model number. Intel markets there Pentium's 
+by clock speed. It is usually implied that a XP3200 is comparable to a Pentium 3.2 GHz. CPU, even 
+though the clock speeds are different.
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

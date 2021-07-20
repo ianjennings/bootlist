@@ -1,0 +1,266 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 183</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 183 September 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 183rd Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) NICs, USB NICs, And Broadband</a><BR>
+<a href="#2">2) What Is Mapping A Drive?</a><BR>
+<a href="#3">3) Cannot Change Read Only Attribute For XP Folders</a><BR>
+<a href="#4">4) Forgot XP Password</a><BR>
+<a href="#5">5) Some Basics On BIOS Flashing</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) NICs, USB NICs, And Broadband</font></STRONG>
+<P>
+Kenny posts - My daughter recently got 750K broadband from NTL cable.  The engineer who installed it 
+told her that if she installed an NIC she would have a better/faster connection but didn't explain why that 
+was so.  Why would it be better using an NIC rather than USB?  BTW I have a 512K connection via
+Wanadoo and USB modem and it appears to be much faster than her 750K connection, is it just because Wanadoo is a better ISP then NTL?
+<P>
+Thor explains:<BR>
+your daughter's cable connection--750Kbit/sec<BR>
+USB 1.1 throughput---------------12,000Kbit/sec (12 megabit)<BR>
+USB 2.0 throughput---------------480,000Kbit/sec (480 megabit)<BR>
+High speed Ethernet NIC----------100,000Kbit/sec (100 megabit)
+<P>
+Any of the interface options is going to be more than adequate to handle the max bandwidth of the 
+broadband connection she has. The USB connection might use a bit more CPU overhead than the LAN connection though. That is the only real disadvantage I see, and it is a small one. As for why yours seems
+faster, well it's hard to say, but cable broadband is often shared bandwidth with other users in the area, so 
+your daughter is likely not actually getting the full 750Kbit/sec throughput. That figure is an optimal
+best-case-scenario, not necessarily what you can get all the time.
+<P><BR>
+*** If I'm not mistaken, even an old 10 baseT NIC is faster than your cable modem. Correct?
+<P>
+Thor replies:<BR>
+Yup
+<P><BR>
+*** As an aside and perhaps explaining Kennys' engineers comment ie an internal NIC is better than a
+USB nic I often cross paths with the cable techs onsite.  Generally they want to avoid opening up your pc
+and will install a USB nic first assuming you have a free usb port which I totally agree with. 
+<P>
+Sometimes tho 2 or 3 days later tho the customer has drop outs and disconnects and calls the cable
+company which initially tells them its another problem as "It worked when we set it up".  Guess what,
+nine out of ten times putting in an internal NIC fixes the problem. This is where I often cross paths with the
+cable guy ie he comes strutting in with 2 or 3 different brands of internal network cards :)
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) What Is Mapping A Drive?</font></STRONG>
+<P>
+Bradley B. asks - How do you map a drive to a folder?  What is mapping?
+<P>
+Thor answers:<BR>
+Mapping a drive typically means to assign a drive letter to a remote shared network resource, so the 
+local machine can treat that remote resource more like a local resource. For example, computer X 
+has one of it's folders shared to the network. Computer Y is also connected to the network, and can 
+access Computer X's shared folder, but it exists as a lengthy network pathname, and may not be easily 
+or conveniently accessible to some programs in that manner.
+<P>
+So, a solution would be for Computer Y to map the folder to a drive letter, which just means that it assigns 
+a [drive] letter designation to the folder just like it's [one of your] local drives.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Cannot Change Read Only Attribute For XP Folders</font></STRONG>
+<P>
+D.B. wrote - I am having a bit of a problem.  It seems that my folders are  read only, even after I right click 
+and uncheck the read only box.  Why is this and how can I rectify it?
+<P>
+dev answers:<BR>
+You cannot.  It's normal for XP.  [However,] the files therein can be changed. 
+<P>
+Alex N. adds:<BR>
+Read only is an attribute that has no meaning for folders (the directories are always open for writing), and 
+XP makes an alternative use of it.  You can change it and on Apply it will ask if you want the change 
+applied to all contained objects, but the display of it for the folder will revert to greyed.
+
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Forgot XP Password</font></STRONG>
+<P>
+alligator38 asks - I forgot the password to my Windows XP account, and I am the only user.  There must 
+be a way to bypass the sign on at start up--does anyone know how to do this?
+<P>
+Have you tried to log on with the original Administrator user:
+<P>
+How to Log On to Windows XP If You Forget Your Password or Your Password Expires:<BR>
+<A HREF="http://support.microsoft.com/?kbid=321305">http://support.microsoft.com/?kbid=321305</A>
+<P>
+If that doesn't work out, you might try to reset the local Administrator password with one of the methods mentioned here:
+<P>
+<A HREF="http://securityadmin.info/noframes/faqget.asp#password">http://securityadmin.info/noframes/faqget.asp#password</A>
+<BR>
+<A HREF="http://www.petri.co.il/forgot_administrator_password.htm">http://www.petri.co.il/forgot_administrator_password.htm</A>
+
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Some Basics On BIOS Flashing</font></STRONG>
+<P>
+My partner and I have been getting quite a few calls lately regarding bios flashing gone bad or not 
+working.  
+<P>
+What's happening these days is that folks are getting large hard drives and finding out that their
+pc cant see them or use the full capacity of the drive so the usual fix they hear or read about is flashing 
+the bios.  Yes this is a good reason to consider a bios upgrade and most often it does work assuming
+the upgrade addresses the size of the new hard drive. 
+<P>
+You have to do some homework first however before you take the risk. For example, let's say you have 
+a real old pc that came with a 8 gig drive in it.  You may find an updated bios programs on the mobo 
+makers website but that doesn't mean it's a recent file that was produced to handle current model drives. Perhaps the mobo maker only provided a new flash program to see up to 32 gig hard drives and then discontinued support for that motherboard model. Sure the bios flash may go OK but it wont solve your 
+problem. 
+<P>
+Or, a motherboard maker may provide an brand new Sept. 2004 updated bios for a feature you dont 
+even use or need and it may or may not address your large hard drive issue.  So even tho you may see 
+a brand new update for the motherboard/bios you have on the website it doesn't necessarily mean it will 
+do what you need.  
+<P>
+If however, your motherboard maker does address large hard drives with their bios update or to make
+your pc XP friendly then by all means, consider it.  Do the legwork first tho and follow the docs to the letter.
+<P>
+The other problem that we're seeing is folks are being _improperly_  told to use XP to create a dos 
+bootdisk to boot off of for bios flashing or just use a standard win9x bootdisk. This is wrong. You need a
+bootdisk that has no or minimal drivers running. Standard win9X bootdisks have memory managers
+running which is a real no-no to use as a bootdisk prior to flashing your bios. You want a clean boot ie
+a clean config.sys and autoexec.bat.  
+<P>
+In other words yes you can use a standard bootdisk but be sure to rem out all the nonessentials in 
+config.sys and autoexec.bat and also, you can remove all the utils and drivers on the disk to make room 
+for your bios utils.  And yes of course once you're booted to dos you can swap floppy disks if you need to. 
+<P>
+Of course there are always exceptions: ie there are some bios flash programs designed to run in 
+windows or in a command prompt window but this is not the norm. 
+<P>
+So what happens if your flash goes bad? Well, with luck the bios backup you should have made that
+should come with the flash utility may work. Often tho, if a flash goes bad you lose axs to your floppy drive
+which is really frustrating. 
+<P>
+So what do you do if a flash goes bad and you cant restore the old bios? Well, some say get a new
+bios chip, but a new bios chip is likely to cost $59 to $89. New motherboards that come updated are 
+about $89 so if your flash goes bad you might as well just replace the motherboard. 
+<P>
+What also seems to be happening is that folks and perhaps your customers and friends are updating 
+firmware [bios upgrades] just because newer versions are out. This philosophy is NOT recommended.  
+One should consider upgrades ONLY if the upgrade addresses a specific problem you need to address 
+or fix, or, the flash upgrade has new some features you really want. 
+<P>
+On the other hand, how serious is the problem? eg you put XP on and now your pc doesn't shut down
+automatically ie you have to hit the power switch and hold it in for 5 seconds but otherwise the pc is having
+no other problems. You're told correctly by tech support that a bios flash will solve your problem. But, is 
+this a reason to risk flashing? In my opinion NO.
+<P>
+The following is some good general flashing advice from Tyan: 
+<P>
+"Tyan makes no warranties to the usability of a BIOS on our www or ftp areas and are made available to 
+the public on an "as-is" basis.  Upgrading a BIOS without knowing the implications may cause serious 
+adverse affects.  Please do not upgrade a BIOS unless directed to do so by a qualified support 
+technician."  
+<P>
+"Never flash a BIOS while in any Operating System (Win95, Win98SE, Win98ME, WinNT, Win2k, WinXP 
+or Server 2003).  Always follow the precise instructions for how to flash a BIOS correctly.  NOTE:  For 
+WinNT users, after flashing your BIOS, you may need to reinstall the HAL (Hardware Abstraction Layer) 
+for NT to recognize the new BIOS information."
+<P>
+"After flashing your BIOS or upgrading your BIOS it is always a good practice to physically clear the 
+CMOS jumper.  Even though the flash utility has a trigger that should clear the CMOS after the flash it 
+does not always complete this.  To be 100% sure that the flash has taken place clear the CMOS jumper 
+and unplug the power supply from the motherboard.  Wait for 10 minutes and then reset the CMOS 
+jumper back to pins 1 and 2 and plug the power supply back to the motherboard.  This will make sure 
+that the flash is correctly applied to the motherboard."
+<P>
+It is often frustrating tho. ie you have an old pc with a 8.4 or 30 gig HDD that's gone bad and you dont need a
+huge drive but when you go to the store you find that the smallest drives they have are 80s.  Chances are
+that new 80 gig HDD wont install properly or may not even be seen by the bios. Sure you can try the disk
+manager and/or special jumper settings but if that fails see if there is a flash program to try. 
+<P>
+If the flash program does not address the size of your new hdd or it fails then it's time for a new 
+motherboard. But, with the cost of a new hdd and mobo around $200 and new pcs around $500 well..........
+Another option of course is to call the local computer repair folks in the phone book and see if they
+have some used smaller hard drives for sale. This is a long shot however because as you can figure
+they go quickly due to the problem noted above.
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 1 meg zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

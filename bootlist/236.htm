@@ -1,0 +1,304 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 236</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 236 September 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 236th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) XP Only Sees 137 Gig Out Of 250</a><BR>
+<a href="#2">2) Booting From Bootable CDs</a><BR>
+<a href="#3">3) iTunes Install Trouble</a><BR>
+<a href="#4">4) Utility To Remove Items In Add/Remove</a><BR>
+<a href="#5">5) MS Malicious File Removal Tool</a><BR>
+<a href="#6">6) Is It OK To Run More Than One Firewall?</a><BR>
+<a href="#7">7) Roll Back Video Driver</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) XP Only Sees 137 Gig Out Of 250</font></STRONG>
+<P>
+PaulW asked - I have just put my new HDD in my machine to use as a master. I have installed windows 
+xp pro but it only shows as 137GB instead of 250GB.  [ps I dont have a bios limitation]
+<P>
+When I right click on my computer and click manage then click disk management there is 104GB 
+un-allocated. If I right click that and click new partition a window appears.
+<P>
+What I need to know is. Do I need to have a primary or extended partition to get the rest of my HDD 
+back? I dont want another drive like D: or something. I just want the rest of my C: drive back.  It's a newer
+PC and I know that the bios doesn't have the classic 137 gig drive limitation. 
+<P>
+Anna said:<BR>
+The problem arises because most likely when you installed your 250 GB drive, your XP OS did not 
+include SP1 or SP2. The original version of XP did not support large capacity drives, i.e., drives over 
+137 GB. When you subsequently updated the OS to SP1 and/or SP2, the full capacity (roughly 232 GB or 
+thereabouts) of your drive was recognized, however, the disk space beyond the 137 GB is considered "un-allocated space". 
+<P>
+You can, of course, partition/format that disk space (even create additional partitions if you want), but you 
+can't "merge" that space into a single volume using XP's built-in utility (Disk Management). For that you 
+will need to use a third-party program such as Partition Magic.
+<P>
+Carey F. said:<BR>
+Why can I only see 127 to 137 GBytes of my 160 GB drive in Windows XP?:
+<P> 
+<A HREF="http://www.seagate.com/support/kb/disc/faq/137_winxp.html">http://www.seagate.com/support/kb/disc/faq/137_winxp.html</A>
+<P>
+Mike M. answered:<BR>
+Most likely the issue is that you are using a non-SPd version of XP- support for drives over 137 gig did 
+not appear until SP1 came out. What I would do before you start installing software is to download the full version of SP1 or SP2 and then burn what is called a slipstream CD. This will basically give you a new 
+XP install CD, which will have SP1 or 2 already built in.
+<P>
+Ron M. replied:<BR>
+In addition to what the others have said about using the remainder of the hard drive's capacity there is an additional option.
+<P>
+Use a third party partitioning utility such as BootItNG from www.bootitng.com to enlarge the existing 
+partition so that it uses the entire capacity of the drive.   BootItNG is not free but the trial version is fully functional and works for 30 days.  To enlarge the partition you do not need to install it.  Just create the 
+diskette and then boot your computer with that diskette.  
+<P>
+Note that if you do this then you will also need to create a new Windows XP install CD with Service Pack 2 slipstreamed into it so you can do a Repair Install etc. should that be necessary.
+<P><BR>
+*** Another option is to buy the XP SP2 MS CD. It's about $89 at most office supply stores. Personally, 
+I find that easier then creating a slipstream disk. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Booting From Bootable CDs</font></STRONG>
+<P>
+Larry posted - Currently my DVD-CD is slave on IDE#2 but a CD I know is bootable is ignored. BIOS is 
+set to check Floppy | CD | HDD.
+<P><BR>
+*** First, set the bios to boot from CD first, not the floppy first. Also make sure in the BIOS that the CD drive
+is set to AUTO-Detect. 
+<P>
+If you have 2 CDrom drives in a pc, the pc will want to boot from the FIRST CD Drive it finds in the bios. 
+<P>
+In other words, if you have 2 cdrom drives on the same channel the pc will only like to boot from the 
+master. Or, if you have 2 drives, one master and one slave, and you want to boot from the slave drive,
+then go into the bios and disable the Master. 
+<P>
+Or, if you have 2 cdrom drives on different channels the first one the bios sees will be the one you use to 
+boot from if using a bootable cdrom disk.  It wont matter, in most cases, if both are slaves. 
+<P>
+Even with the above said, its still best to have your CD burner as a Master on the Secondary Channel
+if you have a choice of where to set it up. 
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) iTunes Install Trouble</font></STRONG>
+<P>
+TomS wrote - I just tried to install a new version of itunes on my home computer and keep getting an error 
+at the end of the download that says check Windows Installer.  Help on msi.chm or MSDN.  I copied the itunes.exe from my work computer which worked and still got the same error message on my home computer.  How can I get this download to work.
+<P>
+ssengupta suggested:<BR>
+Make sure that you are doing the following things:
+<P>
+1. To install iTunes or iPod software, you need to be logged in as an administrator on the computer.<BR>
+2. You should have the latest Windows Installer engine installed.
+<P>
+<A HREF="http://support.microsoft.com/?kbid=884016">http://support.microsoft.com/?kbid=884016</A>
+<P>
+3. If you have temp.installation files then you must empty your Temp directory and restart.<BR>
+4. If you have older versions of iTunes then Uninstall that.<BR>
+5. Disable AV Software during installation.
+<P>
+I shall suggest you to kindly go through the instructions: Clean up iTunes installer files on the computer as described here:
+<P>
+<A HREF="http://docs.info.apple.com/article.html?artnum=93976">http://docs.info.apple.com/article.html?artnum=93976</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Utility To Remove Items In Add/Remove</font></STRONG>
+<P>
+Me2Ewe asked - For some reason there are lots of items in add/remove that have no Remove option.  
+[Is there a free utility that can remove these items for me so I dont have to go into the registry myself?]
+<P>
+Deango responded:<BR>
+Download this free utility. Add/Remove Pro 2.8 (second one down, I think):
+<P>
+<A HREF="http://www.regvac.com/ffreewar.htm">http://www.regvac.com/ffreewar.htm</A>
+<P>
+Read the instructions well.  It works wonders.
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) MS Malicious File Removal Tool</font></STRONG>
+<P>
+adykes inquired - What's this newfangled Windows Malicious File Removal Tool?  [I ran it now I cant find 
+it in my start menu or control panel]
+<P>
+Richard U. answered:<BR>
+It's a web based tool. Every 2nd Tuesday of the month, Microsoft's official "update Tuesday", it will 
+download to your computer, run and then delete itself from your computer. If it detects something you will 
+be notified by a popup window.
+<P>
+Jupiter Jones adds:<BR>
+It runs and then is gone with nothing in Control Panel, All Programs etc. But there is a log %WINDIR%\debug\mrt.log  See this link for more information about the MSRT:
+<P>
+<A HREF="http://support.microsoft.com/kb/890830">http://support.microsoft.com/kb/890830</A>
+<P><BR>
+*** One may also choose to download the util to run on demand also. Take the time to read the MS
+article and you'll see why I chose to include this in my techletter as I didn't include many details here.  
+
+
+<P><BR>
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6) Is It OK To Run More Than One Firewall?</font></STRONG>
+<P>
+bwaller asked - What is SP2 firewall?  Is it all right to run more than one firewall?
+<P>
+Malke says:<BR>
+Understanding Windows Firewall:<BR>
+<A HREF="http://www.microsoft.com/windowsxp/using/security/internet/sp2_wfintro.mspx">http://www.microsoft.com/windowsxp/using/security/internet/sp2_wfintro.mspx</A>
+<P>
+No, don't run more than one firewall. Either use the Windows Firewall if you have SP2 or a third-party one, 
+but not both.
+<P>
+anon7 adds:<BR>
+SP2 Firewall is also known as Windows Firewall.  It is quite alright to run more than one firewall as long as the second/other firewall(s) is/are hardware based and not any software based.  I have found Windows Firewall quite adequate for my needs and I also have router based firewall which can be configured to 
+your likings.
+<P>
+Ken B. buds in:<BR>
+You'll find those with different points on view on this. Here's mine: don't run two firewalls. You achieve no extra protection, you incur the extra overhead of running two firewalls, and you run the risk (probably small, but not zero) of conflicts between them.
+<P>
+See:<BR> 
+<A HREF="http://www.microsoft.com/athome/security/protect/firewall.mspx">http://www.microsoft.com/athome/security/protect/firewall.mspx</A>
+<P>
+Which includes the following:
+<P>
+"Q. Should I use both the built-in firewall and a software firewall from a different company on my Windows 
+XP computer?
+<P>
+"A. No. Running multiple software firewalls is unnecessary for typical home computers, home networking, 
+and small-business networking scenarios. Using two firewalls on the same connection could cause 
+issues with connectivity to the Internet or other unexpected behavior. One firewall, whether it is the 
+Windows XP Internet Connection Firewall or a different software firewall, can provide substantial 
+protection for your computer."
+<P>
+Also note that if you update your third-party firewall to a new version, the update routine will probably turn 
+it off first. If the Windows firewall isn't running, you will temporarily be left with no running firewall, which is 
+very dangerous. So turn on the Windows firewall temporarily before doing maintenance on your 
+third-party firewall.
+<P>
+The Windows firewall monitors incoming traffic only. Almost any third-party firewall will also monitor 
+outbound traffic, stopping rogue programs trying to call home, and is a better choice.
+<P><BR>
+*** In summary, it's NOT recommended to have 2 software firewalls running. But it IS OK to have a 2-WAY software firewall and a hardware firewall [1 way incoming only], eg your router.  Generally you dont have 
+to configure your router's firewall it does fine at the default settings. If you have teens in the house and 
+haven't password protected your router then there's a good chance he/she will open ports as described 
+on various web pages to play certain games, share files, etc.  So even with a router,  one can see the 
+benefits of having a software firewall on _your_ personal computer. 
+
+
+<P><BR>
+<A NAME="7"></A>
+########################################<BR>
+<STRONG><font color="red">7) Roll Back Video Driver</font></STRONG>
+<P>
+Felicia posted - I downloaded some kind of update/patch from the IBM site the other day - I think it had to 
+do with my NVidia video card. Once it downloaded, my display is now showing as 800x600 resolution 
+and I cannot change it. I tried doing so by moving the arrow to "highest resolution" but every time the 
+screen updates, it just goes back to where it was before (800x600) - and of course everything on my 
+screen is now way too big. I never had this problem before I downloaded the update. 
+<P>
+Ron M. replied:<BR>
+Open Control Panel - System and go to the Hardware tab<BR>
+Click on the Device Manager button<BR>
+Click on the + sign in front of the Display Adapters category line<BR>
+Right-click on the entry for your nVidia display adapter, select Properties and go to the Driver tab<BR>
+Click on the Roll Back Driver button and follow the instructions to revert to your previous video driver.
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 700K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

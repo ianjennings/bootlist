@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 197</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 197 November 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 197th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Cant Stop XP Chkdsk From Running</a><BR>
+<a href="#2">2) Boot Drive Changed To F: After XP Reinstall</a><BR>
+<a href="#3">3) Six Foot SCSI Cable Doesn't Work</a><BR>
+<a href="#4">4) Disk Space Doesn't Increase When I Delete Files</a><BR>
+<a href="#5">5) Anything Wrong With Having Two Firewalls Running?</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Cant Stop XP Chkdsk From Running</font></STRONG>
+<P>
+Java.King.not posted - While in the middle of downloading a file from the internet my PC became 
+unplugged. Since then, everytime I boot my system it runs the chkdsk command on one of my partitions. 
+It always passes the chkdsk command successfully but for some reason it will not set the drive from 'dirty' 
+to 'clean'. Hence each time it runs the chkdsk command on boot. 
+<P>
+I could of lived with this, but is this is now stopping my defragger tool from running. Does anyone know 
+how to set the drive status back to clean to stop the chkdsk utility from running?
+<P>
+Mary answers:<BR>
+Chkdsk does not correct errors without the /F parameter. Go to Run, type CHKDSK  /F and say yes to run 
+at next boot. Then reboot and let it run and fix the errors. (note the space before the /F)
+<P><BR>
+*** A reminder to also set the drive letter you want to be checked, if applicable. 
+<P>
+<A HREF="http://www.fsref.com/pr/dosxp.htm">http://www.fsref.com/pr/dosxp.htm</A><BR>
+You'll have to scroll down to chkdsk.
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Boot Drive Changed To F: After XP Reinstall</font></STRONG>
+<P>
+ross asks - I've just reinstalled XP Pro with SP2 and find my [Primary/Boot] Drive letter is F, not C. I 
+tried comp management but it says it cant change the letter of the boot drive. Is there a way around this 
+please? 
+<P>
+PJB answers:<BR>
+Do you have a multi-format memory card reader fitted? If so, disconnect it, reinstall XP, and it will come 
+up as drive C. Then reconnect the card reader.
+<P><BR>
+*** This is pretty much the same deal I've talked about many times. It's often best to install an OS with your
+perifs turned off or disconnected. Printers, scanners, external drives, cameras, etc., etc., etc.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Six Foot SCSI Cable Doesn't Work</font></STRONG>
+<P>
+Les wrote - I am using an external SCSI with two drives in the case. The system works fine when it is 
+attached to a three foot cable, from the external case to the computer. But when I change the cable to six 
+feet I see the drives but I seldom get the SCSI Bios acknowledgement. If I do get the acknowledgement I 
+still cannot see the drives in Windows Explorer. 
+<P><BR>
+*** Perfectly normal. SCSI devices have ALWAYS liked short cables. Heck, some of the old external 
+SCSI cables I have are only 1 1/2 foot long. Many of you may remember your first scanner and how short 
+the cable was :)  Yes most of the older scanners were SCSI ie you had to put that special card in, 
+remember?  
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Disk Space Doesn't Increase When I Delete Files</font></STRONG>
+<P>
+Melissa complains - Whenever I delete files in XP the disk space does not increase it stays the same. I
+eventually run out of room on my somewhat small disk drive any clues?
+<P><BR>
+*** 90% of the time, from experience with onsite service calls, I find it's due to folks using Nortons 
+Protected Recycle Bin. Disable that if you have it running or just clean it out.  The other ten percent of the 
+time it's due to one or more of the niggles delineated on this page:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=315688">http://support.microsoft.com/?kbid=315688</A>
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Anything Wrong With Having Two Firewalls Running?</font></STRONG>
+<P>
+LarryLOOK posted - My Belkin router has a firewall which is enabled.  Now I have sp2 with firewall turned 
+on.  Anything wrong with having two firewalls running?  Any advantages to this.  So far haven't noticed any problems, but it's only been 2 days. 
+<P>
+Bruce C. explains:<BR>
+No, [There are no advantages to having XPs firewall in addition to a router's]. WinXP's built-in 
+firewall wont provided any added protection. However:
+<P>
+If you use a router with NAT, it's still a very good idea to use a 3rd party software firewall.  Like WinXP's 
+built-in firewall, NAT-capable routers do nothing to protect the user from him/herself (or any "curious," 
+overconfident teenagers in the home).  Again -- and I cannot emphasize this enough -- almost all 
+spyware and many Trojans and worms are downloaded and installed deliberately (albeit unknowingly) 
+by the user.  So a software firewall, such as Sygate or ZoneAlarm, that can detect and warn the user of unauthorized outgoing traffic is an important element of protecting one's privacy and security.
+<P>
+(Remember: Most antivirus applications do not even scan for or protect you from adware/spyware, 
+because, after all, you've installed them yourself, so you must want them there, right?)
+<P>
+I use both a router with NAT and Sygate Personal Firewall, even though I generally know better than to 
+install scumware.  When it comes to computer security and protecting my privacy, I prefer the old "belt 
+and suspenders" approach.  In the professional IT community, this is also known as a "layered defense."  Basically, it comes down to never, ever "putting all of your eggs in one basket."
+<P>
+WinXP's built-in firewall is adequate at stopping incoming attacks, and hiding your ports from probes.  
+What WinXP SP2's firewall does not do, is protect you from any Trojans or spyware that you (or someone
+else using your computer) might download and install inadvertently. It doesn't monitor outgoing traffic at 
+all, other than to check for IP-spoofing, much less block (or at even ask you about) the bad or the 
+questionable outgoing signals. 
+<P>
+It assumes that any application you have on your hard drive is there because you want it there, and 
+therefore has your "permission" to access the Internet. Further, because the Windows Firewall is a 
+"stateful" firewall, it will also assume that any incoming traffic that's a direct response to a Trojan's or 
+spyware's outgoing signal is also authorized.
+<P>
+ZoneAlarm, Kerio, or Sygate are all much better than WinXP's built-in firewall, and are much more easily configured, and there are free versions of each readily available.  Even the commercially available 
+Symantec's Norton Personal Firewall is superior by far, although it does take a heavier toll of system performance then do ZoneAlarm or Sygate.
+<P><BR>
+*** A comment and clarification. You dont want two software firewalls running eg XPs and Kerio for 
+example. However, a software firewall in addition to your router's [a hardware firewall] will not present
+an operational problem. As Bruce explained, the most popular non-XP firewalls also address 
+OUTGOING traffic. Personally I find Kerio to be one of the leaner, minimally invasive firewalls.
+<P>
+I'm using version 2.1.4 and now they are up to version 4. In 4 you get more features for 30 days and after
+30 days you're left with just the basics you really need anyway.
+<P>
+<A HREF="http://www.kerio.com/kpf_download.html">http://www.kerio.com/kpf_download.html</A>
+<P>
+2.1.4 is still available here:
+<P>
+<A HREF="http://download.kerio.cz/dwn/kpf2-win.exe">http://download.kerio.cz/dwn/kpf2-win.exe</A>
+<P>
+Well you may be thinking, I run an updated antivirus, I take care in what I install, and I have a router so 
+why should I care about a firewall that addresses outgoing traffic?  It's a good point really and I'm not
+at all saying that a second firewall is a _must have_ necessity for everybody.  Yes people may disagree 
+with me and that's OK.  On the other hand I could also argue that a lean software firewall cant hurt and will
+add that second layer of protection. 
+<P>
+Also, if you do get a router it will work just fine out of the box generally with the firewall enabled by default.
+And in the docs it will tell you how to access the router's firmware to configure it using its http address. If
+you have a home network the router's firmware can be accessed by any pc on the network, including
+your teenagers pc up in his bedroom. 
+<P>
+Any teen with no experience in routers can find the routers address and default password from most any
+applicable game or music servers website and start opening ports. If you go for a router, I'd suggest
+accessing it and setting up a new password.
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download the previous 100 issues COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

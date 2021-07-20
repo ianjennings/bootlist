@@ -1,0 +1,226 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 186</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 186 September 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 186th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Cannot Display Secure Pages After XP2 Upgrade</a><BR>
+<a href="#2">2) No Beeps At Startup</a><BR>
+<a href="#3">3) Secure FTP Program</a><BR>
+<a href="#4">4) Slower Dialup Connection Is Sometimes Better?</a><BR>
+<a href="#5">5) Mixing Brands And Types Of RAM</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Cannot Display Secure Pages After XP2 Upgrade</font></STRONG>
+<P>
+Ricardofe asked - Could someone help me fix this problem? I cannot display secure pages after 
+installing XP SP2.  
+<P>
+Torgeir B. points to:<BR>
+How to troubleshoot problems accessing secure Web pages with Internet Explorer 6 Service Pack 2:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=870700">http://support.microsoft.com/?kbid=870700</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) No Beeps At Startup</font></STRONG>
+<P>
+claude76 inquires - Got an Aopen AK77-600GN and it was working fine at last switch on. Now I'm not 
+getting any BIOS beeps or boot up. I am getting power to the board as the standby LED is on and the cpu 
+fan is running. I've taken the board out of the case and tried it with just the cpu/heatsink/fan, no joy. Tried it
+with a single stick of RAM in all the slots, no joy. Power Supply in the case is good as I've checked it with 
+a multimeter, as is power out of the power connector. At a bit of a lose now. Can anyone give me any 
+more pointers to try?
+<P><BR>
+*** As an aside, assuming all other parts are good, a motherboard cant send a beep to the speaker 
+unless it has a working cpu. In other words, if you put together a system with just the motherboard and cpu 
+ie no video and/or no ram you will get beeps assuming the speaker is connected properly and works. If 
+you put in a good video card and good ram on a good motherboard but the cpu is bad or missing you 
+wont get beeps. I'm not saying your cpu is bad, ie just an comment that it HAS to be good and seated 
+correctly to get beeps. 
+<P>
+Did you have an internal modem installed? Just asking as a surge can toast a modem and then toast the 
+motherboard causing the same problem you have. Just a guess. eg you can have perfect cpu and ram 
+and video but if the motherboard has been toasted it wont beep even with a good cpu.  The good news
+is if in fact a surge came through your modem and also toasted the motherboard chances are the cpu
+and ram ARE still good.  
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Secure FTP Program</font></STRONG>
+<P>
+"WinSCP is an open source SFTP (SSH File Transfer Protocol) and SCP (Secure CoPy) client for 
+Windows using SSH (Secure SHell). Its main function is safe copying of files between a local and a 
+remote computer."
+<P><BR>
+*** OK that's that's the author's explanation above.  WinSCP is best described as a [secure FTP] utility.
+You will need your webpage host to set up a shell account for you FIRST if you want to use it. Many hosts 
+will not do this for you unless you have a good working relationship with them as it's such a powerful 
+program.  
+<P>
+Note that there are a HUGE number of features in this utility and you may find many of them most useful. 
+<P>
+<A HREF="http://winscp.sourceforge.net/eng/about.php">http://winscp.sourceforge.net/eng/about.php</A><BR>
+<A HREF="http://winscp.sourceforge.net/eng/download.php">http://winscp.sourceforge.net/eng/download.php</A><BR>
+<A HREF="http://heanet.dl.sourceforge.net/sourceforge/winscp/winscp368setup.exe">http://heanet.dl.sourceforge.net/sourceforge/winscp/winscp368setup.exe</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Slower Dialup Connection Is Sometimes Better?</font></STRONG>
+<P>
+ChrisCoaster wrote - I still have primitive dialup, and a little pair of monitors that display the connection 
+speed, in the Systray.
+<P>
+When the speed displayed is 36,000bps, I can surf faster than when it displays 45,000bps.  I also get 
+fewer hangups and fewer PAGE CANNOT BE DISPLAYED at 36k than I do at 45k connection speed.
+<P>
+There. I've said it. Now somebody go ahead and attempt to prove I am cuckoo.
+<P>
+Thor explains:<BR>
+Actually that is more common than you know and I have dealt with it occasionally on customer systems. 
+What it means is that your modem is sometimes negotiating a higher connect speed than it should, in 
+order to maintain stable, error free communication with the host. It may be caused by sporadic noise on 
+the line.
+<P>
+For example, at the moment your modem handshakes with the host's modem to negotiate a connection 
+speed, the line may be clear of noise, or clearer than normal. Soon afterward line conditions may
+deteriorate causing instability, poor throughput, etc. but the modem is stuck on the higher connection 
+speed which is too fast for the line quality. 
+<P>
+A good modem should be able to retrain the connection speed to a lower level in order to stabilize it, but 
+as is often the case, this doesn't always happen, and the modem persists in trying to communicate at the 
+higher speeds, resulting in very poor connection quality. 
+<P>
+The solution often is to artificially limit the top connection speed via AT commands placed in the 
+advanced modem properties. The problem is that your modem may, or may not support some of these 
+commands.  You would need to know the modem manufacturer and then do some research on that make
+and model to see if there are any AT commands to limit the connect speed to the level that you require. 
+Some only allow you to disable things like V.90, V.92, K56, or X2 protocols, which could put you all the 
+way down to 33.6 and lower speeds (often 28.8).
+<P><BR>
+*** I agree. At home here on my dialup and my USR external 28.8 or 33.6 modems all any PC usually 
+gets is a 26.6 connection. The old USR modems are conservative. One can note that if you have the
+volume knob turned up and here the multiple handshakes. 
+<P>
+Then often when I bring a customers computer home to work on it overnight I test their Internet connection
+and wala, I get upper 30s or even low 40s. Again tho, it may work for 10 or 30 minutes but then file 
+downloads stop [ie downloading drivers I need etc. for that system] or the entire connection goes sour. 
+I'm sure it works fine in the customers house so I let it be. 
+<P>
+I first noticed this when the 56K winmodems were the newest thing. Sure, they'd often connect at a joyous
+high speed, but  then there were niggles which were often incorrectly blamed on the ISP. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Mixing Brands And Types Of RAM</font></STRONG>
+<P>
+JTJersey wrote - Bought a Hytek 512MB 266Mhz PC2100 DDR DIMM for a new system that is marked as
+Non ECC on the package.  In my parts cabinet I found a PNY 128MB 266Mhz DDR DIMM, however there 
+are no other markings on it or the packaging indicating PC2100 or Non ECC.  I'd like to throw both of them
+into the system I'm putting together, but I'm concerned about compatibility.  Think they'll play nice 
+together?
+<P><BR>
+*** You will never know unless you try. It's pretty much the same old rule, eg often newer parts just dont
+get along with older parts on the same channel [for hard drives] or bank [for ram]. There is no way to test
+this in advance, even with hard drives of the same brand but vastly different manufacturing dates. What
+may work perfectly in one pc may not work at all in another.  
+<P>
+I've often mixed ram on many different systems and sometimes it works perfect and other times its error
+city in certain applications, namely Explorer or even IE, or even Netscape or your html editor for that 
+matter.  Windows Explorer is one of the best free ram compatibility testers out there :)
+<P>
+If you are doing that system for your friend or client however, I'd  be wary as it may work just fine for the
+30 minutes you test it out in your shop or home but may not work fine in the long term with the mixed ram. 
+<P>
+A single large ram stick is the best, or second best is 2 [sister] sticks bought at the same time. Mixing
+brands, types, sizes, ages, is always a hit or miss option.  This is the reason that it's often recommended
+that when you buy a new pc you should always spring for the amount of ram you think you'll need 2 or 3 
+years down the road. 
+<P>
+Thor adds:<BR>
+Chances are that the PNY module is non-ECC as well (it's the most common type used), or else it would probably be labelled as such. In any case, the modules should work ok in non-ECC mode I would think 
+even if one is an ECC module.
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 1 meg zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

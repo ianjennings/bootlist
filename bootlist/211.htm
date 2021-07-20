@@ -1,0 +1,249 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 211</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 211 February 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 211th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) StartUp Utility</a><BR>
+<a href="#2">2) How I Auto Backup Data Over My Home Network</a><BR>
+<a href="#3">3) XP Lost My Sound Card</a><BR>
+<a href="#4">4) Email Reply Verification Service</a><BR>
+<a href="#5">5) Do I Need To Reboot My Explorer?</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) StartUp Utility</font></STRONG>
+<P>
+MrZorg asked - Is there a good startup utility that you can recommend? 
+<P>
+There are several. Note that the best way to disable a startup is to use the program itself. After that of
+course you have msconfig built into windows. Some third party utilities are below. Autoruns is the most
+modern. 
+<P>
+Autoruns:<BR>
+<A HREF="http://www.sysinternals.com/ntw2k/freeware/autoruns.shtml">http://www.sysinternals.com/ntw2k/freeware/autoruns.shtml</A>
+<P>
+StartUp Control Panel:<BR>
+<A HREF="http://www.bootdisk.com/casandra/start28.zip">http://www.bootdisk.com/casandra/start28.zip</A>
+<P>
+StartUpCop:<BR>
+<A HREF="http://www.pchelp911.com/files/startcop.zip">http://www.pchelp911.com/files/startcop.zip</A>
+
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) How I Auto Backup Data Over My Home Network</font></STRONG>
+<P>
+Smith called - I have a few pcs in my home connected to a router and my network is set up and runs. I
+was wondering if you could recommend a file backup program that works over the network and can
+do both mirroring folders and entire hard drives to other computers in my network. 
+<P><BR>
+*** There are a few of them, but the one I'm sold on and have running 24/7 is Second Copy 2000 from:
+<P>
+<A HREF="http://www.centered.com/">http://www.centered.com/</A>
+<P>
+Mind you, I tried it as shareware, then registered it, and the Author has no idea who I am or that I'm even
+mentioning it here. Here's why I like it:
+<P>
+I have a second, pre done bootable hard drive in my wife's pc that I set Second Copy set to mirror my 
+entire hard drive to once/week. I have a second hard drive in my son's pc that I have it set to mirror my 
+most important folders every 3 hours.  Yes I still backup important folders to cd regularly but  you know 
+how that is, you forget to do it, run out of media, or just plain put it off :)
+<P>
+It's a really productive way to utilize older drives as most often the other pcs in your home have room for 
+them. You can set Performance - Background Copy Priority to [Low] and you wont even notice its working.
+<P>
+I also select Exact Copy - which deletes files on the destination [Drive or Folder] you deleted and/or 
+cleaned up on the Source Folder or Drive. No need to keep a backup of useless temp or Intenet cache
+files after a cleaning on the Source PC.  
+<P>
+Once you get used to the program and reading the Log you wont be concerned about the copy Errors as 
+they are simply files in use that you dont need copied anyway. One can even set Second Copy to [Hide 
+icon from system tray] if you dont want to see the E in the tray. 
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) XP Lost My Sound Card</font></STRONG>
+<P>
+John T. posted - Recently my soundblaster audigy2 just stopped working.  I checked in device manager, 
+and it wasn't even listed in there, and the add hardware wizard couldn't find it.  I tried reinstalling the drivers
+from the creative disk, but they wouldn't install since the card wasn't detected.
+<P>
+I haven't made any configuration changes to this machine for about 2 weeks prior to this happening, so 
+this doesn't appear to be the problem.
+<P>
+Anyone know how I can get this card working again?
+<P><BR>
+*** A common niggle. Assuming your sound card is good the standard operating procedure for that type
+of problem is to boot to Safe Mode and REMOVE ALL instances of sound in device manager. On the
+reboot XP should find your card and then you install the drivers according to the docs. ie sometimes
+the docs say to cancel the OS's attempt to install drivers and then run the install from the sound card
+CD. Sometimes you can just point XP to the drivers folder on the creative or other brand drivers cd. 
+<P>
+And of course sometimes XP will just install the drivers automagically using it's own drivers or using
+the drivers you originally installed. 
+<P>
+It the above fails then sometimes you have to pull the card and put it in another slot on the motherboard to
+force XP to find it fresh. Sound cards used more resources than any other card so its a good habit
+to have it first in the lineup ie the next one down from the AGP video card but skip a pci slot. After ten years
+of building PCs this setup has always worked for me:
+<P>
+AGP video card<BR>
+Empty PCI slot<BR>
+Sound card<BR>
+NIC<BR>
+Modem
+<P>
+Yes I know integrated motherboards [eg video, sound, NIC onboard] are very popular now so the above
+is not an issue but you may still encounter the "lost sound card" problem on such boards as well. 
+<P>
+As an aside, if you're building your own PC check the bios for an item that says: Plug and Play OS 
+[YES or NO] as by default many motherboards come default as NO and you have to change it to Yes
+for best results when installing windows.  Also, check the serial [com] port settings. If you are not going to 
+be using them Disable them in the bios to free up more resources for the cards and devices you are 
+going to be using. 
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Email Reply Verification Service</font></STRONG>
+<P>
+Jet57 asked - I get lots of spam so I am considering using an email verification service. It is the type of
+service that asks the sender to supply more information in order to send mail to me or to reply to me. 
+It it worth the hassle I figured I would ask you as you perhaps see lots of that type of thing? 
+<P><BR>
+*** It may be worth the hassle for you and your family and friends to communicate and reduce spam to
+your private addresses. By private I mean you only use a particular email address for friends and 
+family. By private I mean an email address that you NEVER use on webpages, for newsletters, for writing
+to folks you dont know, etc. 
+<P>
+For business and general use however, I STRONGLY suggest NOT to subscribe to such a service. 
+<P>
+Why? Take for example you are asking for email tech support for that new printer. The helpdesk person 
+is NOT going to bother jumping through additional hoops to help you as many of those verification 
+services just take you to a webpage where you have to fill out a form, have put in the first and last name EXACTLY as it appears in your mail setup and who remembers that off the bat, and read those hard to 
+read graphics and enter in those characters, etc. 
+<P>
+Or how about registering for a PIN, some new software, or just signing up for a service. This is mostly 
+handled by BOTS and the BOT cant answer questions or fill in forms which in these cases you've just 
+added hours of hassle and time trying to get what you need and/or paid for as you'll never see the 
+response. 
+<P>
+Or how about this example that happened to me the other day.  The service required me to fill in a first 
+and last name or the form wouldn't work. I have only one name in my email and it has a period in the 
+middle. The form wouldn't allow it and I'm not going to change my email setup just to reply to a single 
+person. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Do I Need To Reboot My Explorer?</font></STRONG>
+<P>
+Pete wrote - I have a Ford Explorer that runs great but the other day while going to work the Check Engine
+light came on and it's been on for weeks now. My truck runs the same as always and I dont have the
+money now to take it to the repair shop.
+<P>
+I heard that sometimes all you need to do is reboot the computer to make the light go away if so how do
+you do that?
+<P><BR>
+*** The check engine light may or may not indicate a problem or a potential problem. For example, on
+some vehicles it may go on if a sensor goes bad or there is a problem with the pollution control among
+many other reasons. That may or may not affect performance. 
+<P>
+Sometimes tho it's just an error ie some code stuck in ram.  It's common for auto repair shops to simply
+disconnect the car's computer, wait a bit, and plug it back in and see if the Check Engine light goes
+away. Personally tho, I find it's easier to just remove the Negative Battery terminal overnight and connect
+it back in the morning as you can shed some skin pulling out the computer connector.  
+<P>
+If in the morning the light is off, then all you needed was the reboot. If it's still on, then I'd consider having
+it checked out once you have the funds.  Note that the Check Engine light may indicate a bad airbag
+sensor in the bumper and since you generally need two of them to pop a bag in case of an accident
+that's surely a good reason to take the indicator Light seriously. 
+<P>
+As an aside, certain auto makers used to, [I have no idea if they still do], have it built in where that light 
+goes on every 15,000 miles like my parents old Volkswagon Rabbit did in the late 70s. In the Rabbit there 
+was a secret button you pushed under the hood on the pc to reboot it and the light would go off.  The 
+manual, however, said to take it to the dealer :)  
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

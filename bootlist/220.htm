@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 220</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 220 April 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 220th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Tool To Track Registry Changes</a><BR>
+<a href="#2">2) Link For QuickTime Without iTunes</a><BR>
+<a href="#3">3) My Scanner Wont Work Over My Network</a><BR>
+<a href="#4">4) Do I Have A Memory Leak?</a><BR>
+<a href="#5">5) Need Bios Upgrade For Old PC</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Tool To Track Registry Changes</font></STRONG>
+<P>
+boe asked - [I used to use a tool] to know exactly what files were added/modified and what registry 
+changes were made in case you wanted to reverse it or roll it out to your clients but I can't remember 
+what it was.  Can anyone tell me of any good tools/utilities for this?
+<P>
+Kelly answered:<BR>
+Regmon:
+<P>
+<A HREF="http://www.sysinternals.com/ntw2k/source/regmon.shtml">http://www.sysinternals.com/ntw2k/source/regmon.shtml</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Link For QuickTime Without iTunes</font></STRONG>
+<P>
+Warrick W. and  Harold S. emailed:
+<P>
+[In regards to the article in the last issue], you can download Apple's Quicktime without the iTunes at:
+<P>
+<A HREF="http://www.apple.com/quicktime/download/standalone/">http://www.apple.com/quicktime/download/standalone/</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) My Scanner Wont Work Over My Network</font></STRONG>
+<P>
+rab asked - I have a network at home, 2 Dell computers, and the printer works great, but I can't get the 
+scanner to work on the network?  Is there some other way to network it?
+<P>
+Rick said:<BR>
+In general, most scanners for the home user cannot be networked. You can only use it on the machine it 
+is connected to.
+<P>
+Carey F. wrote:<BR>
+You cannot share a scanner over a network in Windows XP, only printers. You can install the scanner 
+software on one PC, but you cannot share the scanner itself over a network.
+<P>
+Help and Support Incorrectly States That Sharing of Scanners is Possible:<BR>
+<A HREF="http://support.microsoft.com/?kbid=304097">http://support.microsoft.com/?kbid=304097</A>
+<P>
+Bruce C. adds:<BR>
+Normally, input devices cannot be shared over a network, at all, but this isn't always true of scanners.  
+You'll be able to share the scanner only if it's manufacturer provided specialized software for that 
+purpose.
+<P>
+You have to use a network-capable scanner (which immediately eliminates most, if not all, USB scanners)
+and specialized software (that comes with the scanner) to do this.  If you're talking about a home 
+consumer grade flatbed USB or parallel port scanner, you very probably can't.
+<P>
+HP, Canon, Xerox, Oc�, Kyocera Mita, and other companies manufacture network capable scanners 
+(They're actually multi-function devices that also copy, print, and sometimes fax and email) and the
+requisite specialized software.  The cost of such devices usually starts somewhere just below $5,000.00 
+USD.
+<P>
+The HP PrecisionScan Pro application, versions 2.03 and higher, which normally comes with some of 
+HP's low-end business scanners, permits some of the scanning functions to be shared.  Consult the
+documentation that came with the scanner.  (I know it works, if not very well; I've set up HP ScanJet 6300C 
+and 7490C devices to be shared, using the supplied software.)
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Do I Have A Memory Leak?</font></STRONG>
+<P>
+Fitz wrote - I'm running WinXP Pro. I like to know how to identify to source of a memory leak. I have 1GB of 
+RAM. After bootup, I'm using about 275MB of RAM for XP and running task. After using the computer for 
+awhile, regardless of program, that will increase to over 450MB with everything closed and back to 
+desktop. Does this sound like a memory leak, and if so, how do I identify the program/process that is 
+causing it?
+<P>
+Ron M. said:<BR>
+The basic principle with Windows and RAM is that "unused RAM is wasted RAM".
+<P>
+Windows will, by design, always attempt to find some use, anything whatever that might potentially be of 
+some benefit, for every bit of RAM installed in the computer.   So it will increase the size of the disk cache 
+to take advantage of available RAM, and will retain the program code from closed applications in RAM 
+in anticipation that the application might be launched again, as is very often the case.
+<P>
+And Windows will instantaneously drop the more trivial of these usages should some better use come 
+along for some of that RAM.
+<P>
+Also there are many system components and shared .DLL files that are not loaded into RAM until the first 
+time they are actually needed. And because these are common items, used by more than one 
+application program and/or Windows function, these items will be retained in RAM once loaded, even 
+though the application that originally needed them has since been closed.
+<P>
+Ken B. added:<BR>
+It sounds perfectly normal. Windows is designed to use all, or nearly all, your RAM all the time. If your 
+apps don't need it, Windows will try to find another use for it (such as using it for cache), then give it back 
+when the apps need it again.
+<P>
+Despite what some people apparently think, this is good, not bad. Unused RAM is wasted RAM. You 
+paid for it all, and shouldn't want to see any of it unused and wasted.
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Need Bios Upgrade For Old PC</font></STRONG>
+<P>
+Loek posted - A friend of mine owns a 1999 Fujitsu Siemens 450 Mhz computer. After having XP installed 
+the system keeps rebooting.  I found out the Award-bios needs to be upgraded and the upgrade can be 
+achieved by paying $ 29.95.  Unfortunately, neither my friend nor I have a credit card.  We would be very 
+happy if anyone could help us out.
+<P><BR>
+*** Try the utils below to see if they can ID your motherboard and/or model, assuming you cant ID it on the
+first screen that shows when you boot up.
+<P>
+<A HREF="http://www.bootdisk.com/ditto/ctbios15.zip">http://www.bootdisk.com/ditto/ctbios15.zip</A><BR>
+<A HREF="http://www.bootdisk.com/ditto/mbid14.exe">http://www.bootdisk.com/ditto/mbid14.exe</A>
+<P>
+One of them should be able to find your maker and model. Then go the the motherboard makers website
+and look for the upgraded bios you need. 
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 232</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 232 August 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 232nd Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Lost Help & Support In XP</a><BR>
+<a href="#2">2) Popup Ads And Email Freezing</a><BR>
+<a href="#3">3) Networking XP And SE</a><BR>
+<a href="#4">4) Webhost Notice "Out Of Disk Space"</a><BR>
+<a href="#5">5) Take Out The Trash</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Lost Help & Support In XP</font></STRONG>
+<P>
+Peter H. asks - I have lost Help & Support features on all programs on XP Home.  Have tried Restore 
+twice without success.  Can this feature be restored any other way without ReFormatting?
+<P>
+Crack answered:<BR>
+Do you mean you tried to reinstall the Help and Support features? This worked for me when I had the problem.
+<P>
+<A HREF="http://windowsxp.mvps.org/rebuildhelp.htm">http://windowsxp.mvps.org/rebuildhelp.htm</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Popup Ads And Email Freezing</font></STRONG>
+<P>
+Will asked - When I send mail it freezes. And my computer keeps opening up webpages and ads even
+though I dont have a web browser open. I have Avast anti-virus so I dont think this is a virus. What can I 
+do?  I didn't have any problems until my daughter came home from summer camp.
+<P><BR>
+*** You have a trojan which disabled your anti-virus and may have even attached itself to half a dozen or 
+more .exe files in the Avast folder. 
+<P>
+First step is Add/Remove and remove anything that looks like its malware or spyware. This is a tough one
+if you are not used to looking in Add/Remove and are unfamiliar with it. But, for example, if you see apps
+like "noads" or "ssee69" or "shopagent" or "24connect" etc items like that got to go. You will get used to 
+the lingo of malware with experience.  Most legit entries are described so you can understand what it it. 
+Others may not be so easy to understand what they are like video drivers and such so again, be careful. 
+<P>
+Using another PC, download the following FREE programs and burn them to a standard CD:
+<P>
+Avast <A HREF="http://www.avast.com/eng/down_home.html">http://www.avast.com/eng/down_home.html</A><BR>
+AVG <A HREF="http://free.grisoft.com/freeweb.php">http://free.grisoft.com/freeweb.php</A><BR>
+Spybot <A HREF="http://www.safer-networking.org/en/index.html">http://www.safer-networking.org/en/index.html</A><BR>
+Adaware <A HREF="http://www.lavasoft.de/support/download/">http://www.lavasoft.de/support/download/</A>
+<P>
+Make a folder on the infected PC called aaa or whatever and copy the 4 files to it from the cd. Now boot to
+SAFE MODE.  Install and run all 4 programs, starting with AVG. AVG may or may not pick up and delete
+the infected files in Avast but its worth a try and often it does. 
+<P>
+The key is to get rid of as much trash as possible in Safe Mode as generally most malware wont run/load 
+and/or wont run 100% inside Safe Mode. When finished, do a standard boot. Launch each program and
+do the internet update first to get the latest definition files, then let it do a full scan again, ON ALL DRIVES. 
+<P>
+The above method "should" work. Be sure to disable the email scanning option in AVG after you are 
+done if you decide to run AVG full time. Email scanning using ANY anitvirus is a waste of time and often corrupts email and/or email attachments and/or causes email sending/receiving problems. It's a 
+redundant feature that is NOT needed or wanted.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Networking XP And SE</font></STRONG>
+<P>
+Tony S. asked - Can someone give me a bit of simple advice, please?
+<P>
+I'm buying a laptop with Windowsxp which I intend to network (802.11) with my desktop. It will be a peer to peer network, ie, I will be accessing files and printers from each machine, in each direction.
+<P>
+If I have the XP machine formatted NTFS, will I be able to read files on it from and to the Win98SE 
+machine?  Or must I have the XP machine formatted FAT32 as well to enable file transfer?
+<P>
+Bruce C. explained:<BR>
+The file systems on the various computers communicating over a network are completely irrelevant, as 
+none of the individual computers' operating systems ever directly access the other computers' hard 
+drives. 
+<P>
+Instead, a computer sends a "request," if you will, for the desired data, and the operating system of the 
+host ("receiving") computer accesses its own hard drive (whose file system it obviously can read) 
+and then sends that data back to the requesting computer as neutral packets of information that are completely independent of the file systems on the respective computers. 
+<P>
+After all, don't you use a Windows-based PC (whether it's FAT32 or NTFS) to access data stored on the Internet's mostly Unix [or Linux] servers, which use a completely different file system?
+<P>
+Personally, I wouldn't even consider using FAT32 when NTFS is an option.  FAT32 has no security capabilities, no compression capabilities, no fault tolerance, and a lot of wasted hard drive space
+on volumes larger than 8 Gb in size.  But your computing needs may vary, and there is no hard and fast answer.
+<P>
+Somewhat more technical information is here:
+<P>
+Limitations of the FAT32 File System in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=314463">http://support.microsoft.com/?kbid=314463</A>
+<P>
+NTFS file system:<BR>
+<A HREF="http://www.digit-life.com/articles/ntfs/">http://www.digit-life.com/articles/ntfs/</A>
+<P>
+Some info on networking here:
+<P>
+On the WinXP computer, create local user account(s), with non-blank password(s), that have the desired access privileges to the desired shares.  Log on to the other PCs using those account(s), and you will be 
+able to access the designated shares, provided your network is configured properly.  Also, if running 
+WinXP SP1 or later, make sure that WinXP's built-in firewall is disabled on the internal LAN connection.  If using WinXP SP2, make sure that you've either disabled the built-in firewall, or set the firewall to allow file and print sharing.
+<P>
+Usually, WinXP's Networking Wizard makes it simple and painless -- almost entirely automatic, in fact.  There's a lot of useful, easy-to-follow information in WinXP's Help & Support files, and here:
+<P>
+Home Networking:<BR>
+<A HREF="http://www.microsoft.com/windowsxp/home/using/howto/homenet/default.asp">http://www.microsoft.com/windowsxp/home/using/howto/homenet/default.asp</A>
+<P>
+Networking Information:<BR>
+<A HREF="http://www.onecomputerguy.com/networking.htm">http://www.onecomputerguy.com/networking.htm</A>
+
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Webhost Notice "Out Of Disk Space"</font></STRONG>
+<P>
+You're shopping for a webhost and the plans says "50 megs disk space".  Is that enough? When you
+add up all the files on your site it only comes to 25 megs so you sign up with a hosting company and
+a month later you get a warning that your account is low on space. It doesn't seem to make sense eg
+what took up all that extra space that my hosting company now wants to charge me additional fees?
+<P>
+The "short" answer is email and webstats.  For example, suppose you set up a domain with a host and
+then setup 6 email accounts for your employees.  All those 10 meg photoshop and mp3 files your 
+employees are saving in their accounts count towards the disk space total. Or, if you have a busy site 
+like mine then the stat logs may take up perhaps ten times the space as the basic site files. 
+<P>
+I asked my hosting company to write a little tidbit on disk space for a domain and here's what they came
+back with for my domain:
+<P>
+Website disk stats for Bootdisk.Com.  I compiled these directly from server:
+<P>
+This set of stats applies to a couple conditions:<BR>
+1.  Your host does backups for you<BR>
+2.  Your host allow site tracking stats.<BR>
+3.  You have email.
+<P>
+An account that has 1G of space is normally pretty spacious for most. However there are mitigating circumstances.
+<P>
+1. You have a busy site.  As you will see below, site tracking can consume tremendous amounts of 
+space.  This space is charged against your account and when the account is full, you loose functionality.  Often E-mail service stops completely as there is no where for it to store it.
+<P>
+2. Backups, may be the most underrated of all services and certainly one of the most costly to provide, however the vast majority of the budget or low cost hosts simply can not provide this as they have 
+already oversold available disk space as is.  A typical backup array will do complete site backups 
+every night, every week and every month. 
+<P>
+This now takes your 1 Gig site and makes it a total of 4!  If a host does not keep your data backed up
+he frees up web space (he can proceed to over sell even more), he lightens server loads (backups take 
+4 to 8 hours and consume resources, they must be accounted for in costing) A site that does not provide backups essentially can sell 3-4 times the amount of accounts as opposed to a site that does provide 
+this service. 
+<P>
+How important is your data? Can you replace it easily and do you have a copy downloaded and saved 
+on a daily basis? (this counts against your bandwidth allotment if you do) The other problem is many
+"Backup Services" do not include your "database" files. These are located in a separate partition and 
+are not dealt with by "User initiated" backups. Server initiated backups must be configured for this service.
+<P>
+3. E-mail.  Often the second biggest thief of space on your account. Make sure you delete the trash bin 
+and if need be ssh into server and verify that your mail boxes are in fact emptied.  You can also have the server administrator do this with a simple email.
+<P>
+Service is most critical when picking a hosting company. If you business relies on your site, you really 
+can not afford not to have server side backups available at all times in case of either server failure or 
+your own mess-up and you trash your site.  System administrator can restore your site in an hour or less.
+<P>
+Stats: (Urchin, webalizer, etc)<BR>
+1.0G    total
+<P>
+Mail: (Incl all sub accounts)<BR>
+151M    total
+<P>
+Home: (Your physical site)<BR>
+94M     total
+<P>
+Backups: (at least they are compressed and not charged against your account)<BR>
+670M X 3
+<P>
+The busier the site the more space you need for stats. Again, my site is quite busy so the data adds up
+real quick. Note that one should be able to set your stat programs to start from scratch every month to 
+save disk space and additional charges. Again, the example above is extreme in regards to stats, but
+you may still need to keep an eye on email space. 
+<P>
+I'd like to thank RandyO. for helping out with the above article. Randy is one of the owners of the hosting
+service I've been using now for about 2 years. Also, in my job I have to deal with perhaps half a dozen 
+other hosting services each month to help customers fix problems, etc. Even with all my experience with
+all types of hosting plans and different companies I remain quite firm that you get the best quality and 
+bang for your buck with:
+<P>
+1GigHost:<BR>
+<A HREF="http://www.1gighost.com/">http://www.1gighost.com/</A>
+<P>
+Check it out. As a special bonus for the loyal readers of this publication 1gighost is offering a 33% 
+discount on its posted prices for either a monthly or annual subscription. Just enter in the term [bootlist232] when it asks you for a coupon. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Take Out The Trash</font></STRONG>
+<P>
+okeefe58 asks - Under c:\documents and settings\owner\local settings\temp I have over 1000 files at 
+over 400 mbs--Can these files be deleted?
+<P>
+PA Bear responded:<BR>
+See Take Out the Trash:<BR>
+<A HREF="http://aumha.org/a/health.php#tip6">http://aumha.org/a/health.php#tip6</A>
+<P>
+After rebooting, you can safely choose to delete everything in C:\Documents and Settings\[username]\Local Settings\Temp.  Windows wont allow you to delete anything needed during the current boot.
+<P>
+Also see:
+<P>
+Description of the Disk Cleanup Tool in Windows XP:<BR>
+<A HREF="http://support.microsoft.com/?kbid=310312">http://support.microsoft.com/?kbid=310312</A>
+<P>
+Disk Cleanup Utility:<BR>
+<A HREF="http://www.theeldergeek.com/disk_cleanup_utility.htm">http://www.theeldergeek.com/disk_cleanup_utility.htm</A>
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

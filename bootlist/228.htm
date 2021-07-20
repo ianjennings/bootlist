@@ -1,0 +1,258 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 228</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 228 June 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 228th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Utility To Check Drive Fragmentation For Win98</a><BR>
+<a href="#2">2) Problem Installing MS XP Updates - Continued</a><BR>
+<a href="#3">3) Cant Replace Corrupt Win98 Files While In Use</a><BR>
+<a href="#4">4) USB Or Firewire For External Drives</a><BR>
+<a href="#5">5) Recommended First Step After Installing XP</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Utility To Check Drive Fragmentation For Win98</font></STRONG>
+<P>
+Mr. Davis asked - I have Windows 98 SE and when I go to defrag it doesn't show me how much the drive
+is fragmented like it did in Windows 95. Am I missing something? 
+<P><BR>
+*** Use CrackUp to see in advance if you need to defrag or not:
+<P>
+<A HREF="http://wittswallpapers.com/Oldies/crackup.zip">http://wittswallpapers.com/Oldies/crackup.zip</A>
+<BR>
+<A HREF="http://www.pctipp.ch/library/actions/pre_download.asp?id=369">http://www.pctipp.ch/library/actions/pre_download.asp?id=369</A>
+<BR>
+<A HREF="ftp://cyberia.dnsalias.com/pub/filebase/windows/apps/tools/CRACKUP1.ZIP">ftp://cyberia.dnsalias.com/pub/filebase/windows/apps/tools/CRACKUP1.ZIP</A>
+<P>
+When you run the program you'll get a report on the percent fragmented per drive selected. If it's less 
+than 5% I probably wouldn't bother. In any case delete all your internet cache and temp files before you
+defrag to avoid wasting time and to do a proper job. 
+<P>
+Also set the screen saver to None and do it in Safe Mode if it keeps stalling in standard windows even
+with your background apps turned off with msconfig or the third party app EndItAll. And use the defrag that
+comes with WinME as it's much faster:
+<P>
+<A HREF="http://www.wilders.org/HTMLobj-1636/newdefrag.zip">http://www.wilders.org/HTMLobj-1636/newdefrag.zip</A><BR>
+<A HREF="http://www.bootdisk.com/temp/newdefrag.zip">http://www.bootdisk.com/temp/newdefrag.zip</A>
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Problem Installing MS XP Updates - Continued</font></STRONG>
+<P>
+Eugene G. emailed: <BR>
+Subject: BootLIST 227 Item 3) Problem Installing MS Updates
+<P>
+Recently I have encountered several PCs which do not update (all updates are shown as 0 KB 0 minutes) - I don't know what causes this problem. For most, I found running the following batch file did the trick:
+<P>
+echo on<BR>
+net.exe stop wuauserv<BR>
+cd /d %windir%<BR>
+rd /s softwaredistribution<BR>
+REGSVR32 %windir%\system32\qmgr.dll<BR>
+REGSVR32 %windir%\system32\qmgrprxy.dll<BR>
+REGSVR32 %windir%\system32\wuapi.dll<BR>
+REGSVR32 %windir%\system32\wuaueng1.dll<BR>
+REGSVR32 %windir%\system32\wuaueng.dll<BR>
+REGSVR32 %windir%\system32\wucltui.dll<BR>
+REGSVR32 %windir%\system32\wups.dll<BR>
+REGSVR32 %windir%\system32\msxml3.dll<BR>
+net.exe start wuauserv<BR>
+net.exe stop cryptsvc<BR>
+rename %windir%\system32\catroot oldcatroot<BR>
+rename %windir%\system32\catroot2 oldcatroot2<BR>
+net.exe start cryptsvc
+<P><BR>
+*** Item 3, Issue 227 was very basic, but it's easy sometimes to overlook the basics. In addition to your
+batch file I also have this to refer to:
+<P>
+<A HREF="http://www.bootdisk.com/xptop20.htm#4">http://www.bootdisk.com/xptop20.htm#4</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Cant Replace Corrupt Win98 Files While In Use</font></STRONG>
+<P>
+michael.a. posted - When my computer starts windows it comes up with a message box saying that
+the following system files are corrupt :
+<P>
+DDEML.DLL<BR>
+MCICDA.DRV<BR>
+WINASPI.DLL
+<P>
+Windows still is running fine and I have replacement files for them but I cant replace them because they 
+are in use. I tried using SFC and it doesn't work. I have windows 98 SE.
+<P><BR>
+*** Try replacing them after booting to Safe Mode, or, after booting with a basic bootdisk. If you use a
+bootdisk windows has no chance of running so they cant be in use. Still, even if that works, you may have
+to re-register them as two of them are windows dlls. 
+<P>
+<A HREF="http://word.mvps.org/FAQs/Customization/RegisterDLL.htm">http://word.mvps.org/FAQs/Customization/RegisterDLL.htm</A>
+<P>
+Regarding SFC - System File Checker in win98 I too haven't found that utility to be of much use. 
+<P>
+Jim B. said:
+<P>
+Sometimes the tools below will find files which they are unable to delete because they are in use.
+<P>
+A program called Copylock, here:
+<P>
+<A HREF="http://noeld.com/programs.asp?cat=misc">http://noeld.com/programs.asp?cat=misc</A>
+<P>
+Can aid in the process of replacing, moving, renaming or deleting one or many files which are currently 
+in use (e.g. system files like comctl32.dll, or virus/trojan files.)
+<P>
+Another is Killbox, here:
+<P>
+<A HREF="http://www.downloads.subratam.org/KillBox.zip">http://www.downloads.subratam.org/KillBox.zip</A>
+<P>
+A third which is a bit different but often very useful is Delete Invalid File, here:
+<P>
+<A HREF="http://www.purgeie.com/delinv.htm">http://www.purgeie.com/delinv.htm</A>
+<P>
+Which handles invalid/UNC file/folder name deleting, rather than the in use problem.
+<P><BR>
+*** The above utils should work in both win98 and XP.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) USB Or Firewire For External Drives</font></STRONG>
+<P>
+Advid wrote - I want to add an external hard disk and external DVD writer to my XP PC.  If these have a 
+choice of either USB2 or Firewire - does one outweigh the other? Is firewire connection the same as USB 
+(Win XP home) - ie  Do I just plug in and Win will see the 'extra' drives.   Or do I need any extra 
+software/CD to install it
+<P>
+Oxford Systems answered:<BR>
+Look for some to disagree on this but current generation Firewire would be the preferable to USB2. 
+While the theoretical transfer rate of USB2 is faster (480mpbs vs. 400 mbps for Firewire), in practice 
+Firewire is a more efficient protocol with faster access and transfer rates in the real world.
+<P>
+If your system has Firewire ports, you can just plug it in. Firewire support is built into Win XP. Be aware that 
+Win XP SP2 upgrades "broke" Firewire and caused some very slow transfer rates. There is an 
+explanation and a fix for it here: 
+<P>
+<A HREF="http://support.microsoft.com/?kbid=885222">http://support.microsoft.com/?kbid=885222</A>
+<P>
+Edward W. T. adds:<BR>
+Re USB2 or Firewire, it depends.  If you intend to connect the external drive to a variety of machines then USB2 is more 'universal' with respect to ports.  Firewire ports can vary between machines to none to 4 
+pin or 6 pin.  Firewire with a 4 pin port will require a separate power supply for the HDD
+<P>
+With regards to software, if you are using WINXP SP2 and a motherboard with USB2 and firewire ports 
+built in the WINXP native drivers will be sufficient.  If you are connecting through an add in card then the
+card supplier may require special drivers to be installed.
+<P><BR>
+*** External drives are used for additional storage and data backup, and are designed for portability
+and use on other systems when you need to get data back.  To that end I'd suggest going with a USB
+as most all PCs these days have USB but only a small percentage have Firewire. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Recommended First Step After Installing XP</font></STRONG>
+<P>
+Will proclaimed - I just installed Windows XP version 2 from the new Microsoft CD on a new hard drive. 
+The geeks at work said the first thing I should do is "tweak it up" to make it run better. I dont have a 
+problem with the way it runs now and it boots up nice and fast compared to my old XP.  
+<P><BR>
+*** I'm not sure what they actually mean by "tweak it up", tho I have my suspicions.  The VERY first thing
+to do, assuming you are not behind a hardware firewall like your inhome router, is to make sure you
+have a firewall running, at least for inbound traffic. So, if you have a firewall program on CD or saved to 
+CD, install it. If not, then IMMEDIATELY enable or make sure the built in XP firewall is running. 
+<P>
+<A HREF="http://support.microsoft.com/?kbid=283673">http://support.microsoft.com/?kbid=283673</A>
+<P>
+And I'd certainly would not mess with system aka "tweak it up" if I was already happy with how it was
+running.
+ 
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/63hvt">http://tinyurl.com/63hvt</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+
+<P>
+BONUS -  You will also be provided with a link to download issues #100 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching useless autoreplies
+and spam. If you want to comment on an issue then mail me at  <A HREF="mailto:jabo@localisp.com">jabo@localisp.com</A>.
+You might want to read the FAQ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A> first tho.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 170 </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 170 July 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 170th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) The Elder Geek On Windows XP</a><BR>
+<a href="#2">2) How To Stop Messenger Running When Opening OE</a><BR>
+<a href="#3">3) Apps In Add/Remove Disappeared</a><BR>
+<a href="#4">4) Slow CD Burning On New Dell</a><BR>
+<a href="#5">5) Referencing The Defragging Of The Pagefile</a><BR>
+<a href="#6">6) Free CD/DVD Burning Software</a><BR>
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) The Elder Geek On Windows XP</font></STRONG>
+<P>
+Every once in a while I find a Windows XP tech site that I'm proud to recommend. No hoops to jump 
+through to get the info you want. Nice, easy to understand tutorials which include fast graphics. And an
+index that actually works!
+<P>
+The Elder Geek On Windows XP:<BR>
+<A HREF="http://www.theeldergeek.com/">http://www.theeldergeek.com/</A>
+<P>
+I asked the Elder Geek himself to share with us a little history of his site:
+<P>
+"A few years back the computer system crashed in the emergency room where I worked. Unable to 
+reach IT, one of the nurses said, "Where the hell are all those geeks?" Another one looked at me and 
+said, "I don't know where they are, but we've got the elder geek here." A few weeks later I had a blowout
+with a useless supervisor, got fired, and the next day The Elder Geek on Windows XP was born. Best 
+thing in the world that ever happened to me."
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) How To Stop Messenger Running When Opening OE</font></STRONG>
+<P>
+JethroUK asks - How to stop messenger running in background when I open o/express?
+<P>
+Frank S. explains:<BR>
+Turn off the Contacts pane.
+<P>
+From  <A HREF="http://www.fjsmjs.com/OE/disabmes.htm">http://www.fjsmjs.com/OE/disabmes.htm</A>
+<P>
+To prevent MS Messenger from loading with OE you must do BOTH of these things if you don't want to 
+edit the Registry:
+<P>
+In Tools | Options uncheck the option to automatically logon to Messenger.<BR>
+AND<BR>
+In View | Layout uncheck the Contacts Pane.<BR>
+OR<BR>
+Go to Start | Run and type Regedit
+<P>
+Go to:<BR>
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Outlook Express<BR>
+Add a New, DWORD value called Hide Messenger and set the value to 2. (This step is required to 
+prevent a long delay when opening OE with the Contacts pane enabled)
+<P>
+To just stop it from running at all follow this advice from Kelly:<BR>
+Only 3 Registry edits are required to stop Messenger and get rid of the delay in OE.  
+Start | Run | Regedit<BR>
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Messenger\Client
+<P>
+Add the following values as New, DWord Values:<BR>
+PreventRun<BR>
+PreventAutoRun<BR>
+Set the value of each of these to 1
+<P>
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Outlook Express
+<P>
+Add a New, DWORD value called Hide Messenger and set the value to 2. (This step is required to 
+prevent a long delay when opening OE with the Contacts pane enabled)
+<P>
+You can also stop the spam without disabling Messenger.  In Messenger select Tools | Options and 
+open the Privacy tab.  In MSN Messenger 5 there a check box Only people on My Allow List can see my 
+status and send me messages that you can check (turn on).  In Windows Messenger 4.7 you can select 
+the All other users in My Allow List and move it to My Block List.  In both cases the popups should stop 
+and you can still IM with your friends.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Apps In Add/Remove Disappeared</font></STRONG>
+<P>
+V Green writes - Sometime over the last two days, about 2/3 of the items in my Add/Remove Programs 
+list have disappeared.
+<P>
+I can still see the entire list using Everest, and uninstall from there, but this makes me REALLY edgy and wondering what the heck happened.
+<P>
+Richard U responds:<BR>
+There are some program installs that place a large, blank area in the add/remove list. Scroll down to the 
+end of the list [and past the blank area]. See if your other programs are [down] there.
+
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Slow CD Burning On New Dell</font></STRONG>
+<P>
+Jacob questions - A month ago I bought a new DELL computer with 3.0 GHz Pentium 4,800 bus, 512 MB memory.  I tried both HP 9700 CD burner with 16x speed, and IOMagic 8x dual DVD burner rated at 40x for 
+CD reading and burning.  In both cases I could not get more than 7.5x CD copying speed.
+<P>
+I'm using Windows XP Pro, Roxio Easy Media Creator 7.  I tried three different brands of blank CDs rated 
+at 48x, all with the same result. IDE controller for IOMagic showed Transfer mode: DMA if available,
+and Current Transfer Mode: PIO mode.
+<P>
+Bob K. suggests:<BR>
+My guess is that your IDE controller is stuck in PIO mode. There are a variety of fixes here:
+<P>
+IDE ATA and ATAPI Disks Use PIO Mode After Multiple Time-Out or CRC Errors
+Occur:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=817472">http://support.microsoft.com/?kbid=817472</A>
+<P>
+The simplest method is to uninstall the IDE controller from Device Manager and let XP re-install it.
+<P>
+Nelson L. adds:<BR>
+Need to get it out of PIO mode and into DMA mode to get faster performance. Try going into the BIOS 
+and checking the settings of the device attached to the secondary master.
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Referencing The Defragging Of The Pagefile</font></STRONG>
+<P>
+I always check the pagefile of systems I get in the shop - many are severely fragmented.  You cannot 
+effectively defragment the pagefile, though products such as Diskeeper make a good run at it.  In cases 
+where the pagefile is broken into more than 5 or 6 fragments I do the following:
+<P>
+Reset the pagefile size to the minimum allowed (usually 2MB) and reboot the system, then set the size 
+back to its original or the desired size and reboot again.
+<P>
+The pagefile is not reset to default on each boot, that is recreated clean.  It is cleared, but it simply clears 
+the data and does not remap it.  Find a machine with a severely fragmented pagefile and run a pagefile 
+mapper, you can even use Diskeeper for this, and you will see that it is in as miserable shape as it was 
+before.
+<P>
+All that aside, this is not usually necessary is a PC with adequate memory, however, most off the shelf 
+lower end boxes (Dell, Gateway, Compaq) come with a whopping 128MB of RAM.  It is technically 
+feasible to run XP on 64MB, but it is not useable.
+<P>
+C. Ridley<BR>
+OnCall Solutions<BR>
+Onsite Technology Solutions for Your Home and Business
+
+
+<P><BR>
+<A NAME="6"></A>
+########################################<BR>
+<STRONG><font color="red">6) Free CD/DVD Burning Software</font></STRONG>
+<P>
+<A HREF="http://www.deepburner.com/">http://www.deepburner.com/</A>
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 950K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 163 </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 163 June 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 163rd Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Get Into Fractal Art</a><BR>
+<a href="#2">2) Need To Read Error Message On BSOD</a><BR>
+<a href="#3">3) Why Doesn't Help And Support Work</a><BR>
+<a href="#4">4) What Happens To Files Deleted Remotely?</a><BR>
+<a href="#5">5) Bootdisk For BIOS Flashing</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Get Into Fractal Art</font></STRONG>
+<P>
+<A HREF="http://www.fractalarts.com/">http://www.fractalarts.com/</A>
+<P>
+"One of the most rewarding aspects of the site is the e-mails I receive from people who have started 
+creating from using the tutorials, from young kids to grandmothers. I am always amazed at people in their 
+60's, 70's and 80's who are willing to first tackle the world of computers and the internet and then discover 
+and be willing to try new avenues of creativity. It truly is rewarding for me!" [Doug H., webmaster]
+
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Need To Read Error Message On BSOD</font></STRONG>
+<P>
+kebuchan asks - Something's wrong with my system, it keeps rebooting.  I get the blue screen of death but it flashes by too quickly and I can't read it.  It starts up XP ... about 2  seconds into the startup the screen goes black, then flashes blue and then it reboots.
+<P>
+Will D. answers:<BR>
+Right click on My Computer, select Properties and then the Advanced tab. Click on Settings under 'Startup and Recovery' and then uncheck 'Automatically restart'.  Next time your PC tries to restart you see a Blue Screen [with a stop or error message which you can use to research your problem.]  
+<P>
+Ron M. said in an earlier edition:<BR>
+Windows XP has a default setting to "Restart on failure" and that is almost certainly what is causing [the] restarts. [There is a tweak however that one can do in order to read the error message].
+<P>
+Open Control Panel - System - Advanced - Startup and Recovery Settings and uncheck the 
+"Automatically restart" item in the System failure section.
+<P>
+That will likely result in the PC locking up completely, requiring a manual reset or power-off, but you will be able to see the full text of the BSOD error message and can then investigate  the possible causes.
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Why Doesn't Help And Support Work</font></STRONG>
+<P>
+CJ writes - Whenever I click on the help section (contents and index) of XP, IE, OE, etc., nothing happens.  
+How do I fix this?
+<P>
+Will D. answers:<BR>
+Why doesn't Help and Support work?:
+<P>
+<A HREF="http://www.kellys-korner-xp.com/top10faqs.htm">http://www.kellys-korner-xp.com/top10faqs.htm</A>
+<P>
+Doug K. suggests:
+<P>
+<A HREF="http://www.dougknox.com/xp/scripts_desc/fixwinxphelp.htm">http://www.dougknox.com/xp/scripts_desc/fixwinxphelp.htm</A>
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) What Happens To Files Deleted Remotely?</font></STRONG>
+<P>
+dd inquires - What happens when a file is deleted remotely; where does it reside? The servers recycle 
+bin is empty as is the remote client systems recycle bin from where the deletion [was done].
+<P>
+Ron L. answers:<BR>
+Bad news, I'm afraid. If you delete a file across the network, it doesn't reside anywhere - it is totally gone. 
+<P>
+Phil adds:<BR>
+If its a mapped drive on a network, the file is gone. Doesn't go to recycle bin. If you're connected remotely 
+with something like terminal server, then the file is [also] gone.  If your connected remotely with desktop emulation software, like remote desktop, then the file would be in the hosts recycle bin (the computer
+ you're connected to).
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Bootdisk For BIOS Flashing</font></STRONG>
+<P>
+Kay asks - I'm pretty good with PCs and I need to flash my bios so my computer can see and use larger
+hard drives. My Pentium 400 currently has a 32 gig upper limit and I want to put in an 80 gig hard drive.
+I was informed by my motherboard makers website that I first needed to use a *clean* bootdisk first. Can
+I simply make one by going to DOS on my Windows 98 computer and doing a sys a: ?
+<P><BR>
+*** Yes, with some caveats. First, made sure that the bios flash program addresses your hard drive size
+limit. Motherboard makers and/or national brands may have updated bios's for download, but that 
+doesn't necessarily mean they will address the issue you have. For example on some older Dells
+and other brands I've worked on that had your problem an upgrade flash program was available but they
+didn't include an update for larger drives. 
+<P>
+Secondly, on the off chance that you have an older drive in your system that was doublespaced you 
+certainly dont want the drvspace.bin file loading which can mess up a bios flash. You can, of course, 
+delete drvspace.bin after you make the boodisk. It's a hidden file so you'll have to use the attrib
+command from the windows\command folder to unhide it first with the command attrib -h -r -s drvspace.bin
+then you can delete it. Or of course you can delete it using windows explorer if you have [view all file types
+set]. 
+<P>
+Thirdy. Make sure  you use a brand new floppy disk and that your A: drive is clean and working properly
+before you start. Blow it out with compressed air and/or do a cleaning with a cleaning kit first if it hasn't been
+used in a while. 
+<P>
+Fourth. Dont ignore the backup option for your current bios that should come with the flash utility. 
+<P>
+Fifth. Read the docs. If they say they recommend that you set your bios to defaults before you flash then
+do it. If you have your hard drive parameters set manually tho ie sectors, heads, LBA, Large, etc. record 
+them first. 
+<P>
+Six. Generally, its usual to put the utils you need to flash on the bootdisk. If you use an MS win98
+bootdisk tho made by using the sys a: command you'll already have 376,000 bytes used. A better
+flash bootdisk is available however that only uses 119,000 bytes and is pretty much the standard for
+booting up with these days before you flash. 
+<P>
+It's a disk I made four years ago and many large motherboard makers like Abit have it available for
+download:
+<P>
+<A HREF="ftp://ftp.abit.com.tw/pub/download/utilities/drdos/drdflash.exe">ftp://ftp.abit.com.tw/pub/download/utilities/drdos/drdflash.exe</A>
+<P>
+Alternate download URLs:<BR>
+ftp://User:webhq@webhq.cjb.net/downloads/drdflash.exe<BR>
+http://download.sudhian.com/faq/kt7/downloads/Misc/drdflash.exe<BR>
+http://ftp.sanguine.jp/pub/sahughes/utils/dos/drdflash.exe<BR>
+http://herrie.rpc1.org/downloads/drdflash.exe
+<P>
+Download the file, put a brand new floppy disk in your A: drive, then click on the file which will create the
+disk. 
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 900K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

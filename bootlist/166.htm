@@ -1,0 +1,220 @@
+<HTML>
+<HEAD>
+<TITLE> BootLIST 166 </TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 166 July 2004
+
+<P>
+<CENTER><font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font></CENTER>
+<P>
+<STRONG>Welcome to the 166th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Defrag Your Pagefile?</a><BR>
+<a href="#2">2) Need Motherboard That Handles 8 GIG RAM</a><BR>
+<a href="#3">3) Notes On 30 Gig Hard Drive Limitation</a><BR>
+<a href="#4">4) Notes On XP WPA [Windows Product Activation]</a><BR>
+<a href="#5">5) Yahoo Mail</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Defrag Your Pagefile?</font></STRONG>
+<P>
+SA asks - How do I defrag my pagefile. I have only one hard drive. I am running windows xp.
+<P>
+Ron M. explains:<BR>
+Pagefile fragmentation is one of those issues that is right up there with the bogeyman and dracula - lots of 
+hype and no substance.
+<P>
+The best, if not the only, solution to any and all performance related issues regarding the page file is to 
+have sufficient RAM so as to eliminate, or at least greatly reduce, the need to actually move memory 
+content back and forth between RAM and the page file.
+<P>
+Page file fragmentation can only become a performance issue if you are using the page file so 
+extensively that the extra delays in reading from or writing to two or more fragments of the page file in the 
+same paging operating amounts to a significant amount of time.   And in that case the fact that you are 
+actually writing to or reading from the page file at all will be several hundred times more significant than 
+any possible effect of fragmentation.
+<P>
+In understanding the page file function it is important to appreciate that perhaps the most important 
+function of the page file is to provide the memory address space needed to satisfy the *unused*
+portion of memory allocation requests.  All requested memory must be mapped to an existing memory 
+location, either in RAM or the page file. By mapping the unused portions of requests to the page file Windows
+allows RAM to be devoted only to those portions that are actually being used.
+<P>
+And mapping unused portions to the page file requires no disk activity, just an entry in the internal 
+mapping tables maintained by the CPU.  So page file fragmentation is irrelevant.   And these unused
+portions of memory requests can easily amount to several hundreds of megabytes on a heavily used 
+system. 
+<P>
+Hope this clarifies the situation.
+<P><BR>
+*** A pagefile is a temporary file which is reset to default on bootup anyway. No need to defrag it. You'd 
+just be wasting your time. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) Need Motherboard That Handles 8 GIG RAM</font></STRONG>
+<P>
+Cosmo mails - I just got this IT job and I need to build some servers that can handle 8 gigs of RAM. Any
+ideas?  I figure I can save my dad's company $5,000 or more if I build them myself.  
+<P>
+Tina replies:<BR>
+SuperMicro has some that can go up to 16GB (Xeon):<BR>
+<A HREF="http://www.supermicro.com/products/motherboard/Xeon/">http://www.supermicro.com/products/motherboard/Xeon/</A>
+<P>
+Tyan has some that go up to 36GB (Opteron):<BR>
+<A HREF="http://www.tyan.com/products/html/fam_thunder.html">http://www.tyan.com/products/html/fam_thunder.html</A>
+<P>
+And Xeons that go up to 8GB:<BR>
+<A HREF="http://www.tyan.com/products/html/xeon.html">http://www.tyan.com/products/html/xeon.html</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) Notes On 30 Gig Hard Drive Limitation</font></STRONG>
+<P>
+Jasper posts - I'm going to build a file server from a Pentium-II computer. Its mainboard chip possibly 
+cannot recognize hard disks with size over 30GB. I've heard a few solutions to solve this problem; flash 
+the BIOS, buy another mainboard.
+<P>
+But is it possible to install an IDE-controller, so I can use disks of size over 80GB? I mean: is there a 
+replacing BIOS-like chip on the controller that accessed the disks, or does it use the chip from the 
+mainboard and simply add 2 IDE channels to the system?
+<P>
+Jim B. replies:<BR>
+You can buy a Promise (brand name) [or SIIG] IDE controller card, stick it in a PCI slot, and assuming your
+OS and partitioning can handle the greater size you wont have any more BIOS limitation problems.
+<P>
+*** Yes you can buy a controller. You get the added benefit of additional ide channels as well, ie you can 
+still use the mobo channels for the older drives. Many folks also report that a hard drive connected to a 
+new controller will run faster as well. 
+<P>
+Mr. U. says:<BR>
+Not quite right. Just format it in partitions of 20gig and leftovers and it will be able to see the lot.
+<P>
+*** Incorrect Mr. U. If he has a 32 gig bios limit ie meaning the bios wont see the disk at all then guess what, 
+neither will fdisk or other disk partitioner after a dos boot. 
+<P>
+There is a slight chance that the drive will have special jumper selections to be used in conjunction with 
+the drives disk manager [overlay].  However, I'd still go with a bios flash or new controller card.
+<P>
+Also remember that the new drives use 80 conductor cables so a new controller card that accommodates
+this seems to be one of the better options.   
+<P>
+Thor adds:<BR>
+Yes, they are [the add-on controller cards] U-ATA. But then again, any IDE connector can accommodate
+an 80 conductor IDE cable, since pin-wise they are no different.
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Notes On XP WPA [Windows Product Activation]</font></STRONG>
+<P>
+Craig inquires - My understanding is the WPA system checks for ten categories of hardware then assigns
+votes to them. If my machine always has seven yes votes (meaning unchanged hardware) I will not need 
+a new activation number. But, what if my machine doesn't have all ten of the hardware categories?
+<P>
+Does WPA have a set number of votes to assign and will distribute them to whatever hardware is present?
+<P>
+For example, if my machine only has the motherboard, RAM,  an Athlon (with no serial number), hard 
+drive, CD rom, and video card...will WPA assign each item multiple votes until it's vote quota is reached?
+<P>
+Alex N. answers:<BR>
+An absent category will be seen as a positive vote - until you add an item that falls in the category, when it becomes seen as changed, and the vote is lost (and stays lost).  This applies especially to SCSI 
+controller, which many machines never have; and to Processor Serial Number which only exists on P III processor chips.
+<P>
+The votes are to categories; first item in each category that is found at set up is the one that matters.  
+Later, at boot, the system will search for all in that category and count Yes if it finds the item that was there originally (or establishes that there still isn't one)
+<P>
+You can see the state of play for your machine with a free tool, XPInfo that you can find at:
+<P>
+<A HREF="http://www.licenturion.com/xp/">http://www.licenturion.com/xp/</A>
+
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Yahoo Mail</font></STRONG>
+<P>
+Competition is good. In case you haven't heard, Yahoo now offers, for free, 100 meg email accounts and
+ten meg file attachments. What I like best tho is the service [webpage] is now about three times faster
+with a dialup ISP.
+
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking on this link:
+<P>
+<A HREF="http://tinyurl.com/yskku">http://tinyurl.com/yskku</A>
+<P>
+Or choose your own level of support: <A HREF="http://tinyurl.com/2nlto">http://tinyurl.com/2nlto</A>
+
+<P>
+BONUS - You will also be provided with a link to download EVERY previous issue COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 950K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>

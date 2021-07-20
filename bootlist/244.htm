@@ -1,0 +1,271 @@
+<HTML>
+<HEAD>
+<TITLE>BootLIST 244</TITLE>
+</HEAD>
+<body text="#000000" link="#0000FF" vlink="#800080" bgcolor="#FFFFFF">
+<font face="arial,helvetica" size=3>
+<BODY>
+
+<blockquote>
+<A HREF="http://www.eddiemaintenance.com/"><IMG SRC="../art/eddie.jpg" border=0></A><BR>
+<A HREF="http://www.bootdisk.com/">http://www.bootdisk.com/</A> 244 December 2005
+
+<P>
+<font face="arial,sans" color="#FF0000" size="7">The 
+BootLIST</font>
+<P>
+<STRONG>Welcome to the 244th Edition of The BootLIST</STRONG>
+<P>
+<STRONG><font color="red">INDEX</font></STRONG>
+<BR>
+
+<a href="#1">1) Empty Device Manager</a><BR>
+<a href="#2">2) XP Chkdsk Basics Review</a><BR>
+<a href="#3">3) XP Product Key Basics Review</a><BR>
+<a href="#4">4) Windows 98 Having Trouble Finding Driver Files</a><BR>
+<a href="#5">5) Top Ten Internet Explorer Issues</a><BR>
+
+
+
+<P><BR>
+
+
+
+<A NAME="1"></A>
+########################################<BR>
+<STRONG><font color="red">1) Empty Device Manager</font></STRONG>
+<P>
+davaz posted - I am running Win XP with SP2 installed. Computer has been stable for many months. 
+About a week ago a problem started. No devices are listed in device mgr and operations in window 
+explorer have slowed to a crawl re file access.
+<P>
+R. McCarty said:<BR>
+May be the result of Malware or Privileges reset on the Enum Registry keys that hold Device Manager 
+tables.  A fix for the Malware is available here:
+<P>
+<A HREF="http://swandog46.geekstogo.com/aproposfix.exe">http://swandog46.geekstogo.com/aproposfix.exe</A>
+<P>
+Malke adds:<BR>
+There has been a rash of the "empty Device Manager" problem lately, caused by malware. Your other symptoms indicate probable malware infection, too.
+<P>
+The AproposFix mentioned in this forum thread took care of the empty Device Manager for other posters:
+<P>
+<A HREF="http://www.dslreports.com/forum/remark,14679793">http://www.dslreports.com/forum/remark,14679793</A>
+<P>
+It would be smart to scan for other malware also:<BR>
+<A HREF="http://www.elephantboycomputers.com/page2.html#Removing_Malware">http://www.elephantboycomputers.com/page2.html#Removing_Malware</A>
+<P><BR>
+*** Or, it could be something really simple:
+<P>
+<A HREF="http://support.microsoft.com/?kbid=311504">http://support.microsoft.com/?kbid=311504</A>
+<P>
+ADDITIONAL NOTE: The aproposfix.exe fix was created by a hobbyist. There is no guarantee that it will 
+work nor is there a guarantee that it wont make things worse. Once you click on the .exe to unpack the
+file to a new folder, run the .bat in safe mode. 
+<P>
+However, I do try to be as responsible as I can in this newsletter, and while I couldn't personally test the aproposfix as I'm not about to trash my Device Manager for the heck of it, I have waited several weeks 
+and noted from my sources and feedback that it works most of the time. Make sure you get rid of any
+spyware/malware first tho. 
+<P>
+A FURTHER NOTE: Still, the best way to avoid such issues is to NOT install spyware in the first place, 
+no matter how tempting. For example, just yesterday a software author emailed me to try out and to post
+his companies FREE XP driver backup program. I checked out their webpage, seemed legit, and 
+couldn't resist the small 350K download to try out. 
+<P>
+During the install I read the docs/eula and they said that it included targeted ads that would be generated based on my browser's activity.  The install routine, according to my firewall, also wanted permission to
+connect to the Internet.  One strike, you're out. I wasn't about to continue and cross my fingers and hope for
+the best. That app had two strikes against it even before the "I Agree" button came up.  I hit Cancel of
+course as I really dont enjoy intentially messing up my own PC :)
+<P>
+As a reminder when called to fix a PC. There seems to be an urban myth that removing all spyware that
+is causing OS problems will bring the PC back to normal. Well, in many cases it does, but in many cases
+the spyware may have caused irreparable damage to files/settings that it would take weeks to find 
+and fix, assuming that's even possible.  Educate your customers. 
+
+
+<P><BR>
+<A NAME="2"></A>
+########################################<BR>
+<STRONG><font color="red">2) XP Chkdsk Basics Review</font></STRONG>
+<P>
+Alvin asked - Hi I used to use scandisk on my old pc but now I have windows xp on my new pc and I cant seem to find scandisk.  I was wondering if they changed the name of the programme and where I could 
+find it?
+<P>
+stevea said:<BR>
+This should help you:
+<P>
+<A HREF="http://www.duxcw.com/faq/win/xp/scandisk.htm">http://www.duxcw.com/faq/win/xp/scandisk.htm</A>
+<P>
+Rick adds:<BR>
+It's chkdsk in an NT system (of which WinXP is one). To access the tool, right click the drive in Windows Explorer and select properties. You will find "error checking" on the tools tab. You can also access it from 
+a command prompt (start/run cmd), check the parameters by running chkdsk /?. Note, for some of 
+checkdisk's functions the drive must not be in active use. Frequently, you will need to reboot for the disk checker to run.
+<P>
+Bruce C. buds in:<BR>
+WinXP does not have a program called "Scandisk," as this was a Win9x/Me program.  Instead, because WinXP is descended from the WinNT/2K OS family, it has a command line utility called "Chkdsk," which performs much better.
+<P>
+Start | Run | Cmd | Chkdsk.exe /? for the correct syntax and available options.
+<P>
+Alternatively, double-click My Computer | right-click the desired hard drive | Properties | Tools | Error-checking/Check Now.  This will run Chkdsk, normally on the next reboot.
+<P>
+However, unless you are actually experiencing a specific problem related to your hard drive's file system, there's no real need to run Chkdsk.  The utility is not designed to be used as part of any period 
+maintenance plan.
+<P><BR>
+*** Note there is also a special chkdsk that works in a DOS boot after an NTFS driver is running. It was
+developed by a German company, ie www.datapol.de, that is free and comes on their NTFS bootdisk:
+<P>
+<A HREF="http://www.bootdisk.com/ntfs.htm">http://www.bootdisk.com/ntfs.htm</A><BR>
+<A HREF="http://www.datapol-technologies.com/dpe/freeware/index.html">http://www.datapol-technologies.com/dpe/freeware/index.html</A>
+
+
+<P><BR>
+<A NAME="3"></A>
+########################################<BR>
+<STRONG><font color="red">3) XP Product Key Basics Review</font></STRONG>
+<P>
+Fud asked - I type in my product key # when activating and is giving an error saying incorrect product key.
+I double checked and rechecked and I'm positive that this # is correct.  What are reasons for this?
+<P>
+Kerry B. answered:<BR>
+The key [may not] match the product you are installing. e.g You may be trying to use an OEM key with a 
+retail product or a retail key with a OEM product etc. Did the key come with the media you are installing 
+from?
+<P>
+Steve N. added:<BR>
+Is this a major brand OEM computer? MS has disabled on-line activation for many major brand OEMs 
+due to theft of their product keys. You may have to resort to phone activation.
+<P>
+Ron M. said:<BR>
+The most common reason is that you have read the printed Product Key incorrectly.  Some of the printed 
+keys use a font that makes it quite easy to misinterpret certain letters.
+<P>
+The most common mistake, in my experience, is with B and 8, followed by G and 6 or S and 5.
+<P>
+Also sometimes a Q is misread as 0 or O.  Neither 0 or O are used in Windows product keys.
+<P><BR>
+*** To clarify a bit. Lets say you buy two copies of WinXP at a retail store. You can use either key with 
+either CD. Your key will also work to freshly install your neighbors CD, but of course, if you dont follow the
+one unique key/PC rule you will have an activation problem. Note that Keys are not married to individual 
+CDs, but rather there are "sets" of keys that work with different releases of XP.  
+<P>
+For example, my XP upgrade CD key will most likely NOT work if I try to use it to install a "Full Version" 
+retail CD. Or, my "Full Version" OEM CD key I got with my new big name PC will most likely NOT work on 
+a retail CD. The same applies to win98 keys also. 
+
+
+<P><BR>
+<A NAME="4"></A>
+########################################<BR>
+<STRONG><font color="red">4) Windows 98 Having Trouble Finding Driver Files</font></STRONG>
+<P>
+don posted - Today I had to load a driver for a new Network card I installed - As usual during the 
+installation the new hardware wizard asked me to insert the windows 98 cd to find a file it needs - And as 
+usual it can never find the file on its own cd !  This has happened to me so many times that I now need to 
+know if it is me or is it windows 98 with the problem?
+<P>
+Ben M. answered:<BR>
+When you are prompted for the CD, insert it, then type the drive letter assigned to your CD drive followed 
+by ":\win98".  For example, if your CD drive is assigned drive letter "D", type
+<P>
+D:\win98
+<P>
+Then click "OK" or "Next".
+<P><BR>
+*** Or, quite often when that happens windows really wants you to put in your drivers disk that came with
+the NIC, and point it to the drivers folder on the disk. In other words, windows is just asking for the wrong 
+disk.
+<P>
+Of course, if you download a set of drivers from the Internet and unpack it and go to install, windows may 
+also ask for your WinCD. It may use it, or come back like above, so just point it to the folder you unpacked
+the drivers to. The folder may contain different sets of drivers in subdirectories, in that case just point it
+to the one for the OS you are using. Anyway, it's always a good idea to make a brand new folder to 
+unpack any software to before you install. One can always delete it afterwards. 
+
+
+<P><BR>
+<A NAME="5"></A>
+########################################<BR>
+<STRONG><font color="red">5) Top Ten Internet Explorer Issues</font></STRONG>
+<P>
+I just came across this article and it's very nicely done with clear graphics, and even prints fine at about 
+ten pages.  Aside from the primary thrust of the article, it also discusses using smartdrv to speed up
+deleting folders in DOS on Win98/ME PCs, which another reason it caught my eye. 
+<P>
+Smartdrv is a dos driver which will speed up deleting folders in Windows by 90%. So, lets say I have a 
+Win98 PC that needs a fresh install of windows. I want to keep  all the other data on the drive.  No need to 
+format. I simply boot with a bootdisk that has smartdrv on it, run smartdrv, then use deltree to delete the
+windows folder, and sometimes the program files folder. 
+<P>
+It you dont run smartdrv first, the folder may take an hour to delete. If you run smartdrv first, it will only take
+seconds to delete [deltree] a folder. Then you can install Win98/ME fresh. 
+<P>
+<A HREF="http://www.microsoft.com/windows/IE/community/columns/IEtopten.mspx">http://www.microsoft.com/windows/IE/community/columns/IEtopten.mspx</A>
+<P>
+Also, lets say you want to put XP on a PC and "have" to do the install from DOS if your XP CD is not 
+booting. Run smartdrv first after booting with your bootdisk that has smartdrv on it, then run the 
+winnt.exe file from the i386 folder on the CD. If you dont run smartdrv first, you'll be sitting there for hours. 
+
+
+
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++<BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+
+
+
+<P>
+Like this issue of The BootLIST?
+<P>
+One can, if you wish, return the favor and treat the Newsletter Author to a $5 Dollar Breakfast by clicking 
+on this link:
+<P>
+<A HREF="http://tinyurl.com/3rpjc">http://tinyurl.com/3rpjc</A>
+<P>
+BONUS -  You will also be provided with a link to download issues #140 to present COMPLETE with a 
+nice text search utility that highlights your search words and opens up the old LISTS within the app itself. 
+No software install required. Everything is included in a SINGLE 600K zip package. 
+<P>
+If you prefer real mail send a letter to Ed Jablonowski:<BR>    
+56 Kossman Street, East Brunswick, New Jersey 08816-4442 USA
+
+
+<P>
+NOTICE: Please dont reply to this email as the return address is just for catching autoreplies
+and spam. If you want to comment on an issue or have a question regarding logistics please see the 
+FAQ:<BR>
+ <A HREF="http://www.bootdisk.com/bootlist/faq.htm">http://www.bootdisk.com/bootlist/faq.htm</A>.
+
+
+<P> 
+Kindest regards, Ed
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+     
+ 
+To Subscribe to this techletter please enter your Email address below:<BR>
+<form method=post action=http://www.yourmailinglistprovider.com/subscribe.php?BootLIST>
+<table border=0>
+ <tr>
+ <td><input type=text name=YMP[0] size=30 maxlength=50></td>
+ <td><input type=submit value=Submit name=submit></td>
+ </tr>
+ </table>
+</form>
+
+
+<P><BR>
++++++++++++++++++++++++++++++++++++++++++++++++++
+<P><BR>
+    
+
+
+<P><BR>
+</BODY>
+</HTML>
