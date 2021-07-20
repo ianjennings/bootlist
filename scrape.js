@@ -1,12 +1,12 @@
 const rp = require("request-promise");
 const fs = require("fs");
 
-let i = 391;
+let i = 2;
 
 const download = async () => {
   let paddedI = i.toString().padStart(3, "0");
 
-  let url = `https://www.bootdisk.com/bootlist/${paddedI}.htm`;
+  let url = `https://www.bootdisk.com/housecall/${paddedI}.htm`;
 
   console.log(url);
 
@@ -15,7 +15,7 @@ const download = async () => {
       //success!
       console.log(html);
 
-      fs.writeFileSync(`./bootlist/${paddedI}.htm`, html, "utf-8");
+      fs.writeFileSync(`./housecall/${paddedI}.htm`, html, "utf-8");
 
       i++;
       download();
